@@ -77,7 +77,9 @@ def _preprocessed_texts(raw_texts: list[str]) -> list[str]:
     return [" ".join(preprocess(text)) for text in raw_texts]
 
 
-def _cross_validate(texts: list[str], labels: list[str], n_folds: int = 5) -> None:
+def _cross_validate(
+    texts: list[str], labels: list[str], n_folds: int = 5
+) -> tuple[float, float, list[float]]:
     """Run stratified k-fold cross-validation and log results."""
     pipeline = Pipeline(
         [
@@ -96,12 +98,20 @@ def _cross_validate(texts: list[str], labels: list[str], n_folds: int = 5) -> No
     skf = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=42)
     scores = cross_val_score(pipeline, texts, labels, cv=skf, scoring="accuracy")
 
-    logger.info("Cross-validation accuracy: %.4f (+/- %.4f)", scores.mean(), scores.std())
+    logger.info(
+        "Cross-validation accuracy: %.2f%% (+/- %.2f%%)",
+        scores.mean() * 100,
+        scores.std() * 100,
+    )
     for i, score in enumerate(scores, 1):
-        logger.info("  Fold %d: %.4f", i, score)
+        logger.info("  Fold %d: %.2f%%", i, score * 100)
+
+    return scores.mean(), scores.std(), scores.tolist()
 
 
-def _grid_search(texts: list[str], labels: list[str]) -> Pipeline:
+def _grid_search(
+    texts: list[str], labels: list[str]
+) -> tuple[Pipeline, float]:
     """Tune key hyperparameters via GridSearchCV and return the best pipeline."""
     pipeline = Pipeline(
         [
@@ -136,10 +146,10 @@ def _grid_search(texts: list[str], labels: list[str]) -> Pipeline:
     )
     grid.fit(texts, labels)
 
-    logger.info("GridSearch best accuracy: %.4f", grid.best_score_)
+    logger.info("GridSearch best accuracy: %.2f%%", grid.best_score_ * 100)
     logger.info("GridSearch best params: %s", grid.best_params_)
 
-    return grid.best_estimator_
+    return grid.best_estimator_, grid.best_score_
 
 
 def train_model(save: bool = True, validation_split: float = 0.2) -> Pipeline:
@@ -156,7 +166,7 @@ def train_model(save: bool = True, validation_split: float = 0.2) -> Pipeline:
     _cross_validate(texts, labels)
 
     logger.info("Running grid search for best hyperparameters...")
-    best_pipeline = _grid_search(texts, labels)
+    best_pipeline, _ = _grid_search(texts, labels)
 
     X_train, X_test, y_train, y_test = train_test_split(
         texts, labels, test_size=validation_split, random_state=42, stratify=labels
@@ -165,11 +175,53 @@ def train_model(save: bool = True, validation_split: float = 0.2) -> Pipeline:
     best_pipeline.fit(X_train, y_train)
 
     y_pred = best_pipeline.predict(X_test)
-    logger.info("Hold-out accuracy: %.4f", accuracy_score(y_test, y_pred))
-    logger.info(
-        "Classification report:\n%s",
-        classification_report(y_test, y_pred, zero_division=0),
-    )
+    holdout_acc = accuracy_score(y_test, y_pred) * 100
+    logger.info("Hold-out accuracy: %.2f%%", holdout_acc)
+
+    report = classification_report(y_test, y_pred, zero_division=0, output_dict=True)
+    logger.info("Classification report (%%):")
+
+    header = ["Label", "Precision", "Recall", "F1-Score", "Support"]
+    rows = [
+        [
+            label,
+            format(metrics["precision"] * 100, ".2f") + "%",
+            format(metrics["recall"] * 100, ".2f") + "%",
+            format(metrics["f1-score"] * 100, ".2f") + "%",
+            str(int(metrics["support"])),
+        ]
+        for label, metrics in report.items()
+        if isinstance(metrics, dict)
+    ]
+    averages = report.get("macro avg", None)
+    if averages is not None:
+        rows.append(
+            [
+                "macro avg",
+                format(averages["precision"] * 100, ".2f") + "%",
+                format(averages["recall"] * 100, ".2f") + "%",
+                format(averages["f1-score"] * 100, ".2f") + "%",
+                str(int(averages["support"])),
+            ]
+        )
+
+    widths = [
+        max(len(header[i]), max((len(row[i]) for row in rows), default=0))
+        for i in range(len(header))
+    ]
+    separator = "+" + "+".join("-" * (w + 2) for w in widths) + "+"
+
+    def _render(row: list[str]) -> str:
+        return "| " + " | ".join(
+            cell.ljust(w) for cell, w in zip(row, widths)
+        ) + " |"
+
+    logger.info(separator)
+    logger.info(_render(header))
+    logger.info(separator)
+    for row in rows:
+        logger.info(_render(row))
+    logger.info(separator)
 
     if save:
         save_model(best_pipeline)
