@@ -1,5 +1,9 @@
+from typing import Any
+
 from fastapi import APIRouter
 from pydantic import BaseModel
+
+from app.services.credibility import score_credibility
 
 router = APIRouter(prefix="/credibility", tags=["credibility"])
 
@@ -13,10 +17,15 @@ class CredibilityInput(BaseModel):
 
 class CredibilityResponse(BaseModel):
     score: float
-    factors: dict
+    factors: dict[str, float]
 
 
 @router.post("/", response_model=CredibilityResponse)
-async def score_credibility(input: CredibilityInput):
-    """Score the credibility of a weather report (placeholder)."""
-    return CredibilityResponse(score=0.0, factors={})
+async def score_credibility_endpoint(input: CredibilityInput) -> dict[str, Any]:
+    """Score the credibility of a weather report."""
+    return score_credibility(
+        text=input.text,
+        source=input.source,
+        has_media=input.has_media,
+        has_location=input.has_location,
+    )
