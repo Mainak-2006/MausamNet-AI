@@ -191,7 +191,7 @@ def train_model(save: bool = True, validation_split: float = 0.2) -> Pipeline:
             str(int(metrics["support"])),
         ]
         for label, metrics in report.items()
-        if isinstance(metrics, dict)
+        if isinstance(metrics, dict) and label not in ("macro avg", "weighted avg")
     ]
     averages = report.get("macro avg", None)
     if averages is not None:

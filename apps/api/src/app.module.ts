@@ -9,6 +9,13 @@ import { UsersModule } from './users/users.module';
 import { ReportsModule } from './reports/reports.module';
 import { MediaModule } from './media/media.module';
 import { CloudinaryModule } from './cloudinary/cloudinary.module';
+import { MlClientModule } from './ml-client/ml-client.module';
+import { ClassificationModule } from './classification/classification.module';
+import { CredibilityModule } from './credibility/credibility.module';
+import { DuplicatesModule } from './duplicates/duplicates.module';
+import { WeatherModule } from './weather/weather.module';
+import { VerificationModule } from './verification/verification.module';
+import { AlertsModule } from './alerts/alerts.module';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { RolesGuard } from './auth/roles.guard';
 import { User } from './entities/user.entity';
@@ -42,6 +49,13 @@ import { Alert } from './entities/alert.entity';
     ReportsModule,
     MediaModule,
     CloudinaryModule,
+    MlClientModule,
+    ClassificationModule,
+    CredibilityModule,
+    DuplicatesModule,
+    WeatherModule,
+    VerificationModule,
+    AlertsModule,
   ],
   controllers: [AppController],
   providers: [

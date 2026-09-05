@@ -9,6 +9,14 @@ export default [
   },
   eslint.configs.recommended,
   {
+    files: ['**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
+  {
     files: ['**/*.ts'],
     languageOptions: {
       parser: tsparser,
