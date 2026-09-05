@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import AppLayout from '../components/layout/AppLayout';
 
 export const metadata: Metadata = {
   title: 'MausamNet-AI — National Weather Big Data Analytics Platform',
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppLayout>{children}</AppLayout>
+      </body>
     </html>
   );
 }

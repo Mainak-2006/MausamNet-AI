@@ -11,14 +11,21 @@
   },
   "dependencies": {
     "@mausamnet/shared": "workspace:*",
+    "leaflet": "^1.9.4",
+    "leaflet.heat": "^0.2.0",
     "next": "^16.3.4",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-leaflet": "^5",
+    "recharts": "^3.10.1",
+    "zustand": "^5.0.15"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.7",
     "@mausamnet/tsconfig": "workspace:*",
     "@types/jest": "^29.5.14",
+    "@types/leaflet": "^1.9.22",
+    "@types/leaflet.heat": "^0.2.5",
     "@types/node": "^22.13.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
