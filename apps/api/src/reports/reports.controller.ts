@@ -14,6 +14,8 @@ import { ReportsService } from './reports.service';
 import { CreateReportDto, UpdateReportDto, FilterReportsDto } from './dto/report.dto';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
+import { Roles } from '../auth/decorators/roles.decorator';
+import { UserRole } from '@mausamnet/shared';
 import { User } from '../entities/user.entity';
 
 @Controller('reports')
@@ -24,6 +26,12 @@ export class ReportsController {
   @Post()
   async create(@Body() dto: CreateReportDto, @CurrentUser() user: User) {
     return this.reportsService.create(dto, user.id);
+  }
+
+  @Post('backfill-ai')
+  @Roles(UserRole.ADMIN)
+  async backfillAi(@Query('limit') limit?: number) {
+    return this.reportsService.backfillUnprocessed(limit);
   }
 
   @Get()

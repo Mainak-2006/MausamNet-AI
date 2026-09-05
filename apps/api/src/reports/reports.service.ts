@@ -4,7 +4,7 @@ import {
   ForbiddenException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository, FindOptionsWhere, LessThanOrEqual, MoreThanOrEqual } from 'typeorm';
+import { Repository, FindOptionsWhere, LessThanOrEqual, MoreThanOrEqual, IsNull } from 'typeorm';
 import { Report } from '../entities/report.entity';
 import { CreateReportDto, UpdateReportDto, FilterReportsDto } from './dto/report.dto';
 import { UserRole } from '@mausamnet/shared';
@@ -139,6 +139,26 @@ export class ReportsService {
     await this.reportRepository.remove(report);
 
     return { message: 'Report deleted successfully' };
+  }
+
+  async backfillUnprocessed(limit?: number): Promise<{
+    queued: number;
+    limit: number;
+  }> {
+    const cap = Math.min(Math.floor(limit ?? 100), 200);
+
+    const unprocessed = await this.reportRepository.find({
+      where: { processedAt: IsNull() },
+      take: cap,
+      order: { createdAt: 'ASC' },
+      select: { id: true },
+    });
+
+    for (const report of unprocessed) {
+      void this.reportProcessingService.processReport(report.id);
+    }
+
+    return { queued: unprocessed.length, limit: cap };
   }
 
   async findNearby(
