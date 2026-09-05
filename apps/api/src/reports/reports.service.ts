@@ -8,12 +8,14 @@ import { Repository, FindOptionsWhere, LessThanOrEqual, MoreThanOrEqual } from '
 import { Report } from '../entities/report.entity';
 import { CreateReportDto, UpdateReportDto, FilterReportsDto } from './dto/report.dto';
 import { UserRole } from '@mausamnet/shared';
+import { ReportProcessingService } from './report-processing.service';
 
 @Injectable()
 export class ReportsService {
   constructor(
     @InjectRepository(Report)
     private readonly reportRepository: Repository<Report>,
+    private readonly reportProcessingService: ReportProcessingService,
   ) {}
 
   async create(dto: CreateReportDto, userId: string): Promise<Report> {
@@ -22,7 +24,11 @@ export class ReportsService {
       userId,
     });
 
-    return this.reportRepository.save(report);
+    const saved = await this.reportRepository.save(report);
+
+    void this.reportProcessingService.processReport(saved.id);
+
+    return saved;
   }
 
   async findAll(
@@ -110,7 +116,13 @@ export class ReportsService {
     }
 
     Object.assign(report, dto);
-    return this.reportRepository.save(report);
+    const saved = await this.reportRepository.save(report);
+
+    if (dto.description || dto.eventType) {
+      void this.reportProcessingService.processReport(saved.id);
+    }
+
+    return saved;
   }
 
   async remove(

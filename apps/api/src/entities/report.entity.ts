@@ -35,8 +35,8 @@ export class Report {
   @Column({ type: 'text' })
   description: string;
 
-  @Column({ type: 'enum', enum: WeatherEvent })
-  eventType: WeatherEvent;
+  @Column({ type: 'enum', enum: WeatherEvent, nullable: true })
+  eventType: WeatherEvent | null;
 
   @Column({ type: 'double precision' })
   latitude: number;
@@ -77,6 +77,9 @@ export class Report {
 
   @Column({ type: 'uuid', nullable: true })
   duplicateOfId: string;
+
+  @Column({ type: 'timestamp', nullable: true })
+  processedAt: Date | null;
 
   @CreateDateColumn()
   createdAt: Date;

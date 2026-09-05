@@ -40,6 +40,8 @@ export class ClassificationService {
 
     if (WEATHER_EVENT_TYPES.includes(result.eventType as WeatherEvent)) {
       report.eventType = result.eventType as WeatherEvent;
+    } else if (!report.eventType) {
+      report.eventType = WeatherEvent.OTHER;
     }
 
     return this.reportRepository.save(report);

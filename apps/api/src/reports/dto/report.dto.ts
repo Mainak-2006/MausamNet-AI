@@ -9,6 +9,7 @@ import {
   Min,
   Max,
 } from 'class-validator';
+import { Type } from 'class-transformer';
 import { WeatherEvent, ReportSource, VerificationStatus } from '@mausamnet/shared';
 
 export class CreateReportDto {
@@ -21,8 +22,9 @@ export class CreateReportDto {
   @MinLength(10)
   description: string;
 
+  @IsOptional()
   @IsEnum(WeatherEvent)
-  eventType: WeatherEvent;
+  eventType?: WeatherEvent;
 
   @IsNumber()
   @Min(-90)
@@ -109,11 +111,16 @@ export class UpdateReportDto {
 
 export class FilterReportsDto {
   @IsOptional()
+  @Type(() => Number)
   @IsNumber()
+  @Min(1)
   page?: number;
 
   @IsOptional()
+  @Type(() => Number)
   @IsNumber()
+  @Min(1)
+  @Max(100)
   limit?: number;
 
   @IsOptional()
