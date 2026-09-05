@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { ScheduleModule } from '@nestjs/schedule';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { APP_GUARD } from '@nestjs/core';
 import { AppController } from './app.controller';
@@ -14,6 +15,7 @@ import { ClassificationModule } from './classification/classification.module';
 import { CredibilityModule } from './credibility/credibility.module';
 import { DuplicatesModule } from './duplicates/duplicates.module';
 import { WeatherModule } from './weather/weather.module';
+import { WeatherSyncModule } from './weather/weather-sync.module';
 import { VerificationModule } from './verification/verification.module';
 import { AlertsModule } from './alerts/alerts.module';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
@@ -30,6 +32,7 @@ import { Alert } from './entities/alert.entity';
       isGlobal: true,
       envFilePath: '../../.env',
     }),
+    ScheduleModule.forRoot(),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => ({
@@ -54,6 +57,7 @@ import { Alert } from './entities/alert.entity';
     CredibilityModule,
     DuplicatesModule,
     WeatherModule,
+    WeatherSyncModule,
     VerificationModule,
     AlertsModule,
   ],

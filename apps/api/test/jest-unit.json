@@ -10,6 +10,7 @@
   "testEnvironment": "node",
   "moduleNameMapper": {
     "^@nestjs/typeorm$": "<rootDir>/__mocks__/nestjs-typeorm.js",
-    "^@nestjs/config$": "<rootDir>/__mocks__/nestjs-config.js"
+    "^@nestjs/config$": "<rootDir>/__mocks__/nestjs-config.js",
+    "^@nestjs/schedule$": "<rootDir>/__mocks__/nestjs-schedule.js"
   }
 }

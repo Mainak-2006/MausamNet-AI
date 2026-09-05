@@ -325,7 +325,7 @@ export class WeatherService {
     const data = await this.fetchJson<RawWeatherApiResponse>(
       `${this.weatherApiBase}/current.json?key=${this.getKey(
         'WEATHERAPI_API_KEY',
-      )}&q=${this.buildCityQuery(params)}`,
+      )}&${this.buildCityQuery(params)}`,
     );
 
     const result = this.mapWeatherApi(data);
@@ -341,7 +341,7 @@ export class WeatherService {
     const data = await this.fetchJson<RawWeatherApiResponse>(
       `${this.weatherApiBase}/forecast.json?key=${this.getKey(
         'WEATHERAPI_API_KEY',
-      )}&q=${this.buildCityQuery(params)}&days=5`,
+      )}&${this.buildCityQuery(params)}&days=5`,
     );
 
     return this.mapWeatherApi(data);

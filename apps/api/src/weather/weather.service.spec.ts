@@ -125,6 +125,19 @@ describe('WeatherService', () => {
     );
   });
 
+  it('should build a well-formed WeatherAPI URL (no duplicated q= prefix)', async () => {
+    setup({ WEATHER_PROVIDER: 'weatherapi' });
+    mockFetchDataBased();
+
+    const result = await service.currentWeather({ city: 'Mumbai' });
+
+    expect(result.provider).toBe('weatherapi');
+    const urls = (global.fetch as jest.Mock).mock.calls.map(([url]) => url);
+    expect(urls[0]).toContain('api.weatherapi.com/v1/current.json?key=');
+    expect(urls[0]).toContain('&q=Mumbai');
+    expect(urls[0]).not.toContain('q=q=');
+  });
+
   it('should resolve the city once, then query both sources at that coordinate', async () => {
     setup({ WEATHER_PROVIDERS: 'weatherapi,openweather' });
     mockFetchDataBased();

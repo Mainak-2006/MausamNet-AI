@@ -8,8 +8,14 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
 
   app.setGlobalPrefix('api');
+
+  const corsOrigins = (configService.get<string>('CORS_ORIGINS', '') ?? '')
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+
   app.enableCors({
-    origin: configService.get<string>('NEXT_PUBLIC_API_URL', '*'),
+    origin: corsOrigins.length > 0 ? corsOrigins : true,
   });
   app.useGlobalPipes(
     new ValidationPipe({
