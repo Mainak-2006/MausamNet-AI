@@ -196,8 +196,8 @@ cd apps/api && npx typeorm-ts-node-commonjs -d src/data-source.ts migration:run 
 cd apps/ml && source .venv/bin/activate && python train.py && cd ../..
 
 # 6. Start all services (in separate terminals)
-pnpm turbo dev --filter=web     # Terminal 1
-pnpm turbo dev --filter=api     # Terminal 2
+pnpm turbo dev --filter=@mausamnet/web     # Terminal 1
+pnpm turbo dev --filter=@mausamnet/api     # Terminal 2
 cd apps/ml && uvicorn app.main:app --reload --port 8000  # Terminal 3
 ```
 

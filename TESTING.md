@@ -14,8 +14,8 @@ Testing is organized into three levels:
 
 | Service | Framework | Command |
 |---------|-----------|---------|
-| NestJS Backend | Jest + Supertest | `pnpm test --filter=api` |
-| Next.js Frontend | Jest + React Testing Library | `pnpm test --filter=web` |
+| NestJS Backend | Jest + Supertest | `pnpm turbo test --filter=@mausamnet/api` |
+| Next.js Frontend | Jest + React Testing Library | `pnpm turbo test --filter=@mausamnet/web` |
 | FastAPI ML Service | pytest | `cd apps/ml && pytest` |
 
 ---
@@ -205,7 +205,7 @@ describe('ReportsController (e2e)', () => {
 
 ```bash
 # All tests
-pnpm test --filter=api
+pnpm turbo test --filter=@mausamnet/api
 
 # Specific test file
 cd apps/api
@@ -218,7 +218,7 @@ pnpm test -- --watch
 pnpm test -- --coverage
 
 # E2E tests
-pnpm test:e2e --filter=api
+pnpm --filter @mausamnet/api test:e2e
 ```
 
 ---
@@ -275,7 +275,7 @@ describe('ReportCard', () => {
 
 ```bash
 # All tests
-pnpm test --filter=web
+pnpm turbo test --filter=@mausamnet/web
 
 # Specific test
 cd apps/web
@@ -501,7 +501,7 @@ jobs:
           node-version: '20'
       - uses: pnpm/action-setup@v4
       - run: pnpm install
-      - run: pnpm test --filter=api
+      - run: pnpm turbo test --filter=@mausamnet/api
 
   frontend-tests:
     runs-on: ubuntu-latest
@@ -512,7 +512,7 @@ jobs:
           node-version: '20'
       - uses: pnpm/action-setup@v4
       - run: pnpm install
-      - run: pnpm test --filter=web
+      - run: pnpm turbo test --filter=@mausamnet/web
 
   ml-tests:
     runs-on: ubuntu-latest

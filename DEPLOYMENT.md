@@ -44,8 +44,8 @@
 
 ```bash
 # Start all services
-pnpm turbo dev --filter=web      # :3000
-pnpm turbo dev --filter=api      # :3001
+pnpm turbo dev --filter=@mausamnet/web      # :3000
+pnpm turbo dev --filter=@mausamnet/api      # :3001
 cd apps/ml && uvicorn app.main:app --port 8000  # :8000
 ```
 

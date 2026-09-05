@@ -42,8 +42,8 @@ pnpm install
 pnpm turbo dev --filter="./apps/*"
 
 # Or start individually:
-pnpm turbo dev --filter=web      # Next.js on :3000
-pnpm turbo dev --filter=api      # NestJS on :3001
+pnpm turbo dev --filter=@mausamnet/web      # Next.js on :3000
+pnpm turbo dev --filter=@mausamnet/api      # NestJS on :3001
 cd apps/ml && source .venv/bin/activate && uvicorn app.main:app --port 8000
 ```
 
@@ -184,10 +184,10 @@ chore: update dependencies
 
 ```bash
 # Unit tests
-pnpm test --filter=api
+pnpm turbo test --filter=@mausamnet/api
 
-# E2E tests
-pnpm test:e2e --filter=api
+# E2E tests (package-level script, not a turbo task)
+pnpm --filter @mausamnet/api test:e2e
 
 # Test file location: alongside source files
 src/reports/
@@ -202,7 +202,7 @@ src/reports/
 
 ```bash
 # Unit tests with Jest
-pnpm test --filter=web
+pnpm turbo test --filter=@mausamnet/web
 
 # Test file location:
 components/
@@ -242,6 +242,9 @@ app/
 | `CLOUDINARY_API_KEY` | api | Cloudinary API key |
 | `CLOUDINARY_API_SECRET` | api | Cloudinary API secret |
 | `OPENWEATHER_API_KEY` | api | OpenWeather API key |
+| `WEATHER_PROVIDERS` | api | Comma-separated weather providers, priority order (e.g. `weatherapi,openweather`) |
+| `WEATHER_PROVIDER` | api | Deprecated single-provider alias |
+| `WEATHERAPI_API_KEY` | api | WeatherAPI.com API key |
 | `IMD_API_KEY` | api | IMD API key |
 | `ML_SERVICE_URL` | api | FastAPI ML service URL |
 | `NEXT_PUBLIC_API_URL` | web | Backend API URL |
@@ -260,14 +263,14 @@ pnpm turbo lint                 # Lint all apps
 pnpm turbo test                 # Test all apps
 
 # Frontend (apps/web)
-pnpm turbo dev --filter=web     # Start Next.js dev server
-pnpm turbo build --filter=web   # Build Next.js
-pnpm turbo lint --filter=web    # Lint frontend
+pnpm turbo dev --filter=@mausamnet/web     # Start Next.js dev server
+pnpm turbo build --filter=@mausamnet/web   # Build Next.js
+pnpm turbo lint --filter=@mausamnet/web    # Lint frontend
 
 # Backend (apps/api)
-pnpm turbo dev --filter=api     # Start NestJS dev server
-pnpm turbo build --filter=api   # Build NestJS
-pnpm turbo test --filter=api    # Run backend tests
+pnpm turbo dev --filter=@mausamnet/api     # Start NestJS dev server
+pnpm turbo build --filter=@mausamnet/api   # Build NestJS
+pnpm turbo test --filter=@mausamnet/api    # Run backend tests
 
 # ML Service (apps/ml)
 cd apps/ml
