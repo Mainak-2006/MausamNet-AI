@@ -72,13 +72,24 @@ openssl rand -hex 32
 
 | Variable | Example | Description |
 |----------|---------|-------------|
+| `WEATHER_PROVIDERS` | `weatherapi,openweather` | Comma-separated sources, in priority order (first = primary). Two+ values query all of them each request |
+| `WEATHER_PROVIDER` | `weatherapi` | Single-source alias (deprecated) — used if `WEATHER_PROVIDERS` is unset |
+| `WEATHERAPI_API_KEY` | `abc123def456...` | WeatherAPI.com API key |
 | `OPENWEATHER_API_KEY` | `abc123def456...` | OpenWeatherMap API key |
 | `IMD_API_KEY` | `imd_key_123...` | IMD API key (if available) |
 
-**Get OpenWeather key:**
+**Multi-source behavior:** with `WEATHER_PROVIDERS=weatherapi,openweather`, every `/api/weather/*` request queries both providers in parallel. The response keeps the same normalized `current`/`forecast`/`location` fields from the primary source, plus a `sources[]` array with each provider's full data (and `error` on any that failed). If the primary fails, the canonical fields fall back to a working source; only a total failure returns `503`.
+
+**Single-source behavior:** a single entry (or the deprecated `WEATHER_PROVIDER=weatherapi`) returns today's shape with no `sources[]` field.
+
+**Get a WeatherAPI key (free, ~1M calls/month):**
+1. Sign up at https://www.weatherapi.com/signup.aspx
+2. Copy the API key from your dashboard into `WEATHERAPI_API_KEY`
+
+**Get an OpenWeather key (free tier: 1000 calls/day):**
 1. Sign up at https://openweathermap.org/api
 2. Go to My API Keys
-3. Copy your API key (free tier: 1000 calls/day)
+3. Copy your API key into `OPENWEATHER_API_KEY`
 
 ---
 
@@ -126,6 +137,12 @@ CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 
 # ---- Weather APIs ----
+# WEATHER_PROVIDERS: comma-separated, priority order (first = primary).
+#   "weatherapi,openweather" queries both every request (returns .sources[])
+#   single value (e.g. "weatherapi") keeps the single-source response
+# WEATHER_PROVIDER=<deprecated alias> single provider only
+WEATHER_PROVIDERS=weatherapi,openweather
+WEATHERAPI_API_KEY=your_weatherapi_api_key
 OPENWEATHER_API_KEY=your_openweathermap_api_key
 IMD_API_KEY=your_imd_api_key
 
@@ -152,6 +169,9 @@ NEXT_PUBLIC_MAP_TILE_URL=https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 | `CLOUDINARY_CLOUD_NAME` | — | ✓ | — |
 | `CLOUDINARY_API_KEY` | — | ✓ | — |
 | `CLOUDINARY_API_SECRET` | — | ✓ | — |
+| `WEATHER_PROVIDERS` | — | ✓ | — |
+| `WEATHER_PROVIDER` | — | ✓ | — |
+| `WEATHERAPI_API_KEY` | — | ✓ | — |
 | `OPENWEATHER_API_KEY` | — | ✓ | — |
 | `IMD_API_KEY` | — | ✓ | — |
 | `ML_SERVICE_URL` | — | ✓ | — |

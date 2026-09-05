@@ -7,5 +7,9 @@
   },
   "collectCoverageFrom": ["**/*.(t|j)s"],
   "coverageDirectory": "../coverage",
-  "testEnvironment": "node"
+  "testEnvironment": "node",
+  "moduleNameMapper": {
+    "^@nestjs/typeorm$": "<rootDir>/__mocks__/nestjs-typeorm.js",
+    "^@nestjs/config$": "<rootDir>/__mocks__/nestjs-config.js"
+  }
 }
