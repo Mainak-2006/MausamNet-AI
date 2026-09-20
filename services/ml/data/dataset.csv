@@ -1,0 +1,1825 @@
+category,language,text
+RAINFALL,en,"Rainfall observed near Delhi outskirts, light to moderate rain with cloudy skies"
+RAINFALL,en,Light rainfall in Pune this evening
+RAINFALL,en,"Light rainfall in Ahmedabad this evening, gentle showers across the city keeping roads damp"
+RAINFALL,en,"Light rainfall in Delhi this evening, gentle showers across the city keeping roads damp"
+RAINFALL,en,"Rainfall observed near Varanasi outskirts, light to moderate rain with cloudy skies"
+RAINFALL,en,Light rainfall in Nagpur this evening
+RAINFALL,en,"Steady monsoon rain reported in Kolkata, continuous drizzle expected through the night"
+RAINFALL,en,Light rainfall in Mumbai this evening
+RAINFALL,en,"Light rainfall in Ahmedabad this evening, gentle showers across the city keeping roads damp"
+RAINFALL,en,Rainfall observed near Siliguri outskirts
+RAINFALL,en,Rainfall observed near Hyderabad outskirts
+RAINFALL,en,"Rainfall observed near Varanasi outskirts, light to moderate rain with cloudy skies"
+HEAVY_RAINFALL,en,"Torrential rain in Ahmedabad overnight, extreme rainfall intensity recorded"
+HEAVY_RAINFALL,en,"Torrential rain in Nagpur overnight, extreme rainfall intensity recorded"
+HEAVY_RAINFALL,en,Torrential rain in Siliguri overnight
+HEAVY_RAINFALL,en,"Heavy rainfall lashes Lucknow, torrential downpour caused water splash on roads"
+HEAVY_RAINFALL,en,Torrential rain in Pune overnight
+HEAVY_RAINFALL,en,"Heavy rainfall lashes Hyderabad, torrential downpour caused water splash on roads"
+HEAVY_RAINFALL,en,Torrential rain in Delhi overnight
+HEAVY_RAINFALL,en,Heavy rainfall lashes Patna
+HEAVY_RAINFALL,en,Heavy rainfall lashes Guwahati
+HEAVY_RAINFALL,en,Torrential rain in Pune overnight
+HEAVY_RAINFALL,en,Heavy rainfall lashes Dehradun
+HEAVY_RAINFALL,en,Cloudburst-like heavy rain over Delhi
+FLOOD,en,"Roads flooded after heavy rain in Mumbai, knee deep water disrupted traffic"
+FLOOD,en,Severe flood situation developing in Jaipur
+FLOOD,en,"Severe flood situation developing in Guwahati, water levels rising across the district"
+FLOOD,en,Severe flood situation developing in Hyderabad
+FLOOD,en,"Severe flood situation developing in Mumbai, water levels rising across the district"
+FLOOD,en,Flooding in Ahmedabad low lying areas
+FLOOD,en,Roads flooded after heavy rain in Mumbai
+FLOOD,en,"Flooding in Delhi low lying areas, scores of homes inundated after the river rose"
+FLOOD,en,"Roads flooded after heavy rain in Pune, knee deep water disrupted traffic"
+FLOOD,en,"Roads flooded after heavy rain in Guwahati, knee deep water disrupted traffic"
+FLOOD,en,"Flooding in Guwahati low lying areas, scores of homes inundated after the river rose"
+FLOOD,en,Roads flooded after heavy rain in Hyderabad
+FLASH_FLOOD,en,"Cloudburst triggers flash flood in Pune, fast moving water trapped vehicles"
+FLASH_FLOOD,en,"Cloudburst triggers flash flood in Mumbai, fast moving water trapped vehicles"
+FLASH_FLOOD,en,Cloudburst triggers flash flood in Bengaluru
+FLASH_FLOOD,en,Cloudburst triggers flash flood in Ahmedabad
+FLASH_FLOOD,en,"Flash flood hits Dehradun after cloudburst, sudden surge of water swept through streets"
+FLASH_FLOOD,en,"Rapid flash flooding near Pune, water levels rose within minutes after intense rain"
+FLASH_FLOOD,en,"Cloudburst triggers flash flood in Varanasi, fast moving water trapped vehicles"
+FLASH_FLOOD,en,"Flash flood hits Bhubaneswar after cloudburst, sudden surge of water swept through streets"
+FLASH_FLOOD,en,Flash flood hits Ahmedabad after cloudburst
+FLASH_FLOOD,en,Flash flood hits Bhubaneswar after cloudburst
+FLASH_FLOOD,en,"Rapid flash flooding near Pune, water levels rose within minutes after intense rain"
+FLASH_FLOOD,en,Flash flood hits Hyderabad after cloudburst
+THUNDERSTORM,en,Thunderstorm activity reported at Bhubaneswar
+THUNDERSTORM,en,"Severe thunderstorm over Shimla, dark clouds with lightning and rumbling"
+THUNDERSTORM,en,"Thunderstorm with gusty winds in Dehradun, frequent lightning and heavy rain bursts"
+THUNDERSTORM,en,"Severe thunderstorm over Pune, dark clouds with lightning and rumbling"
+THUNDERSTORM,en,"Severe thunderstorm over Ahmedabad, dark clouds with lightning and rumbling"
+THUNDERSTORM,en,"Thunderstorm activity reported at Varanasi, stormy conditions with loud thunder"
+THUNDERSTORM,en,Thunderstorm activity reported at Pune
+THUNDERSTORM,en,"Thunderstorm activity reported at Nagpur, stormy conditions with loud thunder"
+THUNDERSTORM,en,"Thunderstorm with gusty winds in Nagpur, frequent lightning and heavy rain bursts"
+THUNDERSTORM,en,"Thunderstorm with gusty winds in Guwahati, frequent lightning and heavy rain bursts"
+THUNDERSTORM,en,"Severe thunderstorm over Chennai, dark clouds with lightning and rumbling"
+THUNDERSTORM,en,Thunderstorm activity reported at Shimla
+LIGHTNING,en,Lightning strikes reported in Kolkata
+LIGHTNING,en,Lightning strikes reported in Chennai
+LIGHTNING,en,"Thunderbolts observed over Bengaluru, continuous lightning flashes overnight"
+LIGHTNING,en,"Thunderbolts observed over Lucknow, continuous lightning flashes overnight"
+LIGHTNING,en,Thunderbolts observed over Mumbai
+LIGHTNING,en,"Multiple lightning incidents near Patna, volatile weather with frequent strikes"
+LIGHTNING,en,Thunderbolts observed over Dehradun
+LIGHTNING,en,Thunderbolts observed over Pune
+LIGHTNING,en,Thunderbolts observed over Siliguri
+LIGHTNING,en,"Thunderbolts observed over Delhi, continuous lightning flashes overnight"
+LIGHTNING,en,"Thunderbolts observed over Varanasi, continuous lightning flashes overnight"
+LIGHTNING,en,Multiple lightning incidents near Bhubaneswar
+CYCLONE,en,Cyclonic storm forming near Jaipur coast
+CYCLONE,en,"Cyclone warning for Bengaluru coast, very severe intensity winds accompanied by rain"
+CYCLONE,en,"Cyclone warning for Siliguri coast, very severe intensity winds accompanied by rain"
+CYCLONE,en,"Tropical cyclone approaches Pune, storm surge threat along the shoreline"
+CYCLONE,en,Tropical cyclone approaches Bengaluru
+CYCLONE,en,Tropical cyclone approaches Delhi
+CYCLONE,en,"Tropical cyclone approaches Jaipur, storm surge threat along the shoreline"
+CYCLONE,en,"Tropical cyclone approaches Kochi, storm surge threat along the shoreline"
+CYCLONE,en,Tropical cyclone approaches Hyderabad
+CYCLONE,en,"Cyclonic storm forming near Guwahati coast, storm surge and gales expected"
+CYCLONE,en,"Cyclonic storm forming near Varanasi coast, storm surge and gales expected"
+CYCLONE,en,Tropical cyclone approaches Siliguri
+HEATWAVE,en,Extreme heatwave warning for Bhubaneswar
+HEATWAVE,en,"Scorching heatwave grips Siliguri, parched conditions with record highs"
+HEATWAVE,en,Heatwave conditions in Guwahati
+HEATWAVE,en,Scorching heatwave grips Ahmedabad
+HEATWAVE,en,Heatwave conditions in Ahmedabad
+HEATWAVE,en,Extreme heatwave warning for Mumbai
+HEATWAVE,en,Heatwave conditions in Shimla
+HEATWAVE,en,Heatwave conditions in Varanasi
+HEATWAVE,en,"Heatwave conditions in Chennai, temperatures above 45 celsius for days"
+HEATWAVE,en,"Extreme heatwave warning for Shimla, oppressive heat and no rain relief"
+HEATWAVE,en,Extreme heatwave warning for Bengaluru
+HEATWAVE,en,Scorching heatwave grips Kochi
+COLD_WAVE,en,Cold wave alert for Lucknow
+COLD_WAVE,en,"Cold wave sweeping Varanasi, temperatures dropped sharply overnight"
+COLD_WAVE,en,"Cold wave alert for Hyderabad, unusually low minimum temperatures"
+COLD_WAVE,en,"Cold wave alert for Jaipur, unusually low minimum temperatures"
+COLD_WAVE,en,"Bitterly cold conditions in Guwahati, freezing mornings with frost"
+COLD_WAVE,en,"Bitterly cold conditions in Kochi, freezing mornings with frost"
+COLD_WAVE,en,"Bitterly cold conditions in Delhi, freezing mornings with frost"
+COLD_WAVE,en,"Cold wave sweeping Ahmedabad, temperatures dropped sharply overnight"
+COLD_WAVE,en,Cold wave sweeping Bhubaneswar
+COLD_WAVE,en,Cold wave sweeping Nagpur
+COLD_WAVE,en,Cold wave alert for Ahmedabad
+COLD_WAVE,en,Cold wave alert for Ahmedabad
+FOG,en,Fog patches in Mumbai morning
+FOG,en,"Foggy start to the day in Kolkata, visibility down to one hundred metres"
+FOG,en,"Fog patches in Mumbai morning, reduced visibility on highways"
+FOG,en,Fog patches in Bhubaneswar morning
+FOG,en,Fog patches in Kochi morning
+FOG,en,"Fog patches in Pune morning, reduced visibility on highways"
+FOG,en,"Foggy start to the day in Shimla, visibility down to one hundred metres"
+FOG,en,"Fog patches in Varanasi morning, reduced visibility on highways"
+FOG,en,"Fog patches in Nagpur morning, reduced visibility on highways"
+FOG,en,Foggy start to the day in Shimla
+FOG,en,"Fog patches in Shimla morning, reduced visibility on highways"
+FOG,en,"Light fog reported around Hyderabad, misty conditions at dawn"
+DENSE_FOG,en,Dense fog shrouds Delhi
+DENSE_FOG,en,"Extremely dense fog blanket over Lucknow, near zero visibility on roads"
+DENSE_FOG,en,Thick fog disrupts travel in Lucknow
+DENSE_FOG,en,"Thick fog disrupts travel in Dehradun, flights delayed due to zero visibility"
+DENSE_FOG,en,"Extremely dense fog blanket over Kolkata, near zero visibility on roads"
+DENSE_FOG,en,"Extremely dense fog blanket over Delhi, near zero visibility on roads"
+DENSE_FOG,en,Dense fog shrouds Patna
+DENSE_FOG,en,"Extremely dense fog blanket over Bhubaneswar, near zero visibility on roads"
+DENSE_FOG,en,Dense fog shrouds Ahmedabad
+DENSE_FOG,en,"Dense fog shrouds Hyderabad, visibility below fifty metres across the city"
+DENSE_FOG,en,Extremely dense fog blanket over Dehradun
+DENSE_FOG,en,"Dense fog shrouds Lucknow, visibility below fifty metres across the city"
+DUST_STORM,en,"Dust storm sweeps across Pune, winds carried thick dust and sand"
+DUST_STORM,en,"Sandstorm hits Ahmedabad region, visibility dropped sharply with blowing sand"
+DUST_STORM,en,Dust storm sweeps across Dehradun
+DUST_STORM,en,Haboob like dust storm near Delhi
+DUST_STORM,en,Dust storm sweeps across Varanasi
+DUST_STORM,en,Dust storm sweeps across Mumbai
+DUST_STORM,en,"Dust storm sweeps across Bengaluru, winds carried thick dust and sand"
+DUST_STORM,en,"Sandstorm hits Shimla region, visibility dropped sharply with blowing sand"
+DUST_STORM,en,"Sandstorm hits Hyderabad region, visibility dropped sharply with blowing sand"
+DUST_STORM,en,"Sandstorm hits Kolkata region, visibility dropped sharply with blowing sand"
+DUST_STORM,en,"Dust storm sweeps across Patna, winds carried thick dust and sand"
+DUST_STORM,en,Dust storm sweeps across Patna
+STRONG_WIND,en,Strong wind conditions persist in Dehradun
+STRONG_WIND,en,Strong wind conditions persist in Lucknow
+STRONG_WIND,en,"Windy conditions disrupt Varanasi, wind speed peaking through the day"
+STRONG_WIND,en,"Windy conditions disrupt Shimla, wind speed peaking through the day"
+STRONG_WIND,en,"Gusty winds in Hyderabad, high winds uprooted trees and hoardings"
+STRONG_WIND,en,Strong wind conditions persist in Hyderabad
+STRONG_WIND,en,Gusty winds in Nagpur
+STRONG_WIND,en,"Windy conditions disrupt Varanasi, wind speed peaking through the day"
+STRONG_WIND,en,Gusty winds in Bhubaneswar
+STRONG_WIND,en,Gusty winds in Kolkata
+STRONG_WIND,en,Windy conditions disrupt Shimla
+STRONG_WIND,en,Windy conditions disrupt Kochi
+HAILSTORM,en,"Hailstorm damages crops near Kolkata, hailstones the size of marbles fell"
+HAILSTORM,en,Sudden hailstorm over Mumbai
+HAILSTORM,en,"Hailstorm damages crops near Mumbai, hailstones the size of marbles fell"
+HAILSTORM,en,Sudden hailstorm over Mumbai
+HAILSTORM,en,"Sudden hailstorm over Ahmedabad, accumulated hail covered the ground"
+HAILSTORM,en,"Hail reported in Delhi during storm, pelting hailstones damaged rooftops"
+HAILSTORM,en,Sudden hailstorm over Ahmedabad
+HAILSTORM,en,Sudden hailstorm over Kolkata
+HAILSTORM,en,Sudden hailstorm over Mumbai
+HAILSTORM,en,"Hail reported in Nagpur during storm, pelting hailstones damaged rooftops"
+HAILSTORM,en,Sudden hailstorm over Kochi
+HAILSTORM,en,Hail reported in Pune during storm
+SNOWFALL,en,"Snowfall in Bhubaneswar highlands, fresh snow blanketed the upper reaches"
+SNOWFALL,en,"Snowfall in Pune highlands, fresh snow blanketed the upper reaches"
+SNOWFALL,en,"Heavy snowfall reported at Chennai, roads closed after a foot of snow"
+SNOWFALL,en,"Blizzard conditions near Jaipur, strong winds with continuous snow"
+SNOWFALL,en,"Heavy snowfall reported at Bhubaneswar, roads closed after a foot of snow"
+SNOWFALL,en,Snowfall in Siliguri highlands
+SNOWFALL,en,"Heavy snowfall reported at Nagpur, roads closed after a foot of snow"
+SNOWFALL,en,Snowfall in Mumbai highlands
+SNOWFALL,en,Blizzard conditions near Hyderabad
+SNOWFALL,en,Blizzard conditions near Pune
+SNOWFALL,en,"Snowfall in Guwahati highlands, fresh snow blanketed the upper reaches"
+SNOWFALL,en,Snowfall in Ahmedabad highlands
+DROUGHT,en,Water shortage worsens in Jaipur
+DROUGHT,en,"Drought conditions in Dehradun district, reservoirs at critical low levels"
+DROUGHT,en,Drought like situation near Jaipur
+DROUGHT,en,Drought like situation near Kochi
+DROUGHT,en,Drought conditions in Varanasi district
+DROUGHT,en,Water shortage worsens in Delhi
+DROUGHT,en,"Drought conditions in Pune district, reservoirs at critical low levels"
+DROUGHT,en,Drought conditions in Delhi district
+DROUGHT,en,"Drought like situation near Varanasi, crops failing due to lack of rain"
+DROUGHT,en,"Drought conditions in Pune district, reservoirs at critical low levels"
+DROUGHT,en,Water shortage worsens in Hyderabad
+DROUGHT,en,"Drought like situation near Bhubaneswar, crops failing due to lack of rain"
+LANDSLIDE,en,"Landslide blocks highway near Pune, debris collapsed onto the road"
+LANDSLIDE,en,Landslide cuts off Shimla village
+LANDSLIDE,en,Mudslide reported at Kolkata hills
+LANDSLIDE,en,Landslide blocks highway near Lucknow
+LANDSLIDE,en,Mudslide reported at Kolkata hills
+LANDSLIDE,en,Landslide blocks highway near Bhubaneswar
+LANDSLIDE,en,"Landslide blocks highway near Pune, debris collapsed onto the road"
+LANDSLIDE,en,"Landslide blocks highway near Dehradun, debris collapsed onto the road"
+LANDSLIDE,en,Landslide cuts off Lucknow village
+LANDSLIDE,en,Landslide cuts off Siliguri village
+LANDSLIDE,en,Landslide blocks highway near Mumbai
+LANDSLIDE,en,"Landslide cuts off Chennai village, rutted roads buried under earth and rock"
+WATERLOGGING,en,Waterlogging reported in Kolkata market
+WATERLOGGING,en,Streets waterlogged after rain in Nagpur
+WATERLOGGING,en,Waterlogging reported in Chennai market
+WATERLOGGING,en,"Streets waterlogged after rain in Chennai, puddles made commuting difficult"
+WATERLOGGING,en,Waterlogging on roads in Jaipur
+WATERLOGGING,en,Streets waterlogged after rain in Kolkata
+WATERLOGGING,en,Streets waterlogged after rain in Hyderabad
+WATERLOGGING,en,"Waterlogging reported in Ahmedabad market, shops flooded in low lying area"
+WATERLOGGING,en,"Waterlogging reported in Delhi market, shops flooded in low lying area"
+WATERLOGGING,en,Streets waterlogged after rain in Varanasi
+WATERLOGGING,en,"Streets waterlogged after rain in Chennai, puddles made commuting difficult"
+WATERLOGGING,en,"Waterlogging on roads in Bengaluru, rivers of water flowing on streets"
+CLOUDBURST,en,"Cloudburst over Lucknow causes havoc, sudden intense rain overwhelmed drains"
+CLOUDBURST,en,Cloudburst over Bengaluru causes havoc
+CLOUDBURST,en,"Possible cloudburst reported near Bhubaneswar, flash flooding followed immediately"
+CLOUDBURST,en,"Cloudburst like event at Ahmedabad, cascades of water in a short time"
+CLOUDBURST,en,Cloudburst like event at Bengaluru
+CLOUDBURST,en,"Possible cloudburst reported near Delhi, flash flooding followed immediately"
+CLOUDBURST,en,"Cloudburst like event at Kolkata, cascades of water in a short time"
+CLOUDBURST,en,"Cloudburst like event at Ahmedabad, cascades of water in a short time"
+CLOUDBURST,en,"Cloudburst over Dehradun causes havoc, sudden intense rain overwhelmed drains"
+CLOUDBURST,en,Cloudburst like event at Jaipur
+CLOUDBURST,en,"Cloudburst over Ahmedabad causes havoc, sudden intense rain overwhelmed drains"
+CLOUDBURST,en,Cloudburst over Hyderabad causes havoc
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,बेंगलुरु में हल्की बारिश हो रही है
+RAINFALL,hi,गुवाहाटी में हल्की बारिश हो रही है
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,गुवाहाटी में हल्की बारिश हो रही है
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,शहर में रुकरुक कर बारिश से सड़कें गीली रहीं
+RAINFALL,hi,लखनऊ में हल्की बारिश हो रही है
+HEAVY_RAINFALL,hi,बेंगलुरु में भारी बारिश से जनजीवन अस्तव्यस्त
+HEAVY_RAINFALL,hi,लखनऊ में भारी बारिश से जनजीवन अस्तव्यस्त
+HEAVY_RAINFALL,hi,भुवनेश्वर में भारी बारिश से जनजीवन अस्तव्यस्त
+HEAVY_RAINFALL,hi,जयपुर में भारी बारिश से जनजीवन अस्तव्यस्त
+HEAVY_RAINFALL,hi,मुसलाधार बारिश ने शहर को भिगो दिया
+HEAVY_RAINFALL,hi,मुसलाधार बारिश ने शहर को भिगो दिया
+HEAVY_RAINFALL,hi,मुसलाधार बारिश ने शहर को भिगो दिया
+HEAVY_RAINFALL,hi,मुसलाधार बारिश ने शहर को भिगो दिया
+HEAVY_RAINFALL,hi,मुसलाधार बारिश ने शहर को भिगो दिया
+HEAVY_RAINFALL,hi,मुसलाधार बारिश ने शहर को भिगो दिया
+HEAVY_RAINFALL,hi,मुसलाधार बारिश ने शहर को भिगो दिया
+HEAVY_RAINFALL,hi,चेन्नई में भारी बारिश से जनजीवन अस्तव्यस्त
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLOOD,hi,गुवाहाटी के निचले इलाकों में बाढ़ आ गई
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLOOD,hi,बेंगलुरु के निचले इलाकों में बाढ़ आ गई
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLOOD,hi,भुवनेश्वर के निचले इलाकों में बाढ़ आ गई
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLOOD,hi,बेंगलुरु के निचले इलाकों में बाढ़ आ गई
+FLOOD,hi,बाढ़ का पानी लगातार बढ़ रहा है
+FLASH_FLOOD,hi,बेंगलुरु में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,चेन्नई में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,दिल्ली में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,चेन्नई में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,तेज बारिश के बाद सड़कों पर अचानक बाढ़ का पानी
+FLASH_FLOOD,hi,पटना में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,तेज बारिश के बाद सड़कों पर अचानक बाढ़ का पानी
+FLASH_FLOOD,hi,लखनऊ में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,तेज बारिश के बाद सड़कों पर अचानक बाढ़ का पानी
+FLASH_FLOOD,hi,कोलकाता में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,मुंबई में अचानक आई बाढ़ ने तबाही मचाई
+FLASH_FLOOD,hi,तेज बारिश के बाद सड़कों पर अचानक बाढ़ का पानी
+THUNDERSTORM,hi,भुवनेश्वर में गरज के साथ आंधी और तूफान
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,मुंबई में गरज के साथ आंधी और तूफान
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+THUNDERSTORM,hi,तेज आंधी के साथ जोरदार बारिश हुई
+LIGHTNING,hi,आसमान में बिजली चमकती रही
+LIGHTNING,hi,बेंगलुरु में बिजली गिरने की घटनाएं जारी
+LIGHTNING,hi,बेंगलुरु में बिजली गिरने की घटनाएं जारी
+LIGHTNING,hi,आसमान में बिजली चमकती रही
+LIGHTNING,hi,कोलकाता में बिजली गिरने की घटनाएं जारी
+LIGHTNING,hi,चेन्नई में बिजली गिरने की घटनाएं जारी
+LIGHTNING,hi,आसमान में बिजली चमकती रही
+LIGHTNING,hi,मुंबई में बिजली गिरने की घटनाएं जारी
+LIGHTNING,hi,आसमान में बिजली चमकती रही
+LIGHTNING,hi,आसमान में बिजली चमकती रही
+LIGHTNING,hi,आसमान में बिजली चमकती रही
+LIGHTNING,hi,चेन्नई में बिजली गिरने की घटनाएं जारी
+CYCLONE,hi,चक्रवाती तूफान से तटीय इलाकों में तेज हवाएं
+CYCLONE,hi,चक्रवात गुवाहाटी के तट के करीब पहुंचा
+CYCLONE,hi,चक्रवाती तूफान से तटीय इलाकों में तेज हवाएं
+CYCLONE,hi,चक्रवात जयपुर के तट के करीब पहुंचा
+CYCLONE,hi,चक्रवाती तूफान से तटीय इलाकों में तेज हवाएं
+CYCLONE,hi,चक्रवाती तूफान से तटीय इलाकों में तेज हवाएं
+CYCLONE,hi,चक्रवात पटना के तट के करीब पहुंचा
+CYCLONE,hi,चक्रवात बेंगलुरु के तट के करीब पहुंचा
+CYCLONE,hi,चक्रवाती तूफान से तटीय इलाकों में तेज हवाएं
+CYCLONE,hi,चक्रवात लखनऊ के तट के करीब पहुंचा
+CYCLONE,hi,चक्रवाती तूफान से तटीय इलाकों में तेज हवाएं
+CYCLONE,hi,चक्रवात पटना के तट के करीब पहुंचा
+HEATWAVE,hi,गुवाहाटी में लू चलने से पारा 45 डिग्री के पार
+HEATWAVE,hi,लखनऊ में लू चलने से पारा 45 डिग्री के पार
+HEATWAVE,hi,मुंबई में लू चलने से पारा 45 डिग्री के पार
+HEATWAVE,hi,भीषण गर्मी से लोगों का हाल बेहाल
+HEATWAVE,hi,भीषण गर्मी से लोगों का हाल बेहाल
+HEATWAVE,hi,बेंगलुरु में लू चलने से पारा 45 डिग्री के पार
+HEATWAVE,hi,भीषण गर्मी से लोगों का हाल बेहाल
+HEATWAVE,hi,पटना में लू चलने से पारा 45 डिग्री के पार
+HEATWAVE,hi,भीषण गर्मी से लोगों का हाल बेहाल
+HEATWAVE,hi,भीषण गर्मी से लोगों का हाल बेहाल
+HEATWAVE,hi,भीषण गर्मी से लोगों का हाल बेहाल
+HEATWAVE,hi,पटना में लू चलने से पारा 45 डिग्री के पार
+COLD_WAVE,hi,भुवनेश्वर में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,जयपुर में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,मुंबई में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,दिल्ली में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,चेन्नई में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,गुवाहाटी में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,चेन्नई में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,पटना में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,गुवाहाटी में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,पटना में शीत लहर से कड़ाके की ठंड
+COLD_WAVE,hi,भीषण ठंड के कारण स्कूल बंद रहे
+COLD_WAVE,hi,गुवाहाटी में शीत लहर से कड़ाके की ठंड
+FOG,hi,कोलकाता में सुबह कोहरा छाया रहा
+FOG,hi,कोहरे के कारण दृश्यता कम रही
+FOG,hi,बेंगलुरु में सुबह कोहरा छाया रहा
+FOG,hi,कोहरे के कारण दृश्यता कम रही
+FOG,hi,मुंबई में सुबह कोहरा छाया रहा
+FOG,hi,मुंबई में सुबह कोहरा छाया रहा
+FOG,hi,कोहरे के कारण दृश्यता कम रही
+FOG,hi,गुवाहाटी में सुबह कोहरा छाया रहा
+FOG,hi,जयपुर में सुबह कोहरा छाया रहा
+FOG,hi,कोहरे के कारण दृश्यता कम रही
+FOG,hi,भुवनेश्वर में सुबह कोहरा छाया रहा
+FOG,hi,कोहरे के कारण दृश्यता कम रही
+DENSE_FOG,hi,घने कोहरे के कारण उड़ानें रद्द
+DENSE_FOG,hi,"लखनऊ में घना कोहरा छाया, दृश्यता शून्य के करीब"
+DENSE_FOG,hi,घने कोहरे के कारण उड़ानें रद्द
+DENSE_FOG,hi,"लखनऊ में घना कोहरा छाया, दृश्यता शून्य के करीब"
+DENSE_FOG,hi,"भुवनेश्वर में घना कोहरा छाया, दृश्यता शून्य के करीब"
+DENSE_FOG,hi,घने कोहरे के कारण उड़ानें रद्द
+DENSE_FOG,hi,घने कोहरे के कारण उड़ानें रद्द
+DENSE_FOG,hi,घने कोहरे के कारण उड़ानें रद्द
+DENSE_FOG,hi,घने कोहरे के कारण उड़ानें रद्द
+DENSE_FOG,hi,"मुंबई में घना कोहरा छाया, दृश्यता शून्य के करीब"
+DENSE_FOG,hi,घने कोहरे के कारण उड़ानें रद्द
+DENSE_FOG,hi,"पटना में घना कोहरा छाया, दृश्यता शून्य के करीब"
+DUST_STORM,hi,आंधी के साथ उड़ी धूल से दृश्यता घटी
+DUST_STORM,hi,पटना में धूल भरी आंधी चली
+DUST_STORM,hi,आंधी के साथ उड़ी धूल से दृश्यता घटी
+DUST_STORM,hi,आंधी के साथ उड़ी धूल से दृश्यता घटी
+DUST_STORM,hi,आंधी के साथ उड़ी धूल से दृश्यता घटी
+DUST_STORM,hi,आंधी के साथ उड़ी धूल से दृश्यता घटी
+DUST_STORM,hi,आंधी के साथ उड़ी धूल से दृश्यता घटी
+DUST_STORM,hi,भुवनेश्वर में धूल भरी आंधी चली
+DUST_STORM,hi,मुंबई में धूल भरी आंधी चली
+DUST_STORM,hi,लखनऊ में धूल भरी आंधी चली
+DUST_STORM,hi,आंधी के साथ उड़ी धूल से दृश्यता घटी
+DUST_STORM,hi,पटना में धूल भरी आंधी चली
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,मुंबई में तेज हवाएं चल रही हैं
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,तेज हवाओं के कारण पेड़ गिर गए
+STRONG_WIND,hi,मुंबई में तेज हवाएं चल रही हैं
+STRONG_WIND,hi,जयपुर में तेज हवाएं चल रही हैं
+HAILSTORM,hi,भुवनेश्वर में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,चेन्नई में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,पटना में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,ओलों की बारिश से छतों को नुकसान
+HAILSTORM,hi,ओलों की बारिश से छतों को नुकसान
+HAILSTORM,hi,बेंगलुरु में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,जयपुर में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,बेंगलुरु में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,भुवनेश्वर में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,बेंगलुरु में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,दिल्ली में ओलावृष्टि से फसलों को नुकसान
+HAILSTORM,hi,ओलों की बारिश से छतों को नुकसान
+SNOWFALL,hi,पहाड़ों पर बर्फ गिरने से ठंड बढ़ी
+SNOWFALL,hi,गुवाहाटी के ऊंचाई वाले इलाकों में बर्फबारी
+SNOWFALL,hi,पहाड़ों पर बर्फ गिरने से ठंड बढ़ी
+SNOWFALL,hi,पहाड़ों पर बर्फ गिरने से ठंड बढ़ी
+SNOWFALL,hi,पहाड़ों पर बर्फ गिरने से ठंड बढ़ी
+SNOWFALL,hi,बेंगलुरु के ऊंचाई वाले इलाकों में बर्फबारी
+SNOWFALL,hi,पहाड़ों पर बर्फ गिरने से ठंड बढ़ी
+SNOWFALL,hi,लखनऊ के ऊंचाई वाले इलाकों में बर्फबारी
+SNOWFALL,hi,पहाड़ों पर बर्फ गिरने से ठंड बढ़ी
+SNOWFALL,hi,कोलकाता के ऊंचाई वाले इलाकों में बर्फबारी
+SNOWFALL,hi,गुवाहाटी के ऊंचाई वाले इलाकों में बर्फबारी
+SNOWFALL,hi,पहाड़ों पर बर्फ गिरने से ठंड बढ़ी
+DROUGHT,hi,मुंबई जिले में सूखे जैसे हालात
+DROUGHT,hi,बारिश न होने से सूखा पड़ गया
+DROUGHT,hi,भुवनेश्वर जिले में सूखे जैसे हालात
+DROUGHT,hi,बारिश न होने से सूखा पड़ गया
+DROUGHT,hi,बारिश न होने से सूखा पड़ गया
+DROUGHT,hi,बारिश न होने से सूखा पड़ गया
+DROUGHT,hi,गुवाहाटी जिले में सूखे जैसे हालात
+DROUGHT,hi,चेन्नई जिले में सूखे जैसे हालात
+DROUGHT,hi,बेंगलुरु जिले में सूखे जैसे हालात
+DROUGHT,hi,कोलकाता जिले में सूखे जैसे हालात
+DROUGHT,hi,कोलकाता जिले में सूखे जैसे हालात
+DROUGHT,hi,कोलकाता जिले में सूखे जैसे हालात
+LANDSLIDE,hi,लखनऊ के पास भूस्खलन से पहाड़ी रास्ता बंद
+LANDSLIDE,hi,भूस्खलन से गांव का संपर्क टूटा
+LANDSLIDE,hi,भूस्खलन से गांव का संपर्क टूटा
+LANDSLIDE,hi,चेन्नई के पास भूस्खलन से पहाड़ी रास्ता बंद
+LANDSLIDE,hi,भूस्खलन से गांव का संपर्क टूटा
+LANDSLIDE,hi,भूस्खलन से गांव का संपर्क टूटा
+LANDSLIDE,hi,बेंगलुरु के पास भूस्खलन से पहाड़ी रास्ता बंद
+LANDSLIDE,hi,लखनऊ के पास भूस्खलन से पहाड़ी रास्ता बंद
+LANDSLIDE,hi,भुवनेश्वर के पास भूस्खलन से पहाड़ी रास्ता बंद
+LANDSLIDE,hi,कोलकाता के पास भूस्खलन से पहाड़ी रास्ता बंद
+LANDSLIDE,hi,भूस्खलन से गांव का संपर्क टूटा
+LANDSLIDE,hi,दिल्ली के पास भूस्खलन से पहाड़ी रास्ता बंद
+WATERLOGGING,hi,बेंगलुरु की सड़कों पर जलभराव
+WATERLOGGING,hi,बारिश के बाद सड़कों पर पानी जमा हो गया
+WATERLOGGING,hi,पटना की सड़कों पर जलभराव
+WATERLOGGING,hi,बारिश के बाद सड़कों पर पानी जमा हो गया
+WATERLOGGING,hi,बारिश के बाद सड़कों पर पानी जमा हो गया
+WATERLOGGING,hi,बारिश के बाद सड़कों पर पानी जमा हो गया
+WATERLOGGING,hi,गुवाहाटी की सड़कों पर जलभराव
+WATERLOGGING,hi,लखनऊ की सड़कों पर जलभराव
+WATERLOGGING,hi,बारिश के बाद सड़कों पर पानी जमा हो गया
+WATERLOGGING,hi,बारिश के बाद सड़कों पर पानी जमा हो गया
+WATERLOGGING,hi,चेन्नई की सड़कों पर जलभराव
+WATERLOGGING,hi,बेंगलुरु की सड़कों पर जलभराव
+CLOUDBURST,hi,कोलकाता में मेघ फटने से भारी तबाही
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+CLOUDBURST,hi,गुवाहाटी में मेघ फटने से भारी तबाही
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+CLOUDBURST,hi,पटना में मेघ फटने से भारी तबाही
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+CLOUDBURST,hi,कोलकाता में मेघ फटने से भारी तबाही
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+CLOUDBURST,hi,मेघ फटने जैसी बारिश से नाले उफन गए
+RAINFALL,bn,মুম্বাই তে হালকা বৃষ্টি হচ্ছে
+RAINFALL,bn,দিল্লি তে হালকা বৃষ্টি হচ্ছে
+RAINFALL,bn,মাঝে মাঝে বৃষ্টিতে রাস্তা ভিজে গেছে
+RAINFALL,bn,ভুবনেশ্বর তে হালকা বৃষ্টি হচ্ছে
+RAINFALL,bn,মাঝে মাঝে বৃষ্টিতে রাস্তা ভিজে গেছে
+RAINFALL,bn,পাটনা তে হালকা বৃষ্টি হচ্ছে
+RAINFALL,bn,মাঝে মাঝে বৃষ্টিতে রাস্তা ভিজে গেছে
+RAINFALL,bn,সিলিগুড়ি তে হালকা বৃষ্টি হচ্ছে
+RAINFALL,bn,মাঝে মাঝে বৃষ্টিতে রাস্তা ভিজে গেছে
+RAINFALL,bn,মাঝে মাঝে বৃষ্টিতে রাস্তা ভিজে গেছে
+RAINFALL,bn,মাঝে মাঝে বৃষ্টিতে রাস্তা ভিজে গেছে
+RAINFALL,bn,সিলিগুড়ি তে হালকা বৃষ্টি হচ্ছে
+HEAVY_RAINFALL,bn,সারারাত মুষলধারে বৃষ্টি হয়েছে
+HEAVY_RAINFALL,bn,দিল্লি তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+HEAVY_RAINFALL,bn,সারারাত মুষলধারে বৃষ্টি হয়েছে
+HEAVY_RAINFALL,bn,সারারাত মুষলধারে বৃষ্টি হয়েছে
+HEAVY_RAINFALL,bn,পাটনা তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+HEAVY_RAINFALL,bn,পাটনা তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+HEAVY_RAINFALL,bn,দিল্লি তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+HEAVY_RAINFALL,bn,গুয়াহাটি তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+HEAVY_RAINFALL,bn,সারারাত মুষলধারে বৃষ্টি হয়েছে
+HEAVY_RAINFALL,bn,ভুবনেশ্বর তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+HEAVY_RAINFALL,bn,মুম্বাই তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+HEAVY_RAINFALL,bn,পাটনা তে ভারী বৃষ্টিতে জনজীবন বিপর্যস্ত
+FLOOD,bn,মুম্বাই এর নিচু এলাকায় বন্যা হয়েছে
+FLOOD,bn,বন্যার জল ক্রমাগত বাড়ছে
+FLOOD,bn,বন্যার জল ক্রমাগত বাড়ছে
+FLOOD,bn,বন্যার জল ক্রমাগত বাড়ছে
+FLOOD,bn,মুম্বাই এর নিচু এলাকায় বন্যা হয়েছে
+FLOOD,bn,মুম্বাই এর নিচু এলাকায় বন্যা হয়েছে
+FLOOD,bn,গুয়াহাটি এর নিচু এলাকায় বন্যা হয়েছে
+FLOOD,bn,ভুবনেশ্বর এর নিচু এলাকায় বন্যা হয়েছে
+FLOOD,bn,দিল্লি এর নিচু এলাকায় বন্যা হয়েছে
+FLOOD,bn,বন্যার জল ক্রমাগত বাড়ছে
+FLOOD,bn,বন্যার জল ক্রমাগত বাড়ছে
+FLOOD,bn,দিল্লি এর নিচু এলাকায় বন্যা হয়েছে
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,মুম্বাই এ হঠাৎ বন্যা হয়ে বিপর্যয়
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,পাটনা এ হঠাৎ বন্যা হয়ে বিপর্যয়
+FLASH_FLOOD,bn,গুয়াহাটি এ হঠাৎ বন্যা হয়ে বিপর্যয়
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+FLASH_FLOOD,bn,প্রবল বৃষ্টির পর রাস্তায় হঠাৎ বন্যার জল
+THUNDERSTORM,bn,জোরে বজ্রপাতসহ ঝড় বইছে
+THUNDERSTORM,bn,জোরে বজ্রপাতসহ ঝড় বইছে
+THUNDERSTORM,bn,মুম্বাই এ বজ্রসহ ঝড় বৃষ্টি হয়েছে
+THUNDERSTORM,bn,সিলিগুড়ি এ বজ্রসহ ঝড় বৃষ্টি হয়েছে
+THUNDERSTORM,bn,জোরে বজ্রপাতসহ ঝড় বইছে
+THUNDERSTORM,bn,ভুবনেশ্বর এ বজ্রসহ ঝড় বৃষ্টি হয়েছে
+THUNDERSTORM,bn,জোরে বজ্রপাতসহ ঝড় বইছে
+THUNDERSTORM,bn,জোরে বজ্রপাতসহ ঝড় বইছে
+THUNDERSTORM,bn,মুম্বাই এ বজ্রসহ ঝড় বৃষ্টি হয়েছে
+THUNDERSTORM,bn,কলকাতা এ বজ্রসহ ঝড় বৃষ্টি হয়েছে
+THUNDERSTORM,bn,জোরে বজ্রপাতসহ ঝড় বইছে
+THUNDERSTORM,bn,জোরে বজ্রপাতসহ ঝড় বইছে
+LIGHTNING,bn,আকাশে বিদ্যুৎ চমকাতে দেখা গেছে
+LIGHTNING,bn,ভুবনেশ্বর এ বজ্রপাতের ঘটনা চলছে
+LIGHTNING,bn,আকাশে বিদ্যুৎ চমকাতে দেখা গেছে
+LIGHTNING,bn,আকাশে বিদ্যুৎ চমকাতে দেখা গেছে
+LIGHTNING,bn,আকাশে বিদ্যুৎ চমকাতে দেখা গেছে
+LIGHTNING,bn,গুয়াহাটি এ বজ্রপাতের ঘটনা চলছে
+LIGHTNING,bn,সিলিগুড়ি এ বজ্রপাতের ঘটনা চলছে
+LIGHTNING,bn,আকাশে বিদ্যুৎ চমকাতে দেখা গেছে
+LIGHTNING,bn,মুম্বাই এ বজ্রপাতের ঘটনা চলছে
+LIGHTNING,bn,ভুবনেশ্বর এ বজ্রপাতের ঘটনা চলছে
+LIGHTNING,bn,মুম্বাই এ বজ্রপাতের ঘটনা চলছে
+LIGHTNING,bn,পাটনা এ বজ্রপাতের ঘটনা চলছে
+CYCLONE,bn,ঘূর্ণিঝড়ের প্রভাবে উপকূলে প্রবল বাতাস
+CYCLONE,bn,ঘূর্ণিঝড় দিল্লি উপকূলের কাছে পৌঁছেছে
+CYCLONE,bn,ঘূর্ণিঝড় দিল্লি উপকূলের কাছে পৌঁছেছে
+CYCLONE,bn,ঘূর্ণিঝড়ের প্রভাবে উপকূলে প্রবল বাতাস
+CYCLONE,bn,ঘূর্ণিঝড়ের প্রভাবে উপকূলে প্রবল বাতাস
+CYCLONE,bn,ঘূর্ণিঝড় গুয়াহাটি উপকূলের কাছে পৌঁছেছে
+CYCLONE,bn,ঘূর্ণিঝড়ের প্রভাবে উপকূলে প্রবল বাতাস
+CYCLONE,bn,ঘূর্ণিঝড় সিলিগুড়ি উপকূলের কাছে পৌঁছেছে
+CYCLONE,bn,ঘূর্ণিঝড় কলকাতা উপকূলের কাছে পৌঁছেছে
+CYCLONE,bn,ঘূর্ণিঝড়ের প্রভাবে উপকূলে প্রবল বাতাস
+CYCLONE,bn,ঘূর্ণিঝড় মুম্বাই উপকূলের কাছে পৌঁছেছে
+CYCLONE,bn,ঘূর্ণিঝড় সিলিগুড়ি উপকূলের কাছে পৌঁছেছে
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,ভুবনেশ্বর তে তাপপ্রবাহে তাপমাত্রা ৪৫ ছাড়াল
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,কলকাতা তে তাপপ্রবাহে তাপমাত্রা ৪৫ ছাড়াল
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+HEATWAVE,bn,প্রচণ্ড গরমে জনজীবন দুর্বিষহ
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+COLD_WAVE,bn,মুম্বাই তে শৈত্যপ্রবাহে তীব্র শীত
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+COLD_WAVE,bn,গুয়াহাটি তে শৈত্যপ্রবাহে তীব্র শীত
+COLD_WAVE,bn,গুয়াহাটি তে শৈত্যপ্রবাহে তীব্র শীত
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+COLD_WAVE,bn,গুয়াহাটি তে শৈত্যপ্রবাহে তীব্র শীত
+COLD_WAVE,bn,প্রচণ্ড ঠান্ডায় স্কুল বন্ধ রয়েছে
+FOG,bn,গুয়াহাটি তে সকালে কুয়াশা ছড়িয়ে ছিল
+FOG,bn,কুয়াশার কারণে দৃশ্যমানতা কম ছিল
+FOG,bn,পাটনা তে সকালে কুয়াশা ছড়িয়ে ছিল
+FOG,bn,পাটনা তে সকালে কুয়াশা ছড়িয়ে ছিল
+FOG,bn,দিল্লি তে সকালে কুয়াশা ছড়িয়ে ছিল
+FOG,bn,কুয়াশার কারণে দৃশ্যমানতা কম ছিল
+FOG,bn,কুয়াশার কারণে দৃশ্যমানতা কম ছিল
+FOG,bn,কলকাতা তে সকালে কুয়াশা ছড়িয়ে ছিল
+FOG,bn,কুয়াশার কারণে দৃশ্যমানতা কম ছিল
+FOG,bn,কুয়াশার কারণে দৃশ্যমানতা কম ছিল
+FOG,bn,সিলিগুড়ি তে সকালে কুয়াশা ছড়িয়ে ছিল
+FOG,bn,কুয়াশার কারণে দৃশ্যমানতা কম ছিল
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DENSE_FOG,bn,"দিল্লি তে ঘন কুয়াশা, দৃশ্যমানতা প্রায় শূন্য"
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DENSE_FOG,bn,"মুম্বাই তে ঘন কুয়াশা, দৃশ্যমানতা প্রায় শূন্য"
+DENSE_FOG,bn,"সিলিগুড়ি তে ঘন কুয়াশা, দৃশ্যমানতা প্রায় শূন্য"
+DENSE_FOG,bn,"ভুবনেশ্বর তে ঘন কুয়াশা, দৃশ্যমানতা প্রায় শূন্য"
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DENSE_FOG,bn,ঘন কুয়াশায় ফ্লাইট বাতিল হয়েছে
+DUST_STORM,bn,মুম্বাই তে ধুলিঝড় বইছে
+DUST_STORM,bn,ধুলিঝড়ের কারণে দৃশ্যমানতা কমেছে
+DUST_STORM,bn,ধুলিঝড়ের কারণে দৃশ্যমানতা কমেছে
+DUST_STORM,bn,ধুলিঝড়ের কারণে দৃশ্যমানতা কমেছে
+DUST_STORM,bn,ধুলিঝড়ের কারণে দৃশ্যমানতা কমেছে
+DUST_STORM,bn,মুম্বাই তে ধুলিঝড় বইছে
+DUST_STORM,bn,গুয়াহাটি তে ধুলিঝড় বইছে
+DUST_STORM,bn,ধুলিঝড়ের কারণে দৃশ্যমানতা কমেছে
+DUST_STORM,bn,পাটনা তে ধুলিঝড় বইছে
+DUST_STORM,bn,পাটনা তে ধুলিঝড় বইছে
+DUST_STORM,bn,ধুলিঝড়ের কারণে দৃশ্যমানতা কমেছে
+DUST_STORM,bn,ধুলিঝড়ের কারণে দৃশ্যমানতা কমেছে
+STRONG_WIND,bn,প্রবল বাতাসে গাছ উপড়ে গেছে
+STRONG_WIND,bn,কলকাতা তে প্রবল বাতাস বইছে
+STRONG_WIND,bn,দিল্লি তে প্রবল বাতাস বইছে
+STRONG_WIND,bn,প্রবল বাতাসে গাছ উপড়ে গেছে
+STRONG_WIND,bn,সিলিগুড়ি তে প্রবল বাতাস বইছে
+STRONG_WIND,bn,মুম্বাই তে প্রবল বাতাস বইছে
+STRONG_WIND,bn,প্রবল বাতাসে গাছ উপড়ে গেছে
+STRONG_WIND,bn,প্রবল বাতাসে গাছ উপড়ে গেছে
+STRONG_WIND,bn,মুম্বাই তে প্রবল বাতাস বইছে
+STRONG_WIND,bn,ভুবনেশ্বর তে প্রবল বাতাস বইছে
+STRONG_WIND,bn,প্রবল বাতাসে গাছ উপড়ে গেছে
+STRONG_WIND,bn,প্রবল বাতাসে গাছ উপড়ে গেছে
+HAILSTORM,bn,পাটনা তে শিলাবৃষ্টিতে ফসলের ক্ষতি
+HAILSTORM,bn,শিলাবৃষ্টিতে ঘরবাড়ির ক্ষতি হয়েছে
+HAILSTORM,bn,শিলাবৃষ্টিতে ঘরবাড়ির ক্ষতি হয়েছে
+HAILSTORM,bn,ভুবনেশ্বর তে শিলাবৃষ্টিতে ফসলের ক্ষতি
+HAILSTORM,bn,শিলাবৃষ্টিতে ঘরবাড়ির ক্ষতি হয়েছে
+HAILSTORM,bn,শিলাবৃষ্টিতে ঘরবাড়ির ক্ষতি হয়েছে
+HAILSTORM,bn,শিলাবৃষ্টিতে ঘরবাড়ির ক্ষতি হয়েছে
+HAILSTORM,bn,শিলাবৃষ্টিতে ঘরবাড়ির ক্ষতি হয়েছে
+HAILSTORM,bn,কলকাতা তে শিলাবৃষ্টিতে ফসলের ক্ষতি
+HAILSTORM,bn,শিলাবৃষ্টিতে ঘরবাড়ির ক্ষতি হয়েছে
+HAILSTORM,bn,পাটনা তে শিলাবৃষ্টিতে ফসলের ক্ষতি
+HAILSTORM,bn,কলকাতা তে শিলাবৃষ্টিতে ফসলের ক্ষতি
+SNOWFALL,bn,পাহাড়ে তুষারপাতে শীত বেড়েছে
+SNOWFALL,bn,ভুবনেশ্বর এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,কলকাতা এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,গুয়াহাটি এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,ভুবনেশ্বর এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,দিল্লি এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,ভুবনেশ্বর এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,দিল্লি এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,সিলিগুড়ি এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,পাহাড়ে তুষারপাতে শীত বেড়েছে
+SNOWFALL,bn,কলকাতা এর উচ্চ এলাকায় তুষারপাত
+SNOWFALL,bn,সিলিগুড়ি এর উচ্চ এলাকায় তুষারপাত
+DROUGHT,bn,দিল্লি জেলায় খরার মতো পরিস্থিতি
+DROUGHT,bn,গুয়াহাটি জেলায় খরার মতো পরিস্থিতি
+DROUGHT,bn,বৃষ্টির অভাবে খরা দেখা দিয়েছে
+DROUGHT,bn,দিল্লি জেলায় খরার মতো পরিস্থিতি
+DROUGHT,bn,সিলিগুড়ি জেলায় খরার মতো পরিস্থিতি
+DROUGHT,bn,বৃষ্টির অভাবে খরা দেখা দিয়েছে
+DROUGHT,bn,পাটনা জেলায় খরার মতো পরিস্থিতি
+DROUGHT,bn,মুম্বাই জেলায় খরার মতো পরিস্থিতি
+DROUGHT,bn,বৃষ্টির অভাবে খরা দেখা দিয়েছে
+DROUGHT,bn,বৃষ্টির অভাবে খরা দেখা দিয়েছে
+DROUGHT,bn,মুম্বাই জেলায় খরার মতো পরিস্থিতি
+DROUGHT,bn,গুয়াহাটি জেলায় খরার মতো পরিস্থিতি
+LANDSLIDE,bn,পাটনা এর কাছে ভূমিধসে রাস্তা বন্ধ
+LANDSLIDE,bn,ভূমিধসে গ্রামের যোগাযোগ বিচ্ছিন্ন
+LANDSLIDE,bn,কলকাতা এর কাছে ভূমিধসে রাস্তা বন্ধ
+LANDSLIDE,bn,ভূমিধসে গ্রামের যোগাযোগ বিচ্ছিন্ন
+LANDSLIDE,bn,ভূমিধসে গ্রামের যোগাযোগ বিচ্ছিন্ন
+LANDSLIDE,bn,মুম্বাই এর কাছে ভূমিধসে রাস্তা বন্ধ
+LANDSLIDE,bn,ভূমিধসে গ্রামের যোগাযোগ বিচ্ছিন্ন
+LANDSLIDE,bn,দিল্লি এর কাছে ভূমিধসে রাস্তা বন্ধ
+LANDSLIDE,bn,কলকাতা এর কাছে ভূমিধসে রাস্তা বন্ধ
+LANDSLIDE,bn,দিল্লি এর কাছে ভূমিধসে রাস্তা বন্ধ
+LANDSLIDE,bn,ভূমিধসে গ্রামের যোগাযোগ বিচ্ছিন্ন
+LANDSLIDE,bn,ভূমিধসে গ্রামের যোগাযোগ বিচ্ছিন্ন
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+WATERLOGGING,bn,ভুবনেশ্বর এর রাস্তায় জলজমাট
+WATERLOGGING,bn,মুম্বাই এর রাস্তায় জলজমাট
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+WATERLOGGING,bn,দিল্লি এর রাস্তায় জলজমাট
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+WATERLOGGING,bn,পাটনা এর রাস্তায় জলজমাট
+WATERLOGGING,bn,বৃষ্টির পর রাস্তায় জল জমে আছে
+CLOUDBURST,bn,ভুবনেশ্বর তে মেঘ বিস্ফোরণে ক্ষয়ক্ষতি
+CLOUDBURST,bn,কলকাতা তে মেঘ বিস্ফোরণে ক্ষয়ক্ষতি
+CLOUDBURST,bn,মেঘ বিস্ফোরণের মতো বৃষ্টিতে নর্দমা উপচে পড়েছে
+CLOUDBURST,bn,মেঘ বিস্ফোরণের মতো বৃষ্টিতে নর্দমা উপচে পড়েছে
+CLOUDBURST,bn,গুয়াহাটি তে মেঘ বিস্ফোরণে ক্ষয়ক্ষতি
+CLOUDBURST,bn,গুয়াহাটি তে মেঘ বিস্ফোরণে ক্ষয়ক্ষতি
+CLOUDBURST,bn,মেঘ বিস্ফোরণের মতো বৃষ্টিতে নর্দমা উপচে পড়েছে
+CLOUDBURST,bn,মুম্বাই তে মেঘ বিস্ফোরণে ক্ষয়ক্ষতি
+CLOUDBURST,bn,মেঘ বিস্ফোরণের মতো বৃষ্টিতে নর্দমা উপচে পড়েছে
+CLOUDBURST,bn,মেঘ বিস্ফোরণের মতো বৃষ্টিতে নর্দমা উপচে পড়েছে
+CLOUDBURST,bn,দিল্লি তে মেঘ বিস্ফোরণে ক্ষয়ক্ষতি
+CLOUDBURST,bn,মেঘ বিস্ফোরণের মতো বৃষ্টিতে নর্দমা উপচে পড়েছে
+RAINFALL,ta,திருச்சிராப்பள்ளி ல் லேசான மழை பெய்கிறது
+RAINFALL,ta,பெங்களூரு ல் லேசான மழை பெய்கிறது
+RAINFALL,ta,இடைவிடாமல் மழை பெய்து சாலைகள் நனைந்தன
+RAINFALL,ta,கோயம்புத்தூர் ல் லேசான மழை பெய்கிறது
+RAINFALL,ta,இடைவிடாமல் மழை பெய்து சாலைகள் நனைந்தன
+RAINFALL,ta,இடைவிடாமல் மழை பெய்து சாலைகள் நனைந்தன
+RAINFALL,ta,மதுரை ல் லேசான மழை பெய்கிறது
+RAINFALL,ta,திருச்சிராப்பள்ளி ல் லேசான மழை பெய்கிறது
+RAINFALL,ta,இடைவிடாமல் மழை பெய்து சாலைகள் நனைந்தன
+RAINFALL,ta,கோயம்புத்தூர் ல் லேசான மழை பெய்கிறது
+RAINFALL,ta,இடைவிடாமல் மழை பெய்து சாலைகள் நனைந்தன
+RAINFALL,ta,இடைவிடாமல் மழை பெய்து சாலைகள் நனைந்தன
+HEAVY_RAINFALL,ta,பெங்களூரு ல் கனமழை பெய்தது
+HEAVY_RAINFALL,ta,பலத்த மழையால் நகரம் பாதிப்படைந்தது
+HEAVY_RAINFALL,ta,சென்னை ல் கனமழை பெய்தது
+HEAVY_RAINFALL,ta,திருச்சிராப்பள்ளி ல் கனமழை பெய்தது
+HEAVY_RAINFALL,ta,மதுரை ல் கனமழை பெய்தது
+HEAVY_RAINFALL,ta,பலத்த மழையால் நகரம் பாதிப்படைந்தது
+HEAVY_RAINFALL,ta,பலத்த மழையால் நகரம் பாதிப்படைந்தது
+HEAVY_RAINFALL,ta,பலத்த மழையால் நகரம் பாதிப்படைந்தது
+HEAVY_RAINFALL,ta,பலத்த மழையால் நகரம் பாதிப்படைந்தது
+HEAVY_RAINFALL,ta,சென்னை ல் கனமழை பெய்தது
+HEAVY_RAINFALL,ta,பெங்களூரு ல் கனமழை பெய்தது
+HEAVY_RAINFALL,ta,சென்னை ல் கனமழை பெய்தது
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,கோயம்புத்தூர் ல் தாழ்வான பகுதிகளில் வெள்ளம்
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,வெள்ள நீர் தொடர்ந்து அதிகரித்து வருகிறது
+FLOOD,ta,மதுரை ல் தாழ்வான பகுதிகளில் வெள்ளம்
+FLOOD,ta,சென்னை ல் தாழ்வான பகுதிகளில் வெள்ளம்
+FLOOD,ta,கோயம்புத்தூர் ல் தாழ்வான பகுதிகளில் வெள்ளம்
+FLASH_FLOOD,ta,பெங்களூரு ல் திடீர் வெள்ளம் பேரழிவை ஏற்படுத்தியது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+FLASH_FLOOD,ta,மதுரை ல் திடீர் வெள்ளம் பேரழிவை ஏற்படுத்தியது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+FLASH_FLOOD,ta,மதுரை ல் திடீர் வெள்ளம் பேரழிவை ஏற்படுத்தியது
+FLASH_FLOOD,ta,திருச்சிராப்பள்ளி ல் திடீர் வெள்ளம் பேரழிவை ஏற்படுத்தியது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+FLASH_FLOOD,ta,கனமழைக்கு பிறகு திடீர் வெள்ளம் புகுந்தது
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,மதுரை ல் இடியுடன் கூடிய மழையும் புயலும்
+THUNDERSTORM,ta,பெங்களூரு ல் இடியுடன் கூடிய மழையும் புயலும்
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+THUNDERSTORM,ta,மதுரை ல் இடியுடன் கூடிய மழையும் புயலும்
+THUNDERSTORM,ta,பலத்த இடிமுழக்கத்துடன் மழை பெய்தது
+LIGHTNING,ta,கோயம்புத்தூர் ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,சென்னை ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,திருச்சிராப்பள்ளி ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,கோயம்புத்தூர் ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,வானத்தில் மின்னல் மின்னியது
+LIGHTNING,ta,சென்னை ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,கோயம்புத்தூர் ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,பெங்களூரு ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,சென்னை ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,மதுரை ல் மின்னல் தாக்குதல்கள் பதிவாயின
+LIGHTNING,ta,வானத்தில் மின்னல் மின்னியது
+LIGHTNING,ta,வானத்தில் மின்னல் மின்னியது
+CYCLONE,ta,புயல் எச்சரிக்கை விடுக்கப்பட்டது
+CYCLONE,ta,சூறாவளி மதுரை கடற்கரையை நெருங்குகிறது
+CYCLONE,ta,சூறாவளி மதுரை கடற்கரையை நெருங்குகிறது
+CYCLONE,ta,புயல் எச்சரிக்கை விடுக்கப்பட்டது
+CYCLONE,ta,புயல் எச்சரிக்கை விடுக்கப்பட்டது
+CYCLONE,ta,சூறாவளி கோயம்புத்தூர் கடற்கரையை நெருங்குகிறது
+CYCLONE,ta,சூறாவளி கோயம்புத்தூர் கடற்கரையை நெருங்குகிறது
+CYCLONE,ta,புயல் எச்சரிக்கை விடுக்கப்பட்டது
+CYCLONE,ta,சூறாவளி சென்னை கடற்கரையை நெருங்குகிறது
+CYCLONE,ta,புயல் எச்சரிக்கை விடுக்கப்பட்டது
+CYCLONE,ta,சூறாவளி சென்னை கடற்கரையை நெருங்குகிறது
+CYCLONE,ta,புயல் எச்சரிக்கை விடுக்கப்பட்டது
+HEATWAVE,ta,மதுரை ல் வெப்ப அலை வீசுகிறது
+HEATWAVE,ta,கோயம்புத்தூர் ல் வெப்ப அலை வீசுகிறது
+HEATWAVE,ta,கடும் வெயிலால் மக்கள் அவதியடைந்தனர்
+HEATWAVE,ta,சென்னை ல் வெப்ப அலை வீசுகிறது
+HEATWAVE,ta,கடும் வெயிலால் மக்கள் அவதியடைந்தனர்
+HEATWAVE,ta,கடும் வெயிலால் மக்கள் அவதியடைந்தனர்
+HEATWAVE,ta,சென்னை ல் வெப்ப அலை வீசுகிறது
+HEATWAVE,ta,மதுரை ல் வெப்ப அலை வீசுகிறது
+HEATWAVE,ta,கடும் வெயிலால் மக்கள் அவதியடைந்தனர்
+HEATWAVE,ta,கோயம்புத்தூர் ல் வெப்ப அலை வீசுகிறது
+HEATWAVE,ta,கடும் வெயிலால் மக்கள் அவதியடைந்தனர்
+HEATWAVE,ta,கடும் வெயிலால் மக்கள் அவதியடைந்தனர்
+COLD_WAVE,ta,கடும் குளிரால் பள்ளிகள் மூடப்பட்டன
+COLD_WAVE,ta,கோயம்புத்தூர் ல் குளிர் அலை வீசுகிறது
+COLD_WAVE,ta,கோயம்புத்தூர் ல் குளிர் அலை வீசுகிறது
+COLD_WAVE,ta,திருச்சிராப்பள்ளி ல் குளிர் அலை வீசுகிறது
+COLD_WAVE,ta,கடும் குளிரால் பள்ளிகள் மூடப்பட்டன
+COLD_WAVE,ta,கடும் குளிரால் பள்ளிகள் மூடப்பட்டன
+COLD_WAVE,ta,கோயம்புத்தூர் ல் குளிர் அலை வீசுகிறது
+COLD_WAVE,ta,திருச்சிராப்பள்ளி ல் குளிர் அலை வீசுகிறது
+COLD_WAVE,ta,கோயம்புத்தூர் ல் குளிர் அலை வீசுகிறது
+COLD_WAVE,ta,கடும் குளிரால் பள்ளிகள் மூடப்பட்டன
+COLD_WAVE,ta,திருச்சிராப்பள்ளி ல் குளிர் அலை வீசுகிறது
+COLD_WAVE,ta,கோயம்புத்தூர் ல் குளிர் அலை வீசுகிறது
+FOG,ta,பனிமூட்டத்தால் சாலை தெரிவுநிலை குறைந்தது
+FOG,ta,திருச்சிராப்பள்ளி ல் காலையில் பனிமூட்டம்
+FOG,ta,மதுரை ல் காலையில் பனிமூட்டம்
+FOG,ta,பனிமூட்டத்தால் சாலை தெரிவுநிலை குறைந்தது
+FOG,ta,பனிமூட்டத்தால் சாலை தெரிவுநிலை குறைந்தது
+FOG,ta,பெங்களூரு ல் காலையில் பனிமூட்டம்
+FOG,ta,பனிமூட்டத்தால் சாலை தெரிவுநிலை குறைந்தது
+FOG,ta,பெங்களூரு ல் காலையில் பனிமூட்டம்
+FOG,ta,பெங்களூரு ல் காலையில் பனிமூட்டம்
+FOG,ta,கோயம்புத்தூர் ல் காலையில் பனிமூட்டம்
+FOG,ta,திருச்சிராப்பள்ளி ல் காலையில் பனிமூட்டம்
+FOG,ta,கோயம்புத்தூர் ல் காலையில் பனிமூட்டம்
+DENSE_FOG,ta,"திருச்சிராப்பள்ளி ல் அடர்ந்த பனிமூட்டம், தெரிவுநிலை கிட்டத்தட்ட இல்லை"
+DENSE_FOG,ta,அடர்ந்த பனிமூட்டத்தால் விமானங்கள் ரத்து
+DENSE_FOG,ta,"பெங்களூரு ல் அடர்ந்த பனிமூட்டம், தெரிவுநிலை கிட்டத்தட்ட இல்லை"
+DENSE_FOG,ta,"மதுரை ல் அடர்ந்த பனிமூட்டம், தெரிவுநிலை கிட்டத்தட்ட இல்லை"
+DENSE_FOG,ta,"மதுரை ல் அடர்ந்த பனிமூட்டம், தெரிவுநிலை கிட்டத்தட்ட இல்லை"
+DENSE_FOG,ta,அடர்ந்த பனிமூட்டத்தால் விமானங்கள் ரத்து
+DENSE_FOG,ta,அடர்ந்த பனிமூட்டத்தால் விமானங்கள் ரத்து
+DENSE_FOG,ta,அடர்ந்த பனிமூட்டத்தால் விமானங்கள் ரத்து
+DENSE_FOG,ta,"திருச்சிராப்பள்ளி ல் அடர்ந்த பனிமூட்டம், தெரிவுநிலை கிட்டத்தட்ட இல்லை"
+DENSE_FOG,ta,"கோயம்புத்தூர் ல் அடர்ந்த பனிமூட்டம், தெரிவுநிலை கிட்டத்தட்ட இல்லை"
+DENSE_FOG,ta,அடர்ந்த பனிமூட்டத்தால் விமானங்கள் ரத்து
+DENSE_FOG,ta,அடர்ந்த பனிமூட்டத்தால் விமானங்கள் ரத்து
+DUST_STORM,ta,புழுதியால் தெரிவுநிலை குறைந்தது
+DUST_STORM,ta,புழுதியால் தெரிவுநிலை குறைந்தது
+DUST_STORM,ta,புழுதியால் தெரிவுநிலை குறைந்தது
+DUST_STORM,ta,திருச்சிராப்பள்ளி ல் புழுதிப்புயல் வீசியது
+DUST_STORM,ta,கோயம்புத்தூர் ல் புழுதிப்புயல் வீசியது
+DUST_STORM,ta,மதுரை ல் புழுதிப்புயல் வீசியது
+DUST_STORM,ta,புழுதியால் தெரிவுநிலை குறைந்தது
+DUST_STORM,ta,திருச்சிராப்பள்ளி ல் புழுதிப்புயல் வீசியது
+DUST_STORM,ta,கோயம்புத்தூர் ல் புழுதிப்புயல் வீசியது
+DUST_STORM,ta,பெங்களூரு ல் புழுதிப்புயல் வீசியது
+DUST_STORM,ta,புழுதியால் தெரிவுநிலை குறைந்தது
+DUST_STORM,ta,மதுரை ல் புழுதிப்புயல் வீசியது
+STRONG_WIND,ta,பெங்களூரு ல் பலத்த காற்று வீசுகிறது
+STRONG_WIND,ta,பலத்த காற்றில் மரங்கள் சாய்ந்தன
+STRONG_WIND,ta,மதுரை ல் பலத்த காற்று வீசுகிறது
+STRONG_WIND,ta,மதுரை ல் பலத்த காற்று வீசுகிறது
+STRONG_WIND,ta,பலத்த காற்றில் மரங்கள் சாய்ந்தன
+STRONG_WIND,ta,பலத்த காற்றில் மரங்கள் சாய்ந்தன
+STRONG_WIND,ta,பலத்த காற்றில் மரங்கள் சாய்ந்தன
+STRONG_WIND,ta,கோயம்புத்தூர் ல் பலத்த காற்று வீசுகிறது
+STRONG_WIND,ta,கோயம்புத்தூர் ல் பலத்த காற்று வீசுகிறது
+STRONG_WIND,ta,பெங்களூரு ல் பலத்த காற்று வீசுகிறது
+STRONG_WIND,ta,கோயம்புத்தூர் ல் பலத்த காற்று வீசுகிறது
+STRONG_WIND,ta,பலத்த காற்றில் மரங்கள் சாய்ந்தன
+HAILSTORM,ta,ஆலங்கட்டி மழையால் வீடுகள் சேதமடைந்தன
+HAILSTORM,ta,சென்னை ல் ஆலங்கட்டி மழையால் பயிர்கள் சேதம்
+HAILSTORM,ta,கோயம்புத்தூர் ல் ஆலங்கட்டி மழையால் பயிர்கள் சேதம்
+HAILSTORM,ta,பெங்களூரு ல் ஆலங்கட்டி மழையால் பயிர்கள் சேதம்
+HAILSTORM,ta,ஆலங்கட்டி மழையால் வீடுகள் சேதமடைந்தன
+HAILSTORM,ta,ஆலங்கட்டி மழையால் வீடுகள் சேதமடைந்தன
+HAILSTORM,ta,ஆலங்கட்டி மழையால் வீடுகள் சேதமடைந்தன
+HAILSTORM,ta,பெங்களூரு ல் ஆலங்கட்டி மழையால் பயிர்கள் சேதம்
+HAILSTORM,ta,ஆலங்கட்டி மழையால் வீடுகள் சேதமடைந்தன
+HAILSTORM,ta,ஆலங்கட்டி மழையால் வீடுகள் சேதமடைந்தன
+HAILSTORM,ta,மதுரை ல் ஆலங்கட்டி மழையால் பயிர்கள் சேதம்
+HAILSTORM,ta,திருச்சிராப்பள்ளி ல் ஆலங்கட்டி மழையால் பயிர்கள் சேதம்
+SNOWFALL,ta,பெங்களூரு ல் மலைப்பகுதிகளில் பனிப்பொழிவு
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+SNOWFALL,ta,திருச்சிராப்பள்ளி ல் மலைப்பகுதிகளில் பனிப்பொழிவு
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+SNOWFALL,ta,திருச்சிராப்பள்ளி ல் மலைப்பகுதிகளில் பனிப்பொழிவு
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+SNOWFALL,ta,மதுரை ல் மலைப்பகுதிகளில் பனிப்பொழிவு
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+SNOWFALL,ta,மலைகளில் பனி பெய்து விட்டது
+DROUGHT,ta,மழை இல்லாததால் வறட்சி ஏற்பட்டது
+DROUGHT,ta,திருச்சிராப்பள்ளி மாவட்டத்தில் வறட்சி நிலை
+DROUGHT,ta,மழை இல்லாததால் வறட்சி ஏற்பட்டது
+DROUGHT,ta,கோயம்புத்தூர் மாவட்டத்தில் வறட்சி நிலை
+DROUGHT,ta,மழை இல்லாததால் வறட்சி ஏற்பட்டது
+DROUGHT,ta,மழை இல்லாததால் வறட்சி ஏற்பட்டது
+DROUGHT,ta,பெங்களூரு மாவட்டத்தில் வறட்சி நிலை
+DROUGHT,ta,மதுரை மாவட்டத்தில் வறட்சி நிலை
+DROUGHT,ta,கோயம்புத்தூர் மாவட்டத்தில் வறட்சி நிலை
+DROUGHT,ta,சென்னை மாவட்டத்தில் வறட்சி நிலை
+DROUGHT,ta,சென்னை மாவட்டத்தில் வறட்சி நிலை
+DROUGHT,ta,மழை இல்லாததால் வறட்சி ஏற்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,பெங்களூரு அருகே மண்சரிவில் சாலை மூடப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,கோயம்புத்தூர் அருகே மண்சரிவில் சாலை மூடப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,மதுரை அருகே மண்சரிவில் சாலை மூடப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+LANDSLIDE,ta,மண்சரிவில் கிராமத்தின் தொடர்பு துண்டிக்கப்பட்டது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,திருச்சிராப்பள்ளி ல் சாலைகளில் நீர் தேக்கம்
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,சென்னை ல் சாலைகளில் நீர் தேக்கம்
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+WATERLOGGING,ta,மழைக்குப் பிறகு சாலைகளில் தண்ணீர் தேங்கியது
+CLOUDBURST,ta,சென்னை ல் மேக வெடிப்பு பாதிப்பு
+CLOUDBURST,ta,மேக வெடிப்பு போன்ற மழையில் வடிகால்கள் நிரம்பின
+CLOUDBURST,ta,சென்னை ல் மேக வெடிப்பு பாதிப்பு
+CLOUDBURST,ta,திருச்சிராப்பள்ளி ல் மேக வெடிப்பு பாதிப்பு
+CLOUDBURST,ta,மேக வெடிப்பு போன்ற மழையில் வடிகால்கள் நிரம்பின
+CLOUDBURST,ta,சென்னை ல் மேக வெடிப்பு பாதிப்பு
+CLOUDBURST,ta,கோயம்புத்தூர் ல் மேக வெடிப்பு பாதிப்பு
+CLOUDBURST,ta,மேக வெடிப்பு போன்ற மழையில் வடிகால்கள் நிரம்பின
+CLOUDBURST,ta,திருச்சிராப்பள்ளி ல் மேக வெடிப்பு பாதிப்பு
+CLOUDBURST,ta,மதுரை ல் மேக வெடிப்பு பாதிப்பு
+CLOUDBURST,ta,மேக வெடிப்பு போன்ற மழையில் வடிகால்கள் நிரம்பின
+CLOUDBURST,ta,மேக வெடிப்பு போன்ற மழையில் வடிகால்கள் நிரம்பின
+RAINFALL,te,విజయవాడ లో తేలికపాటి వర్షం కురుస్తోంది
+RAINFALL,te,ఎడతెరిపి లేకుండా వర్షం పడి రోడ్లు తడిశాయి
+RAINFALL,te,ఎడతెరిపి లేకుండా వర్షం పడి రోడ్లు తడిశాయి
+RAINFALL,te,హైదరాబాద్ లో తేలికపాటి వర్షం కురుస్తోంది
+RAINFALL,te,వరంగల్ లో తేలికపాటి వర్షం కురుస్తోంది
+RAINFALL,te,ఎడతెరిపి లేకుండా వర్షం పడి రోడ్లు తడిశాయి
+RAINFALL,te,ఎడతెరిపి లేకుండా వర్షం పడి రోడ్లు తడిశాయి
+RAINFALL,te,ఎడతెరిపి లేకుండా వర్షం పడి రోడ్లు తడిశాయి
+RAINFALL,te,ఎడతెరిపి లేకుండా వర్షం పడి రోడ్లు తడిశాయి
+RAINFALL,te,హైదరాబాద్ లో తేలికపాటి వర్షం కురుస్తోంది
+RAINFALL,te,హైదరాబాద్ లో తేలికపాటి వర్షం కురుస్తోంది
+RAINFALL,te,ఎడతెరిపి లేకుండా వర్షం పడి రోడ్లు తడిశాయి
+HEAVY_RAINFALL,te,కురిసిన భారీ వర్షంతో నగరం అతలాకుతలమైంది
+HEAVY_RAINFALL,te,కురిసిన భారీ వర్షంతో నగరం అతలాకుతలమైంది
+HEAVY_RAINFALL,te,విజయవాడ లో భారీ వర్షం కురిసింది
+HEAVY_RAINFALL,te,కురిసిన భారీ వర్షంతో నగరం అతలాకుతలమైంది
+HEAVY_RAINFALL,te,విజయవాడ లో భారీ వర్షం కురిసింది
+HEAVY_RAINFALL,te,హైదరాబాద్ లో భారీ వర్షం కురిసింది
+HEAVY_RAINFALL,te,విశాఖపట్నం లో భారీ వర్షం కురిసింది
+HEAVY_RAINFALL,te,వరంగల్ లో భారీ వర్షం కురిసింది
+HEAVY_RAINFALL,te,విజయవాడ లో భారీ వర్షం కురిసింది
+HEAVY_RAINFALL,te,కురిసిన భారీ వర్షంతో నగరం అతలాకుతలమైంది
+HEAVY_RAINFALL,te,హైదరాబాద్ లో భారీ వర్షం కురిసింది
+HEAVY_RAINFALL,te,విజయవాడ లో భారీ వర్షం కురిసింది
+FLOOD,te,వరద నీరు నిరంతరం పెరుగుతోంది
+FLOOD,te,వరద నీరు నిరంతరం పెరుగుతోంది
+FLOOD,te,విశాఖపట్నం లో పల్ల ప్రాంతాల్లో వరదలు
+FLOOD,te,వరద నీరు నిరంతరం పెరుగుతోంది
+FLOOD,te,వరద నీరు నిరంతరం పెరుగుతోంది
+FLOOD,te,వరద నీరు నిరంతరం పెరుగుతోంది
+FLOOD,te,విశాఖపట్నం లో పల్ల ప్రాంతాల్లో వరదలు
+FLOOD,te,వరద నీరు నిరంతరం పెరుగుతోంది
+FLOOD,te,విశాఖపట్నం లో పల్ల ప్రాంతాల్లో వరదలు
+FLOOD,te,వరద నీరు నిరంతరం పెరుగుతోంది
+FLOOD,te,విజయవాడ లో పల్ల ప్రాంతాల్లో వరదలు
+FLOOD,te,విజయవాడ లో పల్ల ప్రాంతాల్లో వరదలు
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+FLASH_FLOOD,te,విశాఖపట్నం లో ఆకస్మిక వరదలు విధ్వంసం
+FLASH_FLOOD,te,విజయవాడ లో ఆకస్మిక వరదలు విధ్వంసం
+FLASH_FLOOD,te,హైదరాబాద్ లో ఆకస్మిక వరదలు విధ్వంసం
+FLASH_FLOOD,te,హైదరాబాద్ లో ఆకస్మిక వరదలు విధ్వంసం
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+FLASH_FLOOD,te,భారీ వర్షం తర్వాత ఆకస్మిక వరదలు వచ్చాయి
+THUNDERSTORM,te,వరంగల్ లో ఉరుముతో కూడిన తుఫాను
+THUNDERSTORM,te,ఉరుములు మెరుపులతో వర్షం కురిసింది
+THUNDERSTORM,te,హైదరాబాద్ లో ఉరుముతో కూడిన తుఫాను
+THUNDERSTORM,te,వరంగల్ లో ఉరుముతో కూడిన తుఫాను
+THUNDERSTORM,te,ఉరుములు మెరుపులతో వర్షం కురిసింది
+THUNDERSTORM,te,ఉరుములు మెరుపులతో వర్షం కురిసింది
+THUNDERSTORM,te,ఉరుములు మెరుపులతో వర్షం కురిసింది
+THUNDERSTORM,te,ఉరుములు మెరుపులతో వర్షం కురిసింది
+THUNDERSTORM,te,ఉరుములు మెరుపులతో వర్షం కురిసింది
+THUNDERSTORM,te,విజయవాడ లో ఉరుముతో కూడిన తుఫాను
+THUNDERSTORM,te,విజయవాడ లో ఉరుముతో కూడిన తుఫాను
+THUNDERSTORM,te,వరంగల్ లో ఉరుముతో కూడిన తుఫాను
+LIGHTNING,te,విజయవాడ లో మెరుపు దాడి సంఘటనలు
+LIGHTNING,te,ఆకాశంలో మెరుపులు మెరిశాయి
+LIGHTNING,te,హైదరాబాద్ లో మెరుపు దాడి సంఘటనలు
+LIGHTNING,te,విజయవాడ లో మెరుపు దాడి సంఘటనలు
+LIGHTNING,te,ఆకాశంలో మెరుపులు మెరిశాయి
+LIGHTNING,te,విశాఖపట్నం లో మెరుపు దాడి సంఘటనలు
+LIGHTNING,te,ఆకాశంలో మెరుపులు మెరిశాయి
+LIGHTNING,te,విశాఖపట్నం లో మెరుపు దాడి సంఘటనలు
+LIGHTNING,te,ఆకాశంలో మెరుపులు మెరిశాయి
+LIGHTNING,te,ఆకాశంలో మెరుపులు మెరిశాయి
+LIGHTNING,te,ఆకాశంలో మెరుపులు మెరిశాయి
+LIGHTNING,te,వరంగల్ లో మెరుపు దాడి సంఘటనలు
+CYCLONE,te,తుఫాను హెచ్చరిక జారీ చేశారు
+CYCLONE,te,తుఫాను విజయవాడ తీరం వైపు దూసుకుపోతోంది
+CYCLONE,te,తుఫాను హైదరాబాద్ తీరం వైపు దూసుకుపోతోంది
+CYCLONE,te,తుఫాను హెచ్చరిక జారీ చేశారు
+CYCLONE,te,తుఫాను హెచ్చరిక జారీ చేశారు
+CYCLONE,te,తుఫాను హైదరాబాద్ తీరం వైపు దూసుకుపోతోంది
+CYCLONE,te,తుఫాను హెచ్చరిక జారీ చేశారు
+CYCLONE,te,తుఫాను హెచ్చరిక జారీ చేశారు
+CYCLONE,te,తుఫాను హెచ్చరిక జారీ చేశారు
+CYCLONE,te,తుఫాను వరంగల్ తీరం వైపు దూసుకుపోతోంది
+CYCLONE,te,తుఫాను విశాఖపట్నం తీరం వైపు దూసుకుపోతోంది
+CYCLONE,te,తుఫాను హెచ్చరిక జారీ చేశారు
+HEATWAVE,te,వరంగల్ లో వేడి గాలులు వీస్తున్నాయి
+HEATWAVE,te,తీవ్ర ఉక్కతో ప్రజలు ఇబ్బందుల్లో
+HEATWAVE,te,విశాఖపట్నం లో వేడి గాలులు వీస్తున్నాయి
+HEATWAVE,te,వరంగల్ లో వేడి గాలులు వీస్తున్నాయి
+HEATWAVE,te,తీవ్ర ఉక్కతో ప్రజలు ఇబ్బందుల్లో
+HEATWAVE,te,తీవ్ర ఉక్కతో ప్రజలు ఇబ్బందుల్లో
+HEATWAVE,te,వరంగల్ లో వేడి గాలులు వీస్తున్నాయి
+HEATWAVE,te,హైదరాబాద్ లో వేడి గాలులు వీస్తున్నాయి
+HEATWAVE,te,విశాఖపట్నం లో వేడి గాలులు వీస్తున్నాయి
+HEATWAVE,te,తీవ్ర ఉక్కతో ప్రజలు ఇబ్బందుల్లో
+HEATWAVE,te,తీవ్ర ఉక్కతో ప్రజలు ఇబ్బందుల్లో
+HEATWAVE,te,విజయవాడ లో వేడి గాలులు వీస్తున్నాయి
+COLD_WAVE,te,తీవ్రమైన చలితో పాఠశాలలు మూసివేశారు
+COLD_WAVE,te,తీవ్రమైన చలితో పాఠశాలలు మూసివేశారు
+COLD_WAVE,te,తీవ్రమైన చలితో పాఠశాలలు మూసివేశారు
+COLD_WAVE,te,తీవ్రమైన చలితో పాఠశాలలు మూసివేశారు
+COLD_WAVE,te,విజయవాడ లో చలి గాలులు వీస్తున్నాయి
+COLD_WAVE,te,తీవ్రమైన చలితో పాఠశాలలు మూసివేశారు
+COLD_WAVE,te,తీవ్రమైన చలితో పాఠశాలలు మూసివేశారు
+COLD_WAVE,te,వరంగల్ లో చలి గాలులు వీస్తున్నాయి
+COLD_WAVE,te,తీవ్రమైన చలితో పాఠశాలలు మూసివేశారు
+COLD_WAVE,te,వరంగల్ లో చలి గాలులు వీస్తున్నాయి
+COLD_WAVE,te,వరంగల్ లో చలి గాలులు వీస్తున్నాయి
+COLD_WAVE,te,విశాఖపట్నం లో చలి గాలులు వీస్తున్నాయి
+FOG,te,హైదరాబాద్ లో ఉదయం పొగమంచు
+FOG,te,హైదరాబాద్ లో ఉదయం పొగమంచు
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+FOG,te,విశాఖపట్నం లో ఉదయం పొగమంచు
+FOG,te,విజయవాడ లో ఉదయం పొగమంచు
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+FOG,te,పొగమంచు వల్ల రహదారి దృశ్యం తగ్గింది
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,"విజయవాడ లో దట్టమైన పొగమంచు, దృశ్యం దాదాపు లేదు"
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,"వరంగల్ లో దట్టమైన పొగమంచు, దృశ్యం దాదాపు లేదు"
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DENSE_FOG,te,దట్టమైన పొగమంచుతో విమానాలు రద్దు
+DUST_STORM,te,ధూళి వల్ల దృశ్యం తగ్గింది
+DUST_STORM,te,ధూళి వల్ల దృశ్యం తగ్గింది
+DUST_STORM,te,విశాఖపట్నం లో ఇసుక తుఫాను వీచింది
+DUST_STORM,te,ధూళి వల్ల దృశ్యం తగ్గింది
+DUST_STORM,te,హైదరాబాద్ లో ఇసుక తుఫాను వీచింది
+DUST_STORM,te,విశాఖపట్నం లో ఇసుక తుఫాను వీచింది
+DUST_STORM,te,విశాఖపట్నం లో ఇసుక తుఫాను వీచింది
+DUST_STORM,te,హైదరాబాద్ లో ఇసుక తుఫాను వీచింది
+DUST_STORM,te,వరంగల్ లో ఇసుక తుఫాను వీచింది
+DUST_STORM,te,ధూళి వల్ల దృశ్యం తగ్గింది
+DUST_STORM,te,విశాఖపట్నం లో ఇసుక తుఫాను వీచింది
+DUST_STORM,te,విశాఖపట్నం లో ఇసుక తుఫాను వీచింది
+STRONG_WIND,te,బలమైన ఈదురు గాలులతో చెట్లు కూలాయి
+STRONG_WIND,te,బలమైన ఈదురు గాలులతో చెట్లు కూలాయి
+STRONG_WIND,te,బలమైన ఈదురు గాలులతో చెట్లు కూలాయి
+STRONG_WIND,te,బలమైన ఈదురు గాలులతో చెట్లు కూలాయి
+STRONG_WIND,te,విశాఖపట్నం లో గాలివాన వీస్తోంది
+STRONG_WIND,te,విశాఖపట్నం లో గాలివాన వీస్తోంది
+STRONG_WIND,te,బలమైన ఈదురు గాలులతో చెట్లు కూలాయి
+STRONG_WIND,te,వరంగల్ లో గాలివాన వీస్తోంది
+STRONG_WIND,te,బలమైన ఈదురు గాలులతో చెట్లు కూలాయి
+STRONG_WIND,te,బలమైన ఈదురు గాలులతో చెట్లు కూలాయి
+STRONG_WIND,te,విజయవాడ లో గాలివాన వీస్తోంది
+STRONG_WIND,te,విజయవాడ లో గాలివాన వీస్తోంది
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,హైదరాబాద్ లో వడగళ్ళ వానతో పంటలు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,హైదరాబాద్ లో వడగళ్ళ వానతో పంటలు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,విశాఖపట్నం లో వడగళ్ళ వానతో పంటలు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+HAILSTORM,te,వడగళ్ళ వానతో ఇళ్లు దెబ్బతిన్నాయి
+SNOWFALL,te,విశాఖపట్నం లో కొండ ప్రాంతాల్లో మంచు కురుస్తోంది
+SNOWFALL,te,కొండల్లో మంచు కురిసింది
+SNOWFALL,te,హైదరాబాద్ లో కొండ ప్రాంతాల్లో మంచు కురుస్తోంది
+SNOWFALL,te,కొండల్లో మంచు కురిసింది
+SNOWFALL,te,వరంగల్ లో కొండ ప్రాంతాల్లో మంచు కురుస్తోంది
+SNOWFALL,te,కొండల్లో మంచు కురిసింది
+SNOWFALL,te,కొండల్లో మంచు కురిసింది
+SNOWFALL,te,కొండల్లో మంచు కురిసింది
+SNOWFALL,te,హైదరాబాద్ లో కొండ ప్రాంతాల్లో మంచు కురుస్తోంది
+SNOWFALL,te,వరంగల్ లో కొండ ప్రాంతాల్లో మంచు కురుస్తోంది
+SNOWFALL,te,కొండల్లో మంచు కురిసింది
+SNOWFALL,te,కొండల్లో మంచు కురిసింది
+DROUGHT,te,విజయవాడ జిల్లాలో కరువు పరిస్థితి
+DROUGHT,te,వర్షాలు లేక కరువు ఏర్పడింది
+DROUGHT,te,విశాఖపట్నం జిల్లాలో కరువు పరిస్థితి
+DROUGHT,te,వర్షాలు లేక కరువు ఏర్పడింది
+DROUGHT,te,వర్షాలు లేక కరువు ఏర్పడింది
+DROUGHT,te,వర్షాలు లేక కరువు ఏర్పడింది
+DROUGHT,te,విశాఖపట్నం జిల్లాలో కరువు పరిస్థితి
+DROUGHT,te,వరంగల్ జిల్లాలో కరువు పరిస్థితి
+DROUGHT,te,వర్షాలు లేక కరువు ఏర్పడింది
+DROUGHT,te,హైదరాబాద్ జిల్లాలో కరువు పరిస్థితి
+DROUGHT,te,విశాఖపట్నం జిల్లాలో కరువు పరిస్థితి
+DROUGHT,te,విజయవాడ జిల్లాలో కరువు పరిస్థితి
+LANDSLIDE,te,కొండచరియలు విరగడంతో గ్రామ సంబంధాలు తెగిపోయాయి
+LANDSLIDE,te,వరంగల్ సమీపంలో కొండచరియలు విరిగి రహదారి మూసుకుపోయింది
+LANDSLIDE,te,వరంగల్ సమీపంలో కొండచరియలు విరిగి రహదారి మూసుకుపోయింది
+LANDSLIDE,te,వరంగల్ సమీపంలో కొండచరియలు విరిగి రహదారి మూసుకుపోయింది
+LANDSLIDE,te,వరంగల్ సమీపంలో కొండచరియలు విరిగి రహదారి మూసుకుపోయింది
+LANDSLIDE,te,కొండచరియలు విరగడంతో గ్రామ సంబంధాలు తెగిపోయాయి
+LANDSLIDE,te,కొండచరియలు విరగడంతో గ్రామ సంబంధాలు తెగిపోయాయి
+LANDSLIDE,te,వరంగల్ సమీపంలో కొండచరియలు విరిగి రహదారి మూసుకుపోయింది
+LANDSLIDE,te,కొండచరియలు విరగడంతో గ్రామ సంబంధాలు తెగిపోయాయి
+LANDSLIDE,te,హైదరాబాద్ సమీపంలో కొండచరియలు విరిగి రహదారి మూసుకుపోయింది
+LANDSLIDE,te,వరంగల్ సమీపంలో కొండచరియలు విరిగి రహదారి మూసుకుపోయింది
+LANDSLIDE,te,కొండచరియలు విరగడంతో గ్రామ సంబంధాలు తెగిపోయాయి
+WATERLOGGING,te,హైదరాబాద్ లో రోడ్లపై నీరు నిలిచి ఉంది
+WATERLOGGING,te,వర్షం తర్వాత రోడ్లపై నీళ్లు నిలిచాయి
+WATERLOGGING,te,వర్షం తర్వాత రోడ్లపై నీళ్లు నిలిచాయి
+WATERLOGGING,te,విశాఖపట్నం లో రోడ్లపై నీరు నిలిచి ఉంది
+WATERLOGGING,te,వర్షం తర్వాత రోడ్లపై నీళ్లు నిలిచాయి
+WATERLOGGING,te,వర్షం తర్వాత రోడ్లపై నీళ్లు నిలిచాయి
+WATERLOGGING,te,వర్షం తర్వాత రోడ్లపై నీళ్లు నిలిచాయి
+WATERLOGGING,te,విశాఖపట్నం లో రోడ్లపై నీరు నిలిచి ఉంది
+WATERLOGGING,te,వర్షం తర్వాత రోడ్లపై నీళ్లు నిలిచాయి
+WATERLOGGING,te,వరంగల్ లో రోడ్లపై నీరు నిలిచి ఉంది
+WATERLOGGING,te,విశాఖపట్నం లో రోడ్లపై నీరు నిలిచి ఉంది
+WATERLOGGING,te,హైదరాబాద్ లో రోడ్లపై నీరు నిలిచి ఉంది
+CLOUDBURST,te,మేఘ విస్ఫోటనం లాంటి వర్షంతో డ్రైన్లు పొంగిపోయాయి
+CLOUDBURST,te,మేఘ విస్ఫోటనం లాంటి వర్షంతో డ్రైన్లు పొంగిపోయాయి
+CLOUDBURST,te,విశాఖపట్నం లో మేఘ విస్ఫోటనం నష్టం
+CLOUDBURST,te,మేఘ విస్ఫోటనం లాంటి వర్షంతో డ్రైన్లు పొంగిపోయాయి
+CLOUDBURST,te,విజయవాడ లో మేఘ విస్ఫోటనం నష్టం
+CLOUDBURST,te,హైదరాబాద్ లో మేఘ విస్ఫోటనం నష్టం
+CLOUDBURST,te,వరంగల్ లో మేఘ విస్ఫోటనం నష్టం
+CLOUDBURST,te,విశాఖపట్నం లో మేఘ విస్ఫోటనం నష్టం
+CLOUDBURST,te,హైదరాబాద్ లో మేఘ విస్ఫోటనం నష్టం
+CLOUDBURST,te,హైదరాబాద్ లో మేఘ విస్ఫోటనం నష్టం
+CLOUDBURST,te,మేఘ విస్ఫోటనం లాంటి వర్షంతో డ్రైన్లు పొంగిపోయాయి
+CLOUDBURST,te,హైదరాబాద్ లో మేఘ విస్ఫోటనం నష్టం
+RAINFALL,mr,शहरात अधूनमधून पाऊस पडून रस्ते ओले आहेत
+RAINFALL,mr,नाशिक मध्ये हल्का पाऊस सुरू आहे
+RAINFALL,mr,मुंबई मध्ये हल्का पाऊस सुरू आहे
+RAINFALL,mr,नाशिक मध्ये हल्का पाऊस सुरू आहे
+RAINFALL,mr,शहरात अधूनमधून पाऊस पडून रस्ते ओले आहेत
+RAINFALL,mr,शहरात अधूनमधून पाऊस पडून रस्ते ओले आहेत
+RAINFALL,mr,शहरात अधूनमधून पाऊस पडून रस्ते ओले आहेत
+RAINFALL,mr,शहरात अधूनमधून पाऊस पडून रस्ते ओले आहेत
+RAINFALL,mr,औरंगाबाद मध्ये हल्का पाऊस सुरू आहे
+RAINFALL,mr,शहरात अधूनमधून पाऊस पडून रस्ते ओले आहेत
+RAINFALL,mr,नाशिक मध्ये हल्का पाऊस सुरू आहे
+RAINFALL,mr,औरंगाबाद मध्ये हल्का पाऊस सुरू आहे
+HEAVY_RAINFALL,mr,सतत पडणाऱ्या मुसळधार पावसाने नागरिक हैराण
+HEAVY_RAINFALL,mr,सतत पडणाऱ्या मुसळधार पावसाने नागरिक हैराण
+HEAVY_RAINFALL,mr,सतत पडणाऱ्या मुसळधार पावसाने नागरिक हैराण
+HEAVY_RAINFALL,mr,सतत पडणाऱ्या मुसळधार पावसाने नागरिक हैराण
+HEAVY_RAINFALL,mr,सतत पडणाऱ्या मुसळधार पावसाने नागरिक हैराण
+HEAVY_RAINFALL,mr,नाशिक मध्ये मुसळधार पाऊस
+HEAVY_RAINFALL,mr,सतत पडणाऱ्या मुसळधार पावसाने नागरिक हैराण
+HEAVY_RAINFALL,mr,नागपूर मध्ये मुसळधार पाऊस
+HEAVY_RAINFALL,mr,औरंगाबाद मध्ये मुसळधार पाऊस
+HEAVY_RAINFALL,mr,नाशिक मध्ये मुसळधार पाऊस
+HEAVY_RAINFALL,mr,सतत पडणाऱ्या मुसळधार पावसाने नागरिक हैराण
+HEAVY_RAINFALL,mr,औरंगाबाद मध्ये मुसळधार पाऊस
+FLOOD,mr,नागपूर च्या खालच्या भागात पूर आला
+FLOOD,mr,नागपूर च्या खालच्या भागात पूर आला
+FLOOD,mr,औरंगाबाद च्या खालच्या भागात पूर आला
+FLOOD,mr,पूराचे पाणी सतत वाढत आहे
+FLOOD,mr,मुंबई च्या खालच्या भागात पूर आला
+FLOOD,mr,पूराचे पाणी सतत वाढत आहे
+FLOOD,mr,मुंबई च्या खालच्या भागात पूर आला
+FLOOD,mr,नाशिक च्या खालच्या भागात पूर आला
+FLOOD,mr,औरंगाबाद च्या खालच्या भागात पूर आला
+FLOOD,mr,नागपूर च्या खालच्या भागात पूर आला
+FLOOD,mr,पूराचे पाणी सतत वाढत आहे
+FLOOD,mr,पुणे च्या खालच्या भागात पूर आला
+FLASH_FLOOD,mr,औरंगाबाद मध्ये अचानक आलेल्या पुराने थैमान घातले
+FLASH_FLOOD,mr,नाशिक मध्ये अचानक आलेल्या पुराने थैमान घातले
+FLASH_FLOOD,mr,औरंगाबाद मध्ये अचानक आलेल्या पुराने थैमान घातले
+FLASH_FLOOD,mr,नाशिक मध्ये अचानक आलेल्या पुराने थैमान घातले
+FLASH_FLOOD,mr,जोरदार पावसानंतर रस्त्यांवर अचानक पूर आला
+FLASH_FLOOD,mr,जोरदार पावसानंतर रस्त्यांवर अचानक पूर आला
+FLASH_FLOOD,mr,जोरदार पावसानंतर रस्त्यांवर अचानक पूर आला
+FLASH_FLOOD,mr,जोरदार पावसानंतर रस्त्यांवर अचानक पूर आला
+FLASH_FLOOD,mr,जोरदार पावसानंतर रस्त्यांवर अचानक पूर आला
+FLASH_FLOOD,mr,औरंगाबाद मध्ये अचानक आलेल्या पुराने थैमान घातले
+FLASH_FLOOD,mr,जोरदार पावसानंतर रस्त्यांवर अचानक पूर आला
+FLASH_FLOOD,mr,जोरदार पावसानंतर रस्त्यांवर अचानक पूर आला
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+THUNDERSTORM,mr,पुणे मध्ये मेघगर्जनेसह वादळ आले
+THUNDERSTORM,mr,नागपूर मध्ये मेघगर्जनेसह वादळ आले
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+THUNDERSTORM,mr,पुणे मध्ये मेघगर्जनेसह वादळ आले
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+THUNDERSTORM,mr,औरंगाबाद मध्ये मेघगर्जनेसह वादळ आले
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+THUNDERSTORM,mr,गडगडाटासह जोरदार पाऊस झाला
+LIGHTNING,mr,नाशिक मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,आकाशात विजा चमकत राहिल्या
+LIGHTNING,mr,नाशिक मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,मुंबई मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,मुंबई मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,आकाशात विजा चमकत राहिल्या
+LIGHTNING,mr,मुंबई मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,मुंबई मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,नाशिक मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,आकाशात विजा चमकत राहिल्या
+LIGHTNING,mr,नाशिक मध्ये विजेच्या कडकडाटाच्या घटना
+LIGHTNING,mr,आकाशात विजा चमकत राहिल्या
+CYCLONE,mr,चक्रीवादळ मुंबई किनाऱ्याजवळ पोहोचले
+CYCLONE,mr,चक्रीवादळाचा इशारा देण्यात आला
+CYCLONE,mr,चक्रीवादळ नाशिक किनाऱ्याजवळ पोहोचले
+CYCLONE,mr,चक्रीवादळाचा इशारा देण्यात आला
+CYCLONE,mr,चक्रीवादळाचा इशारा देण्यात आला
+CYCLONE,mr,चक्रीवादळाचा इशारा देण्यात आला
+CYCLONE,mr,चक्रीवादळ मुंबई किनाऱ्याजवळ पोहोचले
+CYCLONE,mr,चक्रीवादळ पुणे किनाऱ्याजवळ पोहोचले
+CYCLONE,mr,चक्रीवादळ नाशिक किनाऱ्याजवळ पोहोचले
+CYCLONE,mr,चक्रीवादळाचा इशारा देण्यात आला
+CYCLONE,mr,चक्रीवादळाचा इशारा देण्यात आला
+CYCLONE,mr,चक्रीवादळ नागपूर किनाऱ्याजवळ पोहोचले
+HEATWAVE,mr,कडकडीत उन्हाने नागरिक हैराण
+HEATWAVE,mr,पुणे मध्ये उष्णतेची लाट
+HEATWAVE,mr,कडकडीत उन्हाने नागरिक हैराण
+HEATWAVE,mr,मुंबई मध्ये उष्णतेची लाट
+HEATWAVE,mr,कडकडीत उन्हाने नागरिक हैराण
+HEATWAVE,mr,कडकडीत उन्हाने नागरिक हैराण
+HEATWAVE,mr,कडकडीत उन्हाने नागरिक हैराण
+HEATWAVE,mr,पुणे मध्ये उष्णतेची लाट
+HEATWAVE,mr,औरंगाबाद मध्ये उष्णतेची लाट
+HEATWAVE,mr,कडकडीत उन्हाने नागरिक हैराण
+HEATWAVE,mr,नाशिक मध्ये उष्णतेची लाट
+HEATWAVE,mr,पुणे मध्ये उष्णतेची लाट
+COLD_WAVE,mr,नाशिक मध्ये थंडीची लाट
+COLD_WAVE,mr,कडाक्याच्या थंडीमुळे शाळा बंद राहिल्या
+COLD_WAVE,mr,मुंबई मध्ये थंडीची लाट
+COLD_WAVE,mr,कडाक्याच्या थंडीमुळे शाळा बंद राहिल्या
+COLD_WAVE,mr,पुणे मध्ये थंडीची लाट
+COLD_WAVE,mr,कडाक्याच्या थंडीमुळे शाळा बंद राहिल्या
+COLD_WAVE,mr,नाशिक मध्ये थंडीची लाट
+COLD_WAVE,mr,औरंगाबाद मध्ये थंडीची लाट
+COLD_WAVE,mr,नागपूर मध्ये थंडीची लाट
+COLD_WAVE,mr,नाशिक मध्ये थंडीची लाट
+COLD_WAVE,mr,नाशिक मध्ये थंडीची लाट
+COLD_WAVE,mr,कडाक्याच्या थंडीमुळे शाळा बंद राहिल्या
+FOG,mr,धुक्यामुळे दृश्यमानता कमी झाली
+FOG,mr,मुंबई मध्ये सकाळी धुके पडले
+FOG,mr,धुक्यामुळे दृश्यमानता कमी झाली
+FOG,mr,औरंगाबाद मध्ये सकाळी धुके पडले
+FOG,mr,मुंबई मध्ये सकाळी धुके पडले
+FOG,mr,धुक्यामुळे दृश्यमानता कमी झाली
+FOG,mr,धुक्यामुळे दृश्यमानता कमी झाली
+FOG,mr,नागपूर मध्ये सकाळी धुके पडले
+FOG,mr,धुक्यामुळे दृश्यमानता कमी झाली
+FOG,mr,नागपूर मध्ये सकाळी धुके पडले
+FOG,mr,धुक्यामुळे दृश्यमानता कमी झाली
+FOG,mr,नाशिक मध्ये सकाळी धुके पडले
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,"मुंबई मध्ये दाट धुके, दृश्यमानता जवळजवळ शून्य"
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,"मुंबई मध्ये दाट धुके, दृश्यमानता जवळजवळ शून्य"
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,दाट धुक्यामुळे विमानसेवा रद्द
+DENSE_FOG,mr,"पुणे मध्ये दाट धुके, दृश्यमानता जवळजवळ शून्य"
+DENSE_FOG,mr,"पुणे मध्ये दाट धुके, दृश्यमानता जवळजवळ शून्य"
+DUST_STORM,mr,धुळीमुळे दृश्यमानता कमी झाली
+DUST_STORM,mr,धुळीमुळे दृश्यमानता कमी झाली
+DUST_STORM,mr,मुंबई मध्ये धुळीचे वादळ आले
+DUST_STORM,mr,धुळीमुळे दृश्यमानता कमी झाली
+DUST_STORM,mr,नाशिक मध्ये धुळीचे वादळ आले
+DUST_STORM,mr,धुळीमुळे दृश्यमानता कमी झाली
+DUST_STORM,mr,नागपूर मध्ये धुळीचे वादळ आले
+DUST_STORM,mr,धुळीमुळे दृश्यमानता कमी झाली
+DUST_STORM,mr,नाशिक मध्ये धुळीचे वादळ आले
+DUST_STORM,mr,नाशिक मध्ये धुळीचे वादळ आले
+DUST_STORM,mr,औरंगाबाद मध्ये धुळीचे वादळ आले
+DUST_STORM,mr,पुणे मध्ये धुळीचे वादळ आले
+STRONG_WIND,mr,जोरदार वाऱ्याने झाडे उन्मळून पडली
+STRONG_WIND,mr,जोरदार वाऱ्याने झाडे उन्मळून पडली
+STRONG_WIND,mr,मुंबई मध्ये जोरदार वारे वाहत आहेत
+STRONG_WIND,mr,औरंगाबाद मध्ये जोरदार वारे वाहत आहेत
+STRONG_WIND,mr,जोरदार वाऱ्याने झाडे उन्मळून पडली
+STRONG_WIND,mr,जोरदार वाऱ्याने झाडे उन्मळून पडली
+STRONG_WIND,mr,नागपूर मध्ये जोरदार वारे वाहत आहेत
+STRONG_WIND,mr,जोरदार वाऱ्याने झाडे उन्मळून पडली
+STRONG_WIND,mr,जोरदार वाऱ्याने झाडे उन्मळून पडली
+STRONG_WIND,mr,औरंगाबाद मध्ये जोरदार वारे वाहत आहेत
+STRONG_WIND,mr,पुणे मध्ये जोरदार वारे वाहत आहेत
+STRONG_WIND,mr,जोरदार वाऱ्याने झाडे उन्मळून पडली
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,नागपूर मध्ये गारपीटीने पिकांचे नुकसान
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,औरंगाबाद मध्ये गारपीटीने पिकांचे नुकसान
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+HAILSTORM,mr,नागपूर मध्ये गारपीटीने पिकांचे नुकसान
+HAILSTORM,mr,गारपीटीने घरांचे नुकसान झाले
+SNOWFALL,mr,डोंगरात बर्फवृष्टी होऊन शीत वाढली
+SNOWFALL,mr,नाशिक च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,नाशिक च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,नाशिक च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,औरंगाबाद च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,औरंगाबाद च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,डोंगरात बर्फवृष्टी होऊन शीत वाढली
+SNOWFALL,mr,डोंगरात बर्फवृष्टी होऊन शीत वाढली
+SNOWFALL,mr,नागपूर च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,नागपूर च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,औरंगाबाद च्या उंच भागात बर्फवृष्टी
+SNOWFALL,mr,डोंगरात बर्फवृष्टी होऊन शीत वाढली
+DROUGHT,mr,पाऊस न पडल्याने दुष्काळाची स्थिती
+DROUGHT,mr,पाऊस न पडल्याने दुष्काळाची स्थिती
+DROUGHT,mr,पाऊस न पडल्याने दुष्काळाची स्थिती
+DROUGHT,mr,पाऊस न पडल्याने दुष्काळाची स्थिती
+DROUGHT,mr,नागपूर जिल्ह्यात दुष्काळसदृश स्थिती
+DROUGHT,mr,मुंबई जिल्ह्यात दुष्काळसदृश स्थिती
+DROUGHT,mr,नागपूर जिल्ह्यात दुष्काळसदृश स्थिती
+DROUGHT,mr,नाशिक जिल्ह्यात दुष्काळसदृश स्थिती
+DROUGHT,mr,नाशिक जिल्ह्यात दुष्काळसदृश स्थिती
+DROUGHT,mr,पाऊस न पडल्याने दुष्काळाची स्थिती
+DROUGHT,mr,पाऊस न पडल्याने दुष्काळाची स्थिती
+DROUGHT,mr,मुंबई जिल्ह्यात दुष्काळसदृश स्थिती
+LANDSLIDE,mr,भूस्खलनामुळे गावाचा संपर्क तुटला
+LANDSLIDE,mr,औरंगाबाद जवळ भूस्खलनामुळे रस्ता बंद
+LANDSLIDE,mr,भूस्खलनामुळे गावाचा संपर्क तुटला
+LANDSLIDE,mr,भूस्खलनामुळे गावाचा संपर्क तुटला
+LANDSLIDE,mr,नागपूर जवळ भूस्खलनामुळे रस्ता बंद
+LANDSLIDE,mr,औरंगाबाद जवळ भूस्खलनामुळे रस्ता बंद
+LANDSLIDE,mr,नागपूर जवळ भूस्खलनामुळे रस्ता बंद
+LANDSLIDE,mr,भूस्खलनामुळे गावाचा संपर्क तुटला
+LANDSLIDE,mr,पुणे जवळ भूस्खलनामुळे रस्ता बंद
+LANDSLIDE,mr,भूस्खलनामुळे गावाचा संपर्क तुटला
+LANDSLIDE,mr,भूस्खलनामुळे गावाचा संपर्क तुटला
+LANDSLIDE,mr,नाशिक जवळ भूस्खलनामुळे रस्ता बंद
+WATERLOGGING,mr,पावसानंतर रस्त्यांवर तळी राहिली
+WATERLOGGING,mr,पावसानंतर रस्त्यांवर तळी राहिली
+WATERLOGGING,mr,पावसानंतर रस्त्यांवर तळी राहिली
+WATERLOGGING,mr,पावसानंतर रस्त्यांवर तळी राहिली
+WATERLOGGING,mr,पावसानंतर रस्त्यांवर तळी राहिली
+WATERLOGGING,mr,मुंबई च्या रस्त्यांवर पाणी साचले
+WATERLOGGING,mr,पावसानंतर रस्त्यांवर तळी राहिली
+WATERLOGGING,mr,पुणे च्या रस्त्यांवर पाणी साचले
+WATERLOGGING,mr,नाशिक च्या रस्त्यांवर पाणी साचले
+WATERLOGGING,mr,नागपूर च्या रस्त्यांवर पाणी साचले
+WATERLOGGING,mr,पावसानंतर रस्त्यांवर तळी राहिली
+WATERLOGGING,mr,औरंगाबाद च्या रस्त्यांवर पाणी साचले
+CLOUDBURST,mr,पुणे मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,ढगफुटीसारख्या पावसाने नाले उफाळले
+CLOUDBURST,mr,नाशिक मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,औरंगाबाद मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,ढगफुटीसारख्या पावसाने नाले उफाळले
+CLOUDBURST,mr,पुणे मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,नागपूर मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,नाशिक मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,नाशिक मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,नागपूर मध्ये ढगफुटीमुळे नुकसान
+CLOUDBURST,mr,ढगफुटीसारख्या पावसाने नाले उफाळले
+CLOUDBURST,mr,ढगफुटीसारख्या पावसाने नाले उफाळले
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+RAINFALL,pa,ਜਲੰਧਰ ਵਿੱਚ ਹਲਕੀ ਬਾਰਸ਼ ਹੋ ਰਹੀ ਹੈ
+RAINFALL,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਹਲਕੀ ਬਾਰਸ਼ ਹੋ ਰਹੀ ਹੈ
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+RAINFALL,pa,ਜਲੰਧਰ ਵਿੱਚ ਹਲਕੀ ਬਾਰਸ਼ ਹੋ ਰਹੀ ਹੈ
+RAINFALL,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਹਲਕੀ ਬਾਰਸ਼ ਹੋ ਰਹੀ ਹੈ
+RAINFALL,pa,ਰੁਕਰੁਕ ਕੇ ਹੋ ਰਹੀ ਬਾਰਸ਼ ਨਾਲ ਸੜਕਾਂ ਗਿੱਲੀਆਂ ਹਨ
+HEAVY_RAINFALL,pa,ਮੌਸਮ ਮੁਤਾਬਕ ਭਾਰੀ ਮੀਂਹ ਪਿਆ
+HEAVY_RAINFALL,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਭਾਰੀ ਬਾਰਸ਼
+HEAVY_RAINFALL,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਭਾਰੀ ਬਾਰਸ਼
+HEAVY_RAINFALL,pa,ਮੌਸਮ ਮੁਤਾਬਕ ਭਾਰੀ ਮੀਂਹ ਪਿਆ
+HEAVY_RAINFALL,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਭਾਰੀ ਬਾਰਸ਼
+HEAVY_RAINFALL,pa,ਮੌਸਮ ਮੁਤਾਬਕ ਭਾਰੀ ਮੀਂਹ ਪਿਆ
+HEAVY_RAINFALL,pa,ਜਲੰਧਰ ਵਿੱਚ ਭਾਰੀ ਬਾਰਸ਼
+HEAVY_RAINFALL,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਭਾਰੀ ਬਾਰਸ਼
+HEAVY_RAINFALL,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਭਾਰੀ ਬਾਰਸ਼
+HEAVY_RAINFALL,pa,ਮੌਸਮ ਮੁਤਾਬਕ ਭਾਰੀ ਮੀਂਹ ਪਿਆ
+HEAVY_RAINFALL,pa,ਮੌਸਮ ਮੁਤਾਬਕ ਭਾਰੀ ਮੀਂਹ ਪਿਆ
+HEAVY_RAINFALL,pa,ਮੌਸਮ ਮੁਤਾਬਕ ਭਾਰੀ ਮੀਂਹ ਪਿਆ
+FLOOD,pa,ਹੜ੍ਹ ਦਾ ਪਾਣੀ ਲਗਾਤਾਰ ਵਧ ਰਿਹਾ ਹੈ
+FLOOD,pa,ਅੰਮ੍ਰਿਤਸਰ ਦੇ ਹੇਠਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਹੜ੍ਹ
+FLOOD,pa,ਜਲੰਧਰ ਦੇ ਹੇਠਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਹੜ੍ਹ
+FLOOD,pa,ਜਲੰਧਰ ਦੇ ਹੇਠਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਹੜ੍ਹ
+FLOOD,pa,ਜਲੰਧਰ ਦੇ ਹੇਠਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਹੜ੍ਹ
+FLOOD,pa,ਪਟਿਆਲਾ ਦੇ ਹੇਠਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਹੜ੍ਹ
+FLOOD,pa,ਹੜ੍ਹ ਦਾ ਪਾਣੀ ਲਗਾਤਾਰ ਵਧ ਰਿਹਾ ਹੈ
+FLOOD,pa,ਜਲੰਧਰ ਦੇ ਹੇਠਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਹੜ੍ਹ
+FLOOD,pa,ਹੜ੍ਹ ਦਾ ਪਾਣੀ ਲਗਾਤਾਰ ਵਧ ਰਿਹਾ ਹੈ
+FLOOD,pa,ਹੜ੍ਹ ਦਾ ਪਾਣੀ ਲਗਾਤਾਰ ਵਧ ਰਿਹਾ ਹੈ
+FLOOD,pa,ਹੜ੍ਹ ਦਾ ਪਾਣੀ ਲਗਾਤਾਰ ਵਧ ਰਿਹਾ ਹੈ
+FLOOD,pa,ਜਲੰਧਰ ਦੇ ਹੇਠਲੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਹੜ੍ਹ
+FLASH_FLOOD,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਅਚਾਨਕ ਹੜ੍ਹ ਨੇ ਤਬਾਹੀ ਮਚਾਈ
+FLASH_FLOOD,pa,ਭਾਰੀ ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+FLASH_FLOOD,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਅਚਾਨਕ ਹੜ੍ਹ ਨੇ ਤਬਾਹੀ ਮਚਾਈ
+FLASH_FLOOD,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਅਚਾਨਕ ਹੜ੍ਹ ਨੇ ਤਬਾਹੀ ਮਚਾਈ
+FLASH_FLOOD,pa,ਜਲੰਧਰ ਵਿੱਚ ਅਚਾਨਕ ਹੜ੍ਹ ਨੇ ਤਬਾਹੀ ਮਚਾਈ
+FLASH_FLOOD,pa,ਭਾਰੀ ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+FLASH_FLOOD,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਅਚਾਨਕ ਹੜ੍ਹ ਨੇ ਤਬਾਹੀ ਮਚਾਈ
+FLASH_FLOOD,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਅਚਾਨਕ ਹੜ੍ਹ ਨੇ ਤਬਾਹੀ ਮਚਾਈ
+FLASH_FLOOD,pa,ਭਾਰੀ ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+FLASH_FLOOD,pa,ਜਲੰਧਰ ਵਿੱਚ ਅਚਾਨਕ ਹੜ੍ਹ ਨੇ ਤਬਾਹੀ ਮਚਾਈ
+FLASH_FLOOD,pa,ਭਾਰੀ ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+FLASH_FLOOD,pa,ਭਾਰੀ ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+THUNDERSTORM,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਗਰਜ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਜਲੰਧਰ ਵਿੱਚ ਗਰਜ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਗਰਜ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਗਰਜ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਗਰਜ ਅਤੇ ਤੇਜ਼ ਮੀਂਹ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਗਰਜ ਅਤੇ ਤੇਜ਼ ਮੀਂਹ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਜਲੰਧਰ ਵਿੱਚ ਗਰਜ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਗਰਜ ਅਤੇ ਤੇਜ਼ ਮੀਂਹ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਗਰਜ ਅਤੇ ਤੇਜ਼ ਮੀਂਹ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਗਰਜ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਗਰਜ ਅਤੇ ਤੇਜ਼ ਮੀਂਹ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+THUNDERSTORM,pa,ਗਰਜ ਅਤੇ ਤੇਜ਼ ਮੀਂਹ ਨਾਲ ਤੂਫਾਨ ਆਇਆ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਬਿਜਲੀ ਡਿੱਗਣ ਦੀਆਂ ਘਟਨਾਵਾਂ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਅਸਮਾਨ ਵਿੱਚ ਬਿਜਲੀ ਚਮਕਦੀ ਰਹੀ
+LIGHTNING,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਬਿਜਲੀ ਡਿੱਗਣ ਦੀਆਂ ਘਟਨਾਵਾਂ
+LIGHTNING,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਬਿਜਲੀ ਡਿੱਗਣ ਦੀਆਂ ਘਟਨਾਵਾਂ
+LIGHTNING,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਬਿਜਲੀ ਡਿੱਗਣ ਦੀਆਂ ਘਟਨਾਵਾਂ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਪਟਿਆਲਾ ਦੇ ਤੱਟ ਦੇ ਨੇੜੇ ਪਹੁੰਚ ਗਿਆ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਜਲੰਧਰ ਦੇ ਤੱਟ ਦੇ ਨੇੜੇ ਪਹੁੰਚ ਗਿਆ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਜਲੰਧਰ ਦੇ ਤੱਟ ਦੇ ਨੇੜੇ ਪਹੁੰਚ ਗਿਆ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਜਲੰਧਰ ਦੇ ਤੱਟ ਦੇ ਨੇੜੇ ਪਹੁੰਚ ਗਿਆ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਪਟਿਆਲਾ ਦੇ ਤੱਟ ਦੇ ਨੇੜੇ ਪਹੁੰਚ ਗਿਆ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਦੀ ਚੇਤਾਵਨੀ ਜਾਰੀ ਕੀਤੀ ਗਈ
+CYCLONE,pa,ਚੱਕਰਵਾਤ ਅੰਮ੍ਰਿਤਸਰ ਦੇ ਤੱਟ ਦੇ ਨੇੜੇ ਪਹੁੰਚ ਗਿਆ
+HEATWAVE,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+HEATWAVE,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+HEATWAVE,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+HEATWAVE,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+HEATWAVE,pa,ਤੇਜ਼ ਗਰਮੀ ਨਾਲ ਲੋਕ ਪ੍ਰੇਸ਼ਾਨ ਹਨ
+HEATWAVE,pa,ਤੇਜ਼ ਗਰਮੀ ਨਾਲ ਲੋਕ ਪ੍ਰੇਸ਼ਾਨ ਹਨ
+HEATWAVE,pa,ਤੇਜ਼ ਗਰਮੀ ਨਾਲ ਲੋਕ ਪ੍ਰੇਸ਼ਾਨ ਹਨ
+HEATWAVE,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+HEATWAVE,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+HEATWAVE,pa,ਜਲੰਧਰ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+HEATWAVE,pa,ਤੇਜ਼ ਗਰਮੀ ਨਾਲ ਲੋਕ ਪ੍ਰੇਸ਼ਾਨ ਹਨ
+HEATWAVE,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਲੂ ਚੱਲ ਰਹੀ ਹੈ
+COLD_WAVE,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਠੰਡ ਦੀ ਲਹਿਰ
+COLD_WAVE,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਠੰਡ ਦੀ ਲਹਿਰ
+COLD_WAVE,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਠੰਡ ਦੀ ਲਹਿਰ
+COLD_WAVE,pa,ਸਖ਼ਤ ਠੰਡ ਕਾਰਨ ਸਕੂਲ ਬੰਦ ਰਹੇ
+COLD_WAVE,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਠੰਡ ਦੀ ਲਹਿਰ
+COLD_WAVE,pa,ਸਖ਼ਤ ਠੰਡ ਕਾਰਨ ਸਕੂਲ ਬੰਦ ਰਹੇ
+COLD_WAVE,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਠੰਡ ਦੀ ਲਹਿਰ
+COLD_WAVE,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਠੰਡ ਦੀ ਲਹਿਰ
+COLD_WAVE,pa,ਸਖ਼ਤ ਠੰਡ ਕਾਰਨ ਸਕੂਲ ਬੰਦ ਰਹੇ
+COLD_WAVE,pa,ਸਖ਼ਤ ਠੰਡ ਕਾਰਨ ਸਕੂਲ ਬੰਦ ਰਹੇ
+COLD_WAVE,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਠੰਡ ਦੀ ਲਹਿਰ
+COLD_WAVE,pa,ਸਖ਼ਤ ਠੰਡ ਕਾਰਨ ਸਕੂਲ ਬੰਦ ਰਹੇ
+FOG,pa,ਜਲੰਧਰ ਵਿੱਚ ਸਵੇਰੇ ਧੁੰਦ ਛਾਈ
+FOG,pa,ਜਲੰਧਰ ਵਿੱਚ ਸਵੇਰੇ ਧੁੰਦ ਛਾਈ
+FOG,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਸਵੇਰੇ ਧੁੰਦ ਛਾਈ
+FOG,pa,ਧੁੰਦ ਕਾਰਨ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਰਹੀ
+FOG,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਸਵੇਰੇ ਧੁੰਦ ਛਾਈ
+FOG,pa,ਧੁੰਦ ਕਾਰਨ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਰਹੀ
+FOG,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਸਵੇਰੇ ਧੁੰਦ ਛਾਈ
+FOG,pa,ਧੁੰਦ ਕਾਰਨ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਰਹੀ
+FOG,pa,ਜਲੰਧਰ ਵਿੱਚ ਸਵੇਰੇ ਧੁੰਦ ਛਾਈ
+FOG,pa,ਧੁੰਦ ਕਾਰਨ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਰਹੀ
+FOG,pa,ਧੁੰਦ ਕਾਰਨ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਰਹੀ
+FOG,pa,ਧੁੰਦ ਕਾਰਨ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਰਹੀ
+DENSE_FOG,pa,ਸੰਘਣੀ ਧੁੰਦ ਕਾਰਨ ਉਡਾਣਾਂ ਰੱਦ
+DENSE_FOG,pa,"ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਸੰਘਣੀ ਧੁੰਦ, ਨਜ਼ਰ ਲਗਭਗ ਨਾ ਦੇ ਬਰਾਬਰ"
+DENSE_FOG,pa,"ਜਲੰਧਰ ਵਿੱਚ ਸੰਘਣੀ ਧੁੰਦ, ਨਜ਼ਰ ਲਗਭਗ ਨਾ ਦੇ ਬਰਾਬਰ"
+DENSE_FOG,pa,"ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਸੰਘਣੀ ਧੁੰਦ, ਨਜ਼ਰ ਲਗਭਗ ਨਾ ਦੇ ਬਰਾਬਰ"
+DENSE_FOG,pa,"ਪਟਿਆਲਾ ਵਿੱਚ ਸੰਘਣੀ ਧੁੰਦ, ਨਜ਼ਰ ਲਗਭਗ ਨਾ ਦੇ ਬਰਾਬਰ"
+DENSE_FOG,pa,ਸੰਘਣੀ ਧੁੰਦ ਕਾਰਨ ਉਡਾਣਾਂ ਰੱਦ
+DENSE_FOG,pa,ਸੰਘਣੀ ਧੁੰਦ ਕਾਰਨ ਉਡਾਣਾਂ ਰੱਦ
+DENSE_FOG,pa,"ਲੁਧਿਆਣਾ ਵਿੱਚ ਸੰਘਣੀ ਧੁੰਦ, ਨਜ਼ਰ ਲਗਭਗ ਨਾ ਦੇ ਬਰਾਬਰ"
+DENSE_FOG,pa,ਸੰਘਣੀ ਧੁੰਦ ਕਾਰਨ ਉਡਾਣਾਂ ਰੱਦ
+DENSE_FOG,pa,ਸੰਘਣੀ ਧੁੰਦ ਕਾਰਨ ਉਡਾਣਾਂ ਰੱਦ
+DENSE_FOG,pa,"ਲੁਧਿਆਣਾ ਵਿੱਚ ਸੰਘਣੀ ਧੁੰਦ, ਨਜ਼ਰ ਲਗਭਗ ਨਾ ਦੇ ਬਰਾਬਰ"
+DENSE_FOG,pa,ਸੰਘਣੀ ਧੁੰਦ ਕਾਰਨ ਉਡਾਣਾਂ ਰੱਦ
+DUST_STORM,pa,ਜਲੰਧਰ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਧੂੜ ਕਾਰਨ ਨਜ਼ਰ ਘਟ ਗਈ
+DUST_STORM,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਜਲੰਧਰ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਧੂੜ ਭਰੀ ਆਂਧੀ ਚੱਲੀ
+DUST_STORM,pa,ਧੂੜ ਕਾਰਨ ਨਜ਼ਰ ਘਟ ਗਈ
+DUST_STORM,pa,ਧੂੜ ਕਾਰਨ ਨਜ਼ਰ ਘਟ ਗਈ
+DUST_STORM,pa,ਧੂੜ ਕਾਰਨ ਨਜ਼ਰ ਘਟ ਗਈ
+STRONG_WIND,pa,ਤੇਜ਼ ਹਵਾਵਾਂ ਕਾਰਨ ਦਰੱਖਤ ਡਿੱਗੇ
+STRONG_WIND,pa,ਜਲੰਧਰ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਤੇਜ਼ ਹਵਾਵਾਂ ਕਾਰਨ ਦਰੱਖਤ ਡਿੱਗੇ
+STRONG_WIND,pa,ਜਲੰਧਰ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਤੇਜ਼ ਹਵਾਵਾਂ ਕਾਰਨ ਦਰੱਖਤ ਡਿੱਗੇ
+STRONG_WIND,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਜਲੰਧਰ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਜਲੰਧਰ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+STRONG_WIND,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਤੇਜ਼ ਹਵਾਵਾਂ ਚੱਲ ਰਹੀਆਂ ਹਨ
+HAILSTORM,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਗੜ੍ਹੇਮਾਰੀ ਨਾਲ ਫਸਲਾਂ ਨੂੰ ਨੁਕਸਾਨ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+HAILSTORM,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਗੜ੍ਹੇਮਾਰੀ ਨਾਲ ਫਸਲਾਂ ਨੂੰ ਨੁਕਸਾਨ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+HAILSTORM,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਗੜ੍ਹੇਮਾਰੀ ਨਾਲ ਫਸਲਾਂ ਨੂੰ ਨੁਕਸਾਨ
+HAILSTORM,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਗੜ੍ਹੇਮਾਰੀ ਨਾਲ ਫਸਲਾਂ ਨੂੰ ਨੁਕਸਾਨ
+HAILSTORM,pa,ਗੜ੍ਹੇਮਾਰੀ ਕਾਰਨ ਘਰਾਂ ਨੂੰ ਨੁਕਸਾਨ ਹੋਇਆ
+SNOWFALL,pa,ਪਹਾੜਾਂ 'ਤੇ ਬਰਫ ਪੈਣ ਨਾਲ ਠੰਡ ਵਧੀ
+SNOWFALL,pa,ਪਹਾੜਾਂ 'ਤੇ ਬਰਫ ਪੈਣ ਨਾਲ ਠੰਡ ਵਧੀ
+SNOWFALL,pa,ਪਟਿਆਲਾ ਦੇ ਉੱਚੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਬਰਫਬਾਰੀ
+SNOWFALL,pa,ਜਲੰਧਰ ਦੇ ਉੱਚੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਬਰਫਬਾਰੀ
+SNOWFALL,pa,ਜਲੰਧਰ ਦੇ ਉੱਚੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਬਰਫਬਾਰੀ
+SNOWFALL,pa,ਪਹਾੜਾਂ 'ਤੇ ਬਰਫ ਪੈਣ ਨਾਲ ਠੰਡ ਵਧੀ
+SNOWFALL,pa,ਪਹਾੜਾਂ 'ਤੇ ਬਰਫ ਪੈਣ ਨਾਲ ਠੰਡ ਵਧੀ
+SNOWFALL,pa,ਪਹਾੜਾਂ 'ਤੇ ਬਰਫ ਪੈਣ ਨਾਲ ਠੰਡ ਵਧੀ
+SNOWFALL,pa,ਲੁਧਿਆਣਾ ਦੇ ਉੱਚੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਬਰਫਬਾਰੀ
+SNOWFALL,pa,ਪਟਿਆਲਾ ਦੇ ਉੱਚੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਬਰਫਬਾਰੀ
+SNOWFALL,pa,ਲੁਧਿਆਣਾ ਦੇ ਉੱਚੇ ਇਲਾਕਿਆਂ ਵਿੱਚ ਬਰਫਬਾਰੀ
+SNOWFALL,pa,ਪਹਾੜਾਂ 'ਤੇ ਬਰਫ ਪੈਣ ਨਾਲ ਠੰਡ ਵਧੀ
+DROUGHT,pa,ਬਾਰਸ਼ ਨਾ ਹੋਣ ਕਾਰਨ ਸੋਕਾ ਪੈ ਗਿਆ
+DROUGHT,pa,ਬਾਰਸ਼ ਨਾ ਹੋਣ ਕਾਰਨ ਸੋਕਾ ਪੈ ਗਿਆ
+DROUGHT,pa,ਲੁਧਿਆਣਾ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+DROUGHT,pa,ਪਟਿਆਲਾ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+DROUGHT,pa,ਬਾਰਸ਼ ਨਾ ਹੋਣ ਕਾਰਨ ਸੋਕਾ ਪੈ ਗਿਆ
+DROUGHT,pa,ਜਲੰਧਰ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+DROUGHT,pa,ਅੰਮ੍ਰਿਤਸਰ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+DROUGHT,pa,ਪਟਿਆਲਾ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+DROUGHT,pa,ਬਾਰਸ਼ ਨਾ ਹੋਣ ਕਾਰਨ ਸੋਕਾ ਪੈ ਗਿਆ
+DROUGHT,pa,ਅੰਮ੍ਰਿਤਸਰ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+DROUGHT,pa,ਪਟਿਆਲਾ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+DROUGHT,pa,ਅੰਮ੍ਰਿਤਸਰ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਸੋਕੇ ਵਰਗੀ ਸਥਿਤੀ
+LANDSLIDE,pa,ਜ਼ਮੀਨ ਖਿਸਕਣ ਨਾਲ ਪਿੰਡ ਦਾ ਸੰਪਰਕ ਟੁੱਟਿਆ
+LANDSLIDE,pa,ਜਲੰਧਰ ਨੇੜੇ ਜ਼ਮੀਨ ਖਿਸਕਣ ਕਾਰਨ ਸੜਕ ਬੰਦ
+LANDSLIDE,pa,ਜ਼ਮੀਨ ਖਿਸਕਣ ਨਾਲ ਪਿੰਡ ਦਾ ਸੰਪਰਕ ਟੁੱਟਿਆ
+LANDSLIDE,pa,ਜ਼ਮੀਨ ਖਿਸਕਣ ਨਾਲ ਪਿੰਡ ਦਾ ਸੰਪਰਕ ਟੁੱਟਿਆ
+LANDSLIDE,pa,ਜ਼ਮੀਨ ਖਿਸਕਣ ਨਾਲ ਪਿੰਡ ਦਾ ਸੰਪਰਕ ਟੁੱਟਿਆ
+LANDSLIDE,pa,ਜ਼ਮੀਨ ਖਿਸਕਣ ਨਾਲ ਪਿੰਡ ਦਾ ਸੰਪਰਕ ਟੁੱਟਿਆ
+LANDSLIDE,pa,ਲੁਧਿਆਣਾ ਨੇੜੇ ਜ਼ਮੀਨ ਖਿਸਕਣ ਕਾਰਨ ਸੜਕ ਬੰਦ
+LANDSLIDE,pa,ਅੰਮ੍ਰਿਤਸਰ ਨੇੜੇ ਜ਼ਮੀਨ ਖਿਸਕਣ ਕਾਰਨ ਸੜਕ ਬੰਦ
+LANDSLIDE,pa,ਅੰਮ੍ਰਿਤਸਰ ਨੇੜੇ ਜ਼ਮੀਨ ਖਿਸਕਣ ਕਾਰਨ ਸੜਕ ਬੰਦ
+LANDSLIDE,pa,ਪਟਿਆਲਾ ਨੇੜੇ ਜ਼ਮੀਨ ਖਿਸਕਣ ਕਾਰਨ ਸੜਕ ਬੰਦ
+LANDSLIDE,pa,ਜ਼ਮੀਨ ਖਿਸਕਣ ਨਾਲ ਪਿੰਡ ਦਾ ਸੰਪਰਕ ਟੁੱਟਿਆ
+LANDSLIDE,pa,ਜ਼ਮੀਨ ਖਿਸਕਣ ਨਾਲ ਪਿੰਡ ਦਾ ਸੰਪਰਕ ਟੁੱਟਿਆ
+WATERLOGGING,pa,ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਖੜ੍ਹਾ ਹੋ ਗਿਆ
+WATERLOGGING,pa,ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਖੜ੍ਹਾ ਹੋ ਗਿਆ
+WATERLOGGING,pa,ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਖੜ੍ਹਾ ਹੋ ਗਿਆ
+WATERLOGGING,pa,ਅੰਮ੍ਰਿਤਸਰ ਦੀਆਂ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+WATERLOGGING,pa,ਜਲੰਧਰ ਦੀਆਂ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+WATERLOGGING,pa,ਲੁਧਿਆਣਾ ਦੀਆਂ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+WATERLOGGING,pa,ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਖੜ੍ਹਾ ਹੋ ਗਿਆ
+WATERLOGGING,pa,ਲੁਧਿਆਣਾ ਦੀਆਂ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+WATERLOGGING,pa,ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਖੜ੍ਹਾ ਹੋ ਗਿਆ
+WATERLOGGING,pa,ਜਲੰਧਰ ਦੀਆਂ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+WATERLOGGING,pa,ਮੀਂਹ ਤੋਂ ਬਾਅਦ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਖੜ੍ਹਾ ਹੋ ਗਿਆ
+WATERLOGGING,pa,ਪਟਿਆਲਾ ਦੀਆਂ ਸੜਕਾਂ 'ਤੇ ਪਾਣੀ ਭਰ ਗਿਆ
+CLOUDBURST,pa,ਬੱਦਲ ਫਟਣ ਵਰਗੇ ਮੀਂਹ ਕਾਰਨ ਨਾਲੇ ਉਭੜ ਗਏ
+CLOUDBURST,pa,ਪਟਿਆਲਾ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਬੱਦਲ ਫਟਣ ਵਰਗੇ ਮੀਂਹ ਕਾਰਨ ਨਾਲੇ ਉਭੜ ਗਏ
+CLOUDBURST,pa,ਜਲੰਧਰ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਅੰਮ੍ਰਿਤਸਰ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਲੁਧਿਆਣਾ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+CLOUDBURST,pa,ਬੱਦਲ ਫਟਣ ਵਰਗੇ ਮੀਂਹ ਕਾਰਨ ਨਾਲੇ ਉਭੜ ਗਏ
+CLOUDBURST,pa,ਜਲੰਧਰ ਵਿੱਚ ਬੱਦਲ ਫਟਣ ਕਾਰਨ ਨੁਕਸਾਨ
+RAINFALL,ne,काठमाडौं मा हल्का पानी परिरहेको छ
+RAINFALL,ne,रुकरुक पानी परेर सडकहरु भिजेका छन्
+RAINFALL,ne,भैरहवा मा हल्का पानी परिरहेको छ
+RAINFALL,ne,रुकरुक पानी परेर सडकहरु भिजेका छन्
+RAINFALL,ne,भैरहवा मा हल्का पानी परिरहेको छ
+RAINFALL,ne,रुकरुक पानी परेर सडकहरु भिजेका छन्
+RAINFALL,ne,रुकरुक पानी परेर सडकहरु भिजेका छन्
+RAINFALL,ne,विराटनगर मा हल्का पानी परिरहेको छ
+RAINFALL,ne,रुकरुक पानी परेर सडकहरु भिजेका छन्
+RAINFALL,ne,काठमाडौं मा हल्का पानी परिरहेको छ
+RAINFALL,ne,विराटनगर मा हल्का पानी परिरहेको छ
+RAINFALL,ne,रुकरुक पानी परेर सडकहरु भिजेका छन्
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,विराटनगर मा भारी वर्षा भइरहेको छ
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,काठमाडौं मा भारी वर्षा भइरहेको छ
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,काठमाडौं मा भारी वर्षा भइरहेको छ
+HEAVY_RAINFALL,ne,मुसलधारे वर्षाले नगर प्रभावित भएको छ
+HEAVY_RAINFALL,ne,विराटनगर मा भारी वर्षा भइरहेको छ
+FLOOD,ne,भैरहवा को तल्लो क्षेत्रमा बाढी आयो
+FLOOD,ne,बाढीको पानी निरन्तर बढ्दै गएको छ
+FLOOD,ne,काठमाडौं को तल्लो क्षेत्रमा बाढी आयो
+FLOOD,ne,पोखरा को तल्लो क्षेत्रमा बाढी आयो
+FLOOD,ne,बाढीको पानी निरन्तर बढ्दै गएको छ
+FLOOD,ne,भैरहवा को तल्लो क्षेत्रमा बाढी आयो
+FLOOD,ne,बाढीको पानी निरन्तर बढ्दै गएको छ
+FLOOD,ne,पोखरा को तल्लो क्षेत्रमा बाढी आयो
+FLOOD,ne,बाढीको पानी निरन्तर बढ्दै गएको छ
+FLOOD,ne,विराटनगर को तल्लो क्षेत्रमा बाढी आयो
+FLOOD,ne,पोखरा को तल्लो क्षेत्रमा बाढी आयो
+FLOOD,ne,बाढीको पानी निरन्तर बढ्दै गएको छ
+FLASH_FLOOD,ne,भैरहवा मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,काठमाडौं मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,पोखरा मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,काठमाडौं मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,भारी वर्षापछि सडकमा अचानक बाढी आयो
+FLASH_FLOOD,ne,भारी वर्षापछि सडकमा अचानक बाढी आयो
+FLASH_FLOOD,ne,विराटनगर मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,विराटनगर मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,काठमाडौं मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,पोखरा मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,विराटनगर मा अचानक आएको बाढीले क्षति पुर्‍यायो
+FLASH_FLOOD,ne,विराटनगर मा अचानक आएको बाढीले क्षति पुर्‍यायो
+THUNDERSTORM,ne,ठूलो गर्जनका साथ पानी परिरहेको छ
+THUNDERSTORM,ne,ठूलो गर्जनका साथ पानी परिरहेको छ
+THUNDERSTORM,ne,ठूलो गर्जनका साथ पानी परिरहेको छ
+THUNDERSTORM,ne,भैरहवा मा आँधीसहित वर्षा भयो
+THUNDERSTORM,ne,ठूलो गर्जनका साथ पानी परिरहेको छ
+THUNDERSTORM,ne,विराटनगर मा आँधीसहित वर्षा भयो
+THUNDERSTORM,ne,पोखरा मा आँधीसहित वर्षा भयो
+THUNDERSTORM,ne,ठूलो गर्जनका साथ पानी परिरहेको छ
+THUNDERSTORM,ne,ठूलो गर्जनका साथ पानी परिरहेको छ
+THUNDERSTORM,ne,काठमाडौं मा आँधीसहित वर्षा भयो
+THUNDERSTORM,ne,ठूलो गर्जनका साथ पानी परिरहेको छ
+THUNDERSTORM,ne,विराटनगर मा आँधीसहित वर्षा भयो
+LIGHTNING,ne,काठमाडौं मा चट्याङ परेका घटनाहरु
+LIGHTNING,ne,आकाशमा बिजुली चम्किरहेको छ
+LIGHTNING,ne,आकाशमा बिजुली चम्किरहेको छ
+LIGHTNING,ne,विराटनगर मा चट्याङ परेका घटनाहरु
+LIGHTNING,ne,आकाशमा बिजुली चम्किरहेको छ
+LIGHTNING,ne,विराटनगर मा चट्याङ परेका घटनाहरु
+LIGHTNING,ne,आकाशमा बिजुली चम्किरहेको छ
+LIGHTNING,ne,आकाशमा बिजुली चम्किरहेको छ
+LIGHTNING,ne,काठमाडौं मा चट्याङ परेका घटनाहरु
+LIGHTNING,ne,आकाशमा बिजुली चम्किरहेको छ
+LIGHTNING,ne,काठमाडौं मा चट्याङ परेका घटनाहरु
+LIGHTNING,ne,भैरहवा मा चट्याङ परेका घटनाहरु
+CYCLONE,ne,चक्रवातको चेतावनी जारी गरियो
+CYCLONE,ne,चक्रवात भैरहवा तट नजिक पुगेको छ
+CYCLONE,ne,चक्रवातको चेतावनी जारी गरियो
+CYCLONE,ne,चक्रवातको चेतावनी जारी गरियो
+CYCLONE,ne,चक्रवात भैरहवा तट नजिक पुगेको छ
+CYCLONE,ne,चक्रवात पोखरा तट नजिक पुगेको छ
+CYCLONE,ne,चक्रवातको चेतावनी जारी गरियो
+CYCLONE,ne,चक्रवात विराटनगर तट नजिक पुगेको छ
+CYCLONE,ne,चक्रवात विराटनगर तट नजिक पुगेको छ
+CYCLONE,ne,चक्रवातको चेतावनी जारी गरियो
+CYCLONE,ne,चक्रवात विराटनगर तट नजिक पुगेको छ
+CYCLONE,ne,चक्रवात भैरहवा तट नजिक पुगेको छ
+HEATWAVE,ne,काठमाडौं मा गर्मी लहर चलिरहेको छ
+HEATWAVE,ne,विराटनगर मा गर्मी लहर चलिरहेको छ
+HEATWAVE,ne,अत्यधिक गर्मीले जनजीवन प्रभावित
+HEATWAVE,ne,अत्यधिक गर्मीले जनजीवन प्रभावित
+HEATWAVE,ne,अत्यधिक गर्मीले जनजीवन प्रभावित
+HEATWAVE,ne,काठमाडौं मा गर्मी लहर चलिरहेको छ
+HEATWAVE,ne,अत्यधिक गर्मीले जनजीवन प्रभावित
+HEATWAVE,ne,भैरहवा मा गर्मी लहर चलिरहेको छ
+HEATWAVE,ne,अत्यधिक गर्मीले जनजीवन प्रभावित
+HEATWAVE,ne,अत्यधिक गर्मीले जनजीवन प्रभावित
+HEATWAVE,ne,काठमाडौं मा गर्मी लहर चलिरहेको छ
+HEATWAVE,ne,अत्यधिक गर्मीले जनजीवन प्रभावित
+COLD_WAVE,ne,काठमाडौं मा जाडो लहर चलिरहेको छ
+COLD_WAVE,ne,अत्यधिक चिसोका कारण विद्यालय बन्द
+COLD_WAVE,ne,अत्यधिक चिसोका कारण विद्यालय बन्द
+COLD_WAVE,ne,अत्यधिक चिसोका कारण विद्यालय बन्द
+COLD_WAVE,ne,काठमाडौं मा जाडो लहर चलिरहेको छ
+COLD_WAVE,ne,पोखरा मा जाडो लहर चलिरहेको छ
+COLD_WAVE,ne,विराटनगर मा जाडो लहर चलिरहेको छ
+COLD_WAVE,ne,भैरहवा मा जाडो लहर चलिरहेको छ
+COLD_WAVE,ne,विराटनगर मा जाडो लहर चलिरहेको छ
+COLD_WAVE,ne,अत्यधिक चिसोका कारण विद्यालय बन्द
+COLD_WAVE,ne,अत्यधिक चिसोका कारण विद्यालय बन्द
+COLD_WAVE,ne,भैरहवा मा जाडो लहर चलिरहेको छ
+FOG,ne,विराटनगर मा बिहान कुहिरो लाग्यो
+FOG,ne,कुहिरोका कारण दृश्यता घट्यो
+FOG,ne,भैरहवा मा बिहान कुहिरो लाग्यो
+FOG,ne,विराटनगर मा बिहान कुहिरो लाग्यो
+FOG,ne,कुहिरोका कारण दृश्यता घट्यो
+FOG,ne,कुहिरोका कारण दृश्यता घट्यो
+FOG,ne,कुहिरोका कारण दृश्यता घट्यो
+FOG,ne,काठमाडौं मा बिहान कुहिरो लाग्यो
+FOG,ne,विराटनगर मा बिहान कुहिरो लाग्यो
+FOG,ne,कुहिरोका कारण दृश्यता घट्यो
+FOG,ne,भैरहवा मा बिहान कुहिरो लाग्यो
+FOG,ne,कुहिरोका कारण दृश्यता घट्यो
+DENSE_FOG,ne,"भैरहवा मा घना कुहिरो, दृश्यता लगभग शून्य"
+DENSE_FOG,ne,घना कुहिरोका कारण उडान रद्द भयो
+DENSE_FOG,ne,घना कुहिरोका कारण उडान रद्द भयो
+DENSE_FOG,ne,"काठमाडौं मा घना कुहिरो, दृश्यता लगभग शून्य"
+DENSE_FOG,ne,घना कुहिरोका कारण उडान रद्द भयो
+DENSE_FOG,ne,"पोखरा मा घना कुहिरो, दृश्यता लगभग शून्य"
+DENSE_FOG,ne,"पोखरा मा घना कुहिरो, दृश्यता लगभग शून्य"
+DENSE_FOG,ne,"भैरहवा मा घना कुहिरो, दृश्यता लगभग शून्य"
+DENSE_FOG,ne,"भैरहवा मा घना कुहिरो, दृश्यता लगभग शून्य"
+DENSE_FOG,ne,"पोखरा मा घना कुहिरो, दृश्यता लगभग शून्य"
+DENSE_FOG,ne,घना कुहिरोका कारण उडान रद्द भयो
+DENSE_FOG,ne,"काठमाडौं मा घना कुहिरो, दृश्यता लगभग शून्य"
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,काठमाडौं मा धुलिलो आँधी चल्यो
+DUST_STORM,ne,काठमाडौं मा धुलिलो आँधी चल्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,आँधीका कारण दृश्यता घट्यो
+DUST_STORM,ne,विराटनगर मा धुलिलो आँधी चल्यो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,काठमाडौं मा तीव्र हावा चलिरहेको छ
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,पोखरा मा तीव्र हावा चलिरहेको छ
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+STRONG_WIND,ne,तीव्र हावाले रुख ढलायो
+HAILSTORM,ne,असिनाले घरहरुमा क्षति पुर्‍यायो
+HAILSTORM,ne,भैरहवा मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,भैरहवा मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,असिनाले घरहरुमा क्षति पुर्‍यायो
+HAILSTORM,ne,पोखरा मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,विराटनगर मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,असिनाले घरहरुमा क्षति पुर्‍यायो
+HAILSTORM,ne,पोखरा मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,पोखरा मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,पोखरा मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,भैरहवा मा असिना परेर बालीनाली क्षति
+HAILSTORM,ne,विराटनगर मा असिना परेर बालीनाली क्षति
+SNOWFALL,ne,विराटनगर को उच्च भागमा हिमपात
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,पोखरा को उच्च भागमा हिमपात
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,हिमालमा हिमपात भएपछि चिसो बढ्यो
+SNOWFALL,ne,पोखरा को उच्च भागमा हिमपात
+DROUGHT,ne,पोखरा जिल्लामा खडेरीको अवस्था
+DROUGHT,ne,विराटनगर जिल्लामा खडेरीको अवस्था
+DROUGHT,ne,पानी नपरेपछि खडेरी पर्यो
+DROUGHT,ne,भैरहवा जिल्लामा खडेरीको अवस्था
+DROUGHT,ne,पोखरा जिल्लामा खडेरीको अवस्था
+DROUGHT,ne,पोखरा जिल्लामा खडेरीको अवस्था
+DROUGHT,ne,पानी नपरेपछि खडेरी पर्यो
+DROUGHT,ne,पानी नपरेपछि खडेरी पर्यो
+DROUGHT,ne,पानी नपरेपछि खडेरी पर्यो
+DROUGHT,ne,पानी नपरेपछि खडेरी पर्यो
+DROUGHT,ne,भैरहवा जिल्लामा खडेरीको अवस्था
+DROUGHT,ne,पानी नपरेपछि खडेरी पर्यो
+LANDSLIDE,ne,काठमाडौं नजिक पहिरोले सडक बन्द
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+LANDSLIDE,ne,पोखरा नजिक पहिरोले सडक बन्द
+LANDSLIDE,ne,काठमाडौं नजिक पहिरोले सडक बन्द
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+LANDSLIDE,ne,काठमाडौं नजिक पहिरोले सडक बन्द
+LANDSLIDE,ne,पहिरोले गाउँको सम्पर्क टुट्यो
+WATERLOGGING,ne,वर्षापछि सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,वर्षापछि सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,पोखरा का सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,वर्षापछि सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,वर्षापछि सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,वर्षापछि सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,विराटनगर का सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,भैरहवा का सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,विराटनगर का सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,विराटनगर का सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,पोखरा का सडकमा पानी जम्मा भयो
+WATERLOGGING,ne,वर्षापछि सडकमा पानी जम्मा भयो
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए
+CLOUDBURST,ne,भैरहवा मा बादल फुटेर क्षति
+CLOUDBURST,ne,काठमाडौं मा बादल फुटेर क्षति
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए
+CLOUDBURST,ne,पोखरा मा बादल फुटेर क्षति
+CLOUDBURST,ne,विराटनगर मा बादल फुटेर क्षति
+CLOUDBURST,ne,बादल फुटेजस्तो वर्षाले नहर भरिए

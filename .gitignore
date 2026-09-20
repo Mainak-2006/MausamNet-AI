@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# env
+.env
+.env.local
+.env.*.local
+
+# builds
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# ML artifacts
+services/ml/**/*.joblib
+services/ml/__pycache__/
+services/ml/.venv/
+services/ml/venv/
+*.pyc
+
+# logs / misc
+*.log
+.DS_Store
+coverage/
+.vercel

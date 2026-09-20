@@ -1,0 +1,320 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_DATABASE_URL")
+}
+
+enum Role {
+  USER
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum ReportStatus {
+  PENDING
+  VERIFIED
+  UNVERIFIED
+  SUSPICIOUS
+  REJECTED
+}
+
+enum EventCategory {
+  RAINFALL
+  HEAVY_RAINFALL
+  FLOOD
+  FLASH_FLOOD
+  THUNDERSTORM
+  LIGHTNING
+  CYCLONE
+  HEATWAVE
+  COLD_WAVE
+  FOG
+  DENSE_FOG
+  DUST_STORM
+  STRONG_WIND
+  HAILSTORM
+  SNOWFALL
+  DROUGHT
+  LANDSLIDE
+  CLOUDBURST
+  WATERLOGGING
+  OTHER
+}
+
+enum Severity {
+  LOW
+  MODERATE
+  HIGH
+  SEVERE
+  CRITICAL
+}
+
+enum MediaType {
+  IMAGE
+  VIDEO
+}
+
+enum SourceType {
+  CITIZEN
+  IMD
+  OPENWEATHER
+  WEATHERAPI
+  NEWS
+  INTERNET
+  IOT
+}
+
+enum SyncLocationLevel {
+  DISTRICT
+  CITY
+}
+
+enum SyncTriggerType {
+  SCHEDULED
+  MANUAL
+}
+
+enum SyncRunStatus {
+  QUEUED
+  RUNNING
+  COMPLETED
+  PARTIAL
+  FAILED
+}
+
+model Profile {
+  id               String    @id @default(uuid())
+  authId           String    @unique @map("auth_id")
+  email            String    @unique
+  name             String?
+  username         String?   @unique
+  avatarUrl        String?   @map("avatar_url")
+  phone            String?
+  city             String?
+  state            String?
+  role             Role      @default(USER)
+  suspended        Boolean   @default(false)
+  banned           Boolean   @default(false)
+  credibilityScore Int       @default(50) @map("credibility_score")
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+
+  reports         Report[]  @relation("Author")
+  verifiedReports Report[]  @relation("Verifier")
+  media           Media[]
+  notifications   Notification[]
+  alertsCreated   Alert[]   @relation("AlertCreator")
+  auditLogs       AuditLog[]
+  passwordResetTokens PasswordResetToken[]
+
+  @@index([role])
+  @@map("profiles")
+}
+
+model PasswordResetToken {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  userId    String   @map("user_id")
+  expiresAt DateTime @map("expires_at")
+  used      Boolean  @default(false) @map("used")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("password_reset_tokens")
+}
+
+model Report {
+  id                String        @id @default(uuid())
+  title             String
+  description       String?       @db.Text
+  category          EventCategory
+  severity          Severity      @default(MODERATE)
+  status            ReportStatus  @default(PENDING)
+  city              String?
+  state             String?
+  latitude          Float?
+  longitude         Float?
+  reportedAt        DateTime      @default(now()) @map("reported_at")
+  source            SourceType    @default(CITIZEN)
+  aiPrediction      EventCategory? @map("ai_prediction")
+  aiConfidence      Float?        @map("ai_confidence")
+  credibilityScore  Int           @default(50) @map("credibility_score")
+  isDuplicate       Boolean       @default(false) @map("is_duplicate")
+  duplicateOfId     String?       @map("duplicate_of_id")
+  verificationNotes String?       @map("verification_notes")
+  verifiedById      String?       @map("verified_by_id")
+  verifiedAt        DateTime?     @map("verified_at")
+  authorId          String?       @map("author_id")
+
+  author    Profile?  @relation("Author", fields: [authorId], references: [id], onDelete: SetNull)
+  verifier  Profile?  @relation("Verifier", fields: [verifiedById], references: [id], onDelete: SetNull)
+  duplicateOf Report? @relation("DuplicateOf", fields: [duplicateOfId], references: [id], onDelete: SetNull)
+  duplicates Report[] @relation("DuplicateOf")
+  media      Media[]
+
+  @@index([status])
+  @@index([category])
+  @@index([state, city])
+  @@index([latitude, longitude])
+  @@index([reportedAt])
+  @@map("reports")
+}
+
+model Media {
+  id         String    @id @default(uuid())
+  url        String
+  publicId   String?   @map("public_id")
+  type       MediaType @default(IMAGE)
+  reportId   String?   @map("report_id")
+  uploaderId String?   @map("uploader_id")
+
+  report   Report?  @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  uploader Profile? @relation(fields: [uploaderId], references: [id], onDelete: SetNull)
+
+  @@map("media")
+}
+
+model Alert {
+  id         String        @id @default(uuid())
+  title      String
+  message    String        @db.Text
+  category   EventCategory
+  severity   Severity      @default(HIGH)
+  city       String?
+  state      String?
+  startAt    DateTime      @default(now()) @map("start_at")
+  endAt      DateTime?     @map("end_at")
+  isActive   Boolean       @default(true) @map("is_active")
+  source     SourceType    @default(CITIZEN)
+  createdById String?      @map("created_by_id")
+
+  createdBy Profile? @relation("AlertCreator", fields: [createdById], references: [id], onDelete: SetNull)
+
+  @@index([isActive, category])
+  @@map("alerts")
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  title     String
+  message   String   @db.Text
+  type      String   @default("ALERT")
+  isRead    Boolean  @default(false) @map("is_read")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isRead])
+  @@map("notifications")
+}
+
+model DataSource {
+  id              String     @id @default(uuid())
+  name            String
+  type            SourceType
+  status          String     @default("ONLINE")
+  reliabilityScore Int       @default(70) @map("reliability_score")
+  lastSyncAt      DateTime?  @map("last_sync_at")
+  meta            Json?
+  createdAt       DateTime   @default(now()) @map("created_at")
+
+  @@map("data_sources")
+}
+
+model WeatherSnapshot {
+  id            String    @id @default(uuid())
+  city          String
+  state         String?
+  latitude      Float?
+  longitude     Float?
+  temperature   Float?
+  feelsLike     Float?    @map("feels_like")
+  humidity      Int?
+  pressure      Int?
+  windSpeed     Float?    @map("wind_speed")
+  windDirection Int?      @map("wind_direction")
+  condition     String?
+  source        SourceType
+  observedAt    DateTime  @default(now()) @map("observed_at")
+  locationId    String?   @map("location_id")
+  runId         String?   @map("run_id")
+  meta          Json?
+
+  location SyncLocation? @relation(fields: [locationId], references: [id], onDelete: SetNull)
+  run      SyncRun?      @relation(fields: [runId], references: [id], onDelete: SetNull)
+
+  @@index([city, observedAt])
+  @@index([state, observedAt])
+  @@index([locationId, observedAt])
+  @@map("weather_snapshots")
+}
+
+model SyncLocation {
+  id               String            @id
+  name             String
+  state            String
+  type             SyncLocationLevel
+  latitude         Float?
+  longitude        Float?
+  population       Int?
+  coordinateSource String?           @map("coordinate_source")
+  lastSyncedAt     DateTime?         @map("last_synced_at")
+  createdAt        DateTime          @default(now()) @map("created_at")
+
+  snapshots WeatherSnapshot[]
+
+  @@index([state, type])
+  @@index([type])
+  @@map("sync_locations")
+}
+
+model SyncRun {
+  id          String           @id @default(uuid())
+  trigger     SyncTriggerType
+  status      SyncRunStatus    @default(QUEUED)
+  scope       String           @default("all")
+  total       Int              @default(0)
+  succeeded   Int              @default(0)
+  failed      Int              @default(0)
+  skipped     Int              @default(0)
+  error       String?          @db.Text
+  triggeredBy String?          @map("triggered_by")
+  startedAt   DateTime         @default(now()) @map("started_at")
+  finishedAt  DateTime?        @map("finished_at")
+  meta        Json?
+
+  snapshots WeatherSnapshot[]
+
+  @@index([status, startedAt])
+  @@map("sync_runs")
+}
+
+model SyncSchedule {
+  id        Int      @id @default(1)
+  nextRunAt DateTime @map("next_run_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("sync_schedule")
+}
+
+model AuditLog {
+  id         String   @id @default(uuid())
+  actorId    String?  @map("actor_id")
+  action     String
+  targetType String?  @map("target_type")
+  targetId   String?  @map("target_id")
+  meta       Json?
+  ip         String?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  actor Profile? @relation(fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([actorId, createdAt])
+  @@map("audit_logs")
+}

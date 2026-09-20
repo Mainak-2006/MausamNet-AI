@@ -1,0 +1,24 @@
+{
+  "name": "mausamnet-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MausamNet-AI – AI-powered National Weather Big Data Analytics Platform",
+  "scripts": {
+    "env:gen": "node scripts/gen-env.mjs",
+    "dev:all": "bash scripts/dev.sh",
+    "start:all": "bash scripts/start-all.sh",
+    "dev": "pnpm --parallel -r run dev",
+    "dev:api": "pnpm --filter @mausamnet/api run start:dev",
+    "dev:web": "pnpm --filter @mausamnet/web run dev",
+    "dev:ml": "cd services/ml && uvicorn main:app --reload --port 8000",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "prisma:generate": "pnpm --filter @mausamnet/api run prisma:generate",
+    "prisma:migrate": "pnpm --filter @mausamnet/api run prisma:migrate",
+    "prisma:seed": "pnpm --filter @mausamnet/api run prisma:seed"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
