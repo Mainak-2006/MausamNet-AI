@@ -22,6 +22,9 @@ services/ml/.venv/
 services/ml/venv/
 *.pyc
 
+# Spark data / checkpoints
+services/spark/data/
+
 # logs / misc
 *.log
 .DS_Store
