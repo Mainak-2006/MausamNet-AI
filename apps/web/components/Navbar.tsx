@@ -9,6 +9,7 @@ import { useAuth } from './AuthContext';
 const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/map', label: 'Live Map' },
+  { href: '/alerts', label: 'Alerts' },
   { href: '/reports', label: 'Reports' },
   { href: '/weather', label: 'Weather' },
 ];

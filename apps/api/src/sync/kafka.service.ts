@@ -151,6 +151,8 @@ export class KafkaService implements OnModuleInit, OnModuleDestroy {
     const consumer: Consumer = this.kafka.consumer({ groupId });
     await consumer.connect();
     await consumer.subscribe({ topic, fromBeginning: false });
+    this.consumers.set(topic, consumer);
+    this.logger.log(`Kafka consumer listening on ${topic} (group ${groupId})`);
     await consumer.run({
       eachMessage: async ({ message }) => {
         if (message.value == null) return;
@@ -163,8 +165,6 @@ export class KafkaService implements OnModuleInit, OnModuleDestroy {
         }
       },
     });
-    this.consumers.set(topic, consumer);
-    this.logger.log(`Kafka consumer listening on ${topic} (group ${groupId})`);
   }
 
   async onModuleDestroy() {

@@ -3,8 +3,9 @@ import { Logger, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import * as path from 'node:path';
-import { ReportStatus, Severity } from '@prisma/client';
+import { ReportStatus, Severity, SourceType } from '@prisma/client';
 import { AlertsService } from '../src/alerts/alerts.service';
+import { MlService } from '../src/ml/ml.service';
 import { PrismaService } from '../src/prisma/prisma.service';
 
 @Module({
@@ -17,7 +18,7 @@ import { PrismaService } from '../src/prisma/prisma.service';
       ],
     }),
   ],
-  providers: [PrismaService, AlertsService],
+  providers: [PrismaService, MlService, AlertsService],
 })
 class BackfillAlertsModule {}
 
@@ -26,13 +27,13 @@ const logger = new Logger('BackfillAlerts');
 async function main() {
   const app = await NestFactory.createApplicationContext(BackfillAlertsModule);
   const alerts = app.get(AlertsService);
+  const ml = app.get(MlService);
   const prisma = app.get(PrismaService);
 
   const candidates = await prisma.report.findMany({
     where: {
       status: { in: [ReportStatus.PENDING, ReportStatus.VERIFIED] },
       severity: { in: [Severity.HIGH, Severity.SEVERE, Severity.CRITICAL] },
-      credibilityScore: { gte: 60 },
       OR: [{ city: { not: null } }, { state: { not: null } }],
     },
     orderBy: { reportedAt: 'asc' },
@@ -42,9 +43,35 @@ async function main() {
 
   let alertsCreated = 0;
   let verified = 0;
+  let rescored = 0;
   let skipped = 0;
 
   for (const report of candidates) {
+    // Reports ingested before the source-trust factor was introduced carry a
+    // stale, artificially low credibility score. Recompute it so historical
+    // severe weather reports are treated consistently with new ingestions.
+    if (report.source !== SourceType.CITIZEN) {
+      const trust = ml.assessTrust({
+        aiConfidence: report.aiConfidence,
+        latitude: report.latitude,
+        longitude: report.longitude,
+        mediaCount: 0,
+        city: report.city ?? undefined,
+        state: report.state ?? undefined,
+        isDuplicate: report.isDuplicate,
+        userCredibility: 50,
+        source: report.source,
+      });
+      if (trust.score !== report.credibilityScore) {
+        await prisma.report.update({
+          where: { id: report.id },
+          data: { credibilityScore: trust.score },
+        });
+        report.credibilityScore = trust.score;
+        rescored++;
+      }
+    }
+
     const alert = await alerts.createFromVerifiedReport(report);
     if (!alert) {
       skipped++;
@@ -61,7 +88,7 @@ async function main() {
   }
 
   logger.log(
-    `Done: ${alertsCreated} alert(s) created, ${verified} report(s) auto-verified, ${skipped} skipped`,
+    `Done: ${alertsCreated} alert(s) created, ${verified} report(s) auto-verified, ${rescored} report(s) rescored, ${skipped} skipped`,
   );
 
   await app.close();

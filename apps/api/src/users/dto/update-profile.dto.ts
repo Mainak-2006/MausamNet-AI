@@ -1,10 +1,9 @@
 import {
-  IsAlpha,
   IsOptional,
-  IsPhoneNumber,
   IsString,
   IsUrl,
   IsAlphanumeric,
+  Matches,
   MinLength,
   MaxLength,
 } from 'class-validator';
@@ -28,12 +27,12 @@ export class UpdateProfileDto {
   phone?: string;
 
   @IsOptional()
-  @IsAlpha()
+  @Matches(/^[\p{L}\s.'-]+$/u)
   @MaxLength(60)
   city?: string;
 
   @IsOptional()
-  @IsAlpha()
+  @Matches(/^[\p{L}\s.'-]+$/u)
   @MaxLength(60)
   state?: string;
 

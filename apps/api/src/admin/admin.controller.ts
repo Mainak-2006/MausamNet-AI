@@ -101,7 +101,11 @@ export class AdminController {
 
   @Get('users')
   listUsers(@Query() query: AdminUsersQueryDto) {
-    return this.admin.listUsers(query.q, 1, 20);
+    const page = query.page && query.page > 0 ? query.page : 1;
+    const limit = query.limit && query.limit > 0 && query.limit <= 100
+      ? query.limit
+      : 20;
+    return this.admin.listUsers(query.q, query.role, page, limit);
   }
 
   @Patch('users/:id/role')

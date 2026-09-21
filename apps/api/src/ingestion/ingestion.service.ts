@@ -33,6 +33,14 @@ interface ConditionRule {
 }
 
 /**
+ * Minimum text-model confidence required before its category is allowed to
+ * override the deterministic condition rule. The model is under-confident on
+ * the templated snapshot titles used here, and a low-confidence guess (e.g.
+ * "mist" -> HAILSTORM) would both mis-classify and mis-rate the event.
+ */
+const ML_OVERRIDE_MIN_CONFIDENCE = 0.5;
+
+/**
  * First-match-wins condition -> event mapping. Order matters: specific/severe
  * events (cyclone, flood, thunder) must beat generic ones (rain, fog).
  */
@@ -43,7 +51,7 @@ const CONDITION_RULES: ConditionRule[] = [
   { pattern: /(thunder|lightning|electrical storm)/, category: EventCategory.THUNDERSTORM },
   { pattern: /(hail|hailstorm)/, category: EventCategory.HAILSTORM },
   { pattern: /(dust storm|sandstorm)/, category: EventCategory.DUST_STORM },
-  { pattern: /(heavy rain|torrential|downpour|drenching|very heavy|extremely heavy)/, category: EventCategory.HEAVY_RAINFALL },
+  { pattern: /(heavy rain|torrential|downpour|drenching|heavy intensity|very heavy|extremely heavy|extreme rain)/, category: EventCategory.HEAVY_RAINFALL },
   { pattern: /(gale|squall|strong winds?|high winds?|windy)/, category: EventCategory.STRONG_WIND },
   { pattern: /(dense fog)/, category: EventCategory.DENSE_FOG },
   { pattern: /(freezing fog|fog|mist|haze)/, category: EventCategory.FOG },
@@ -124,7 +132,7 @@ export class SnapshotIngestionService {
     const category = this.classifyCondition(condition);
     if (!category) {
       this.logger.debug(
-        `Snap ingestion skip (benign): ${input.city} ${condition ?? '(no condition)'}`,
+        `Snap ingestion skip (benign): ${input.city}: ${condition ?? '(no condition)'}`,
       );
       return null;
     }
@@ -132,7 +140,11 @@ export class SnapshotIngestionService {
     const title = this.buildTitle(condition, input.city);
     const description = this.buildDescription(input);
     const prediction = await this.ml.classify(title);
-    const aiCategory = this.ml.normalizeCategory(prediction.category) ?? category;
+    const mlCategory = this.ml.normalizeCategory(prediction.category);
+    const aiCategory =
+      mlCategory && (prediction.confidence ?? 0) >= ML_OVERRIDE_MIN_CONFIDENCE
+        ? mlCategory
+        : category;
     const aiConfidence = prediction.confidence;
 
     const duplicates = await this.ml.findDuplicates({
@@ -159,6 +171,7 @@ export class SnapshotIngestionService {
       state: input.state ?? undefined,
       isDuplicate: false,
       userCredibility: 50,
+      source: input.source,
     });
 
     const severity = this.ml.inferSeverity(aiCategory, aiConfidence);
@@ -200,6 +213,9 @@ export class SnapshotIngestionService {
    */
   private async autoVerifyAndPublish(report: Report): Promise<void> {
     if (!(await this.alerts.canAutoPublish(report))) {
+      this.logger.debug(
+        `Auto-publish skipped for report ${report.id} (${report.category}, ${report.severity}, credibility ${report.credibilityScore})`,
+      );
       return;
     }
     await this.prisma.report.update({

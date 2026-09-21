@@ -30,13 +30,12 @@ Kafka           optional message broker for the weather sync pipeline
 pnpm install
 
 # 1. Wire up env vars (see .env.example). The project ref lives in the DB host.
+# A single root .env is shared by the API, web, ML service and Prisma CLI.
 cp .env.example .env
-# edit .env -> DB_USERNAME, DB_PASSWORD, SUPABASE_URL, SUPABASE_ANON_KEY, CLOUDINARY_*, *_API_KEY
+# edit .env -> DB_USERNAME, DB_PASSWORD, DATABASE_URL, DIRECT_DATABASE_URL,
+#   SUPABASE_URL, SUPABASE_ANON_KEY, CLOUDINARY_*, *_API_KEY
 
-# 2. Generate per-app env files (apps/api/.env, apps/web/.env.local)
-pnpm env:gen
-
-# 3. Push the Prisma schema to the database
+# 2. Push the Prisma schema to the database
 pnpm prisma:generate
 pnpm prisma:migrate
 pnpm prisma:seed   # creates/ flags an ADMIN (uses ADMIN_EMAIL)

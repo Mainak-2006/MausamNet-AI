@@ -1,4 +1,26 @@
 /** @type {import('next').NextConfig} */
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+
+const webDir = path.dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: path.resolve(webDir, '../../.env') });
+
+const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3002';
+const apiWs = apiUrl.replace(/^http/, 'ws');
+const connectOrigins = [
+  ...new Set([
+    "'self'",
+    'https:',
+    apiUrl,
+    apiWs,
+    'http://localhost:3002',
+    'http://127.0.0.1:3002',
+    'ws://localhost:3002',
+    'ws://127.0.0.1:3002',
+  ]),
+];
+
 const securityHeaders = [
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   {
@@ -21,7 +43,7 @@ const securityHeaders = [
       "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.tile.stamen.com https://res.cloudinary.com",
-      "connect-src 'self' https:",
+      `connect-src ${connectOrigins.join(' ')}`,
       "font-src 'self' data:",
       "object-src 'none'",
       "base-uri 'self'",
