@@ -101,10 +101,13 @@ export class MlService {
     const base = this.config.get<string>('ML_SERVICE_URL') ?? 'http://localhost:8000';
     const token = this.config.get<string>('ML_API_TOKEN') ?? '';
     const insecure = this.config.get<string>('ML_INSECURE_DEV_MODE') === 'true';
+    const timeoutMs = Number(
+      this.config.get<string>('ML_TIMEOUT_MS') ?? '60000',
+    );
 
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 4000);
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
       const res = await fetch(`${base}/api/classify`, {
         method: 'POST',
         headers: {

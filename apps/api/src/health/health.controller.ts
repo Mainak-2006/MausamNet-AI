@@ -50,8 +50,11 @@ export class HealthController {
     try {
       const base = this.config.get<string>('ML_SERVICE_URL') ?? 'http://localhost:8000';
       const token = this.config.get<string>('ML_API_TOKEN') ?? '';
+      const timeoutMs = Number(
+        this.config.get<string>('ML_HEALTH_TIMEOUT_MS') ?? '60000',
+      );
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 3000);
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
       const res = await fetch(`${base}/api/health`, {
         headers: { Authorization: `Bearer ${token}` },
         signal: controller.signal,

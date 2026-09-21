@@ -1,0 +1,5 @@
+project_id = "mausamnet"
+
+[functions.sync-weather]
+verify_jwt = false
+schedule = "0 * * * *"

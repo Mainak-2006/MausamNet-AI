@@ -36,22 +36,34 @@ SUMMARY_DIR = os.getenv(
 )
 
 POSTGRES_JDBC_URL = os.getenv("SPARK_POSTGRES_JDBC_URL", "")
+SPARK_JDBC_JARS = os.getenv("SPARK_JDBC_JARS", "")
 
 
 def read_parquet(spark):
     return spark.read.parquet(OUTPUT_DIR)
 
 
-def read_postgres(spark):
+def read_postgres(spark, since_hours=None):
     if not POSTGRES_JDBC_URL:
         raise SystemExit(
             "SPARK_POSTGRES_JDBC_URL not set (e.g. "
             "jdbc:postgresql://host:5432/postgres?user=...&password=...). "
             "Pass --parquet instead."
         )
-    return spark.read.format("jdbc").option("url", POSTGRES_JDBC_URL).option(
-        "dbtable", "weather_snapshots"
-    ).option("driver", "org.postgresql.Driver").load()
+    reader = (
+        spark.read.format("jdbc")
+        .option("url", POSTGRES_JDBC_URL)
+        .option("driver", "org.postgresql.Driver")
+    )
+    if since_hours:
+        reader = reader.option(
+            "query",
+            f"SELECT * FROM weather_snapshots "
+            f"WHERE observed_at >= NOW() - INTERVAL '{int(since_hours)} hours'",
+        )
+    else:
+        reader = reader.option("dbtable", "weather_snapshots")
+    return reader.load()
 
 
 def latest_snapshot_per_location(snapshots):
@@ -102,15 +114,27 @@ def summarize_state(latest):
 def main() -> None:
     parser = argparse.ArgumentParser(description="MausamNet weather batch analytics")
     parser.add_argument("--from", dest="source", choices=["parquet", "postgres"], default="parquet")
+    parser.add_argument(
+        "--since-hours",
+        type=int,
+        default=None,
+        help="Only include snapshots newer than N hours (postgres source)",
+    )
     args = parser.parse_args()
 
-    spark = (
+    spark_builder = (
         SparkSession.builder.appName("MausamNetWeatherBatch")
         .config("spark.sql.shuffle.partitions", "8")
-        .getOrCreate()
     )
+    if SPARK_JDBC_JARS:
+        spark_builder = spark_builder.config("spark.jars", SPARK_JDBC_JARS)
+    spark = spark_builder.getOrCreate()
 
-    snapshots = read_parquet(spark) if args.source == "parquet" else read_postgres(spark)
+    snapshots = (
+        read_parquet(spark)
+        if args.source == "parquet"
+        else read_postgres(spark, args.since_hours)
+    )
     snapshots = snapshots.where(F.col("temperature_c").isNotNull())
 
     latest = latest_snapshot_per_location(snapshots)

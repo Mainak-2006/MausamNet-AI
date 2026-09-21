@@ -1,0 +1,59 @@
+name: spark-batch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+concurrency:
+  group: spark-batch
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java (Spark needs a JDK)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: services/spark/requirements.txt
+
+      - name: Install Spark dependencies
+        run: pip install -r services/spark/requirements.txt
+
+      - name: Fetch PostgreSQL JDBC driver
+        run: >
+          curl -fsSL -o /tmp/postgresql.jar
+          https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar
+
+      - name: Run district/state batch analytics
+        env:
+          SPARK_POSTGRES_JDBC_URL: ${{ secrets.SPARK_POSTGRES_JDBC_URL }}
+          SPARK_JDBC_JARS: /tmp/postgresql.jar
+        run: python services/spark/batch.py --from postgres --since-hours 24
+
+      - name: Upload summaries to Supabase Storage
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          FILE="services/spark/data/output/summaries/by_state.json"
+          test -f "$FILE" || { echo "Summary file missing: $FILE"; exit 1; }
+          curl -fsS \
+            -X POST "$SUPABASE_URL/storage/v1/object/analytics/summaries/by_state.json?upsert=true" \
+            -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
+            -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" \
+            -H "Content-Type: application/json" \
+            --data-binary "@$FILE"

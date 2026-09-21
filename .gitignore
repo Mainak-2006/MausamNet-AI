@@ -18,7 +18,9 @@ out/
 *.tsbuildinfo
 
 # ML artifacts
-services/ml/**/*.joblib
+# NOTE: services/ml/artifacts/*.joblib are NOT ignored — Render needs them in
+# the repo to serve /api/classify. Re-train and commit them with train.py if
+# you keep a model in production.
 services/ml/__pycache__/
 services/ml/.venv/
 services/ml/venv/
