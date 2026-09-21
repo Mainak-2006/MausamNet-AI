@@ -1,4 +1,9 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import {
+  ConflictException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
+import { Prisma } from '@prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
 import { AuthedUser } from '../auth/types';
 import { UpdateProfileDto } from './dto/update-profile.dto';
@@ -30,30 +35,40 @@ export class UsersService {
   }
 
   async update(user: AuthedUser, dto: UpdateProfileDto) {
-    return this.prisma.profile.update({
-      where: { id: user.id },
-      data: {
-        name: dto.name,
-        username: dto.username,
-        phone: dto.phone,
-        city: dto.city,
-        state: dto.state,
-        avatarUrl: dto.avatarUrl,
-      },
-      select: {
-        id: true,
-        email: true,
-        name: true,
-        username: true,
-        avatarUrl: true,
-        phone: true,
-        city: true,
-        state: true,
-        role: true,
-        credibilityScore: true,
-        createdAt: true,
-      },
-    });
+    try {
+      return await this.prisma.profile.update({
+        where: { id: user.id },
+        data: {
+          name: dto.name,
+          username: dto.username,
+          phone: dto.phone,
+          city: dto.city,
+          state: dto.state,
+          avatarUrl: dto.avatarUrl,
+        },
+        select: {
+          id: true,
+          email: true,
+          name: true,
+          username: true,
+          avatarUrl: true,
+          phone: true,
+          city: true,
+          state: true,
+          role: true,
+          credibilityScore: true,
+          createdAt: true,
+        },
+      });
+    } catch (err) {
+      if (
+        err instanceof Prisma.PrismaClientKnownRequestError &&
+        err.code === 'P2002'
+      ) {
+        throw new ConflictException('Username is already taken');
+      }
+      throw err;
+    }
   }
 
   async publicProfile(id: string) {

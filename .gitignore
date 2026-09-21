@@ -7,6 +7,8 @@ node_modules/
 .env
 .env.local
 .env.*.local
+apps/api/.env
+apps/web/.env.local
 
 # builds
 dist/
@@ -24,6 +26,8 @@ services/ml/venv/
 
 # Spark data / checkpoints
 services/spark/data/
+# Guards against running spark from a nested cwd that duplicates output here
+services/spark/services/
 
 # logs / misc
 *.log

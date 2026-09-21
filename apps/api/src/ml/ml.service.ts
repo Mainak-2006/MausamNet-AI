@@ -1,6 +1,11 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { EventCategory, ReportStatus, Severity } from '@prisma/client';
+import {
+  EventCategory,
+  ReportStatus,
+  Severity,
+  SourceType,
+} from '@prisma/client';
 import { MlMethod, MlPrediction } from '../auth/types';
 import {
   baseSeverityForCategory,
@@ -15,6 +20,22 @@ const DUPLICATE_TEXT_THRESHOLD = 0.35;
 const DUPLICATE_WINDOW_MS = 6 * 60 * 60 * 1000;
 const DUPLICATE_RADIUS_KM = 10;
 const DUPLICATE_MAX = 3;
+
+/**
+ * Base trust awarded per report source. Automated observations from official
+ * weather providers are inherently more reliable than an anonymous citizen
+ * submission, so they must not be scored with the same base as a citizen
+ * report (which has no reporter/media history to draw on).
+ */
+const SOURCE_TRUST: Record<SourceType, number> = {
+  [SourceType.IMD]: 25,
+  [SourceType.IOT]: 25,
+  [SourceType.OPENWEATHER]: 20,
+  [SourceType.WEATHERAPI]: 20,
+  [SourceType.CITIZEN]: 0,
+  [SourceType.NEWS]: 0,
+  [SourceType.INTERNET]: 0,
+};
 
 export interface DuplicateQuery {
   category: EventCategory;
@@ -48,6 +69,7 @@ export interface TrustAssessmentInput {
   state?: string;
   isDuplicate: boolean;
   userCredibility: number;
+  source?: SourceType;
 }
 
 export interface TrustFactors {
@@ -57,6 +79,7 @@ export interface TrustFactors {
   media: number;
   place: number;
   ai: number;
+  source: number;
   duplicate: number;
 }
 
@@ -187,6 +210,7 @@ export class MlService {
       media: (input.mediaCount ?? 0) > 0 ? 10 : 0,
       place: input.city && input.state ? 4 : 0,
       ai: input.aiConfidence != null ? Math.round(input.aiConfidence * 20) : 0,
+      source: input.source ? SOURCE_TRUST[input.source] ?? 0 : 0,
       duplicate: input.isDuplicate ? 8 : 0,
     };
     const score = clamp(

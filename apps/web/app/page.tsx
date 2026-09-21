@@ -42,10 +42,10 @@ export default function HomePage() {
             <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-black">
               <CloudLightning size={14} /> National Weather Intelligence Platform
             </p>
-            <h1 className="text-4xl font-bold leading-tight sm:text-5xl text-black">
+            <h1 className="text-4xl font-bold leading-tight text-black sm:text-5xl">
               AI-powered weather reporting &amp; verification
             </h1>
-            <p className="mt-4 text-lg text-slate-700">
+            <p className="mt-4 text-lg text-slate-900">
               MausamNet-AI fuses official weather APIs, citizen reports and
               internet sources, classifies events with machine learning, detects
               duplicates and misinformation, and visualizes trusted weather

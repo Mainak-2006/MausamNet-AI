@@ -1,6 +1,7 @@
 import { ForbiddenException, Injectable, NotFoundException } from '@nestjs/common';
 import { Prisma, ReportStatus, Role } from '@prisma/client';
 import { AuditService } from '../audit/audit.service';
+import { ProfileCacheService } from '../auth/profile-cache.service';
 import { AuthedUser } from '../auth/types';
 import { PrismaService } from '../prisma/prisma.service';
 import { ReportsService } from '../reports/reports.service';
@@ -12,6 +13,7 @@ export class AdminService {
     private readonly prisma: PrismaService,
     private readonly reports: ReportsService,
     private readonly audit: AuditService,
+    private readonly profileCache: ProfileCacheService,
   ) {}
 
   listReports(query: QueryReportsDto) {
@@ -31,7 +33,7 @@ export class AdminService {
     });
   }
 
-  async listUsers(q?: string, page = 1, limit = 20) {
+  async listUsers(q?: string, role?: Role, page = 1, limit = 20) {
     const where: Prisma.ProfileWhereInput = {};
     if (q) {
       where.OR = [
@@ -41,6 +43,7 @@ export class AdminService {
         { username: { contains: q, mode: 'insensitive' } },
       ];
     }
+    if (role) where.role = role;
     const [data, total] = await Promise.all([
       this.prisma.profile.findMany({
         where,
@@ -80,6 +83,7 @@ export class AdminService {
       throw new ForbiddenException('Only SUPER_ADMIN can grant SUPER_ADMIN');
     }
     await this.prisma.profile.update({ where: { id: targetId }, data: { role } });
+    this.profileCache.invalidate(target.authId);
     await this.audit.record(
       actor.id,
       'user.role.change',
@@ -108,6 +112,7 @@ export class AdminService {
     else data = { suspended: false, banned: false };
 
     await this.prisma.profile.update({ where: { id: targetId }, data });
+    this.profileCache.invalidate(target.authId);
     await this.audit.record(actor.id, `user.${status}`, 'Profile', targetId, {}, ip);
     return { ok: true, status };
   }

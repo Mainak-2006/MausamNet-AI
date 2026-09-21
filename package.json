@@ -4,7 +4,6 @@
   "private": true,
   "description": "MausamNet-AI – AI-powered National Weather Big Data Analytics Platform",
   "scripts": {
-    "env:gen": "node scripts/gen-env.mjs",
     "dev:all": "bash scripts/dev.sh",
     "start:all": "bash scripts/start-all.sh",
     "dev": "pnpm --parallel -r run dev",

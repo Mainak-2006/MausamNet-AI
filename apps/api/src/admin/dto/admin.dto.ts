@@ -1,4 +1,5 @@
-import { IsEnum, IsOptional, IsString, MaxLength } from 'class-validator';
+import { IsEnum, IsInt, IsOptional, IsString, Max, MaxLength, Min } from 'class-validator';
+import { Type } from 'class-transformer';
 import { Role } from '@prisma/client';
 
 export class NoteDto {
@@ -19,5 +20,19 @@ export class AdminUsersQueryDto {
   q?: string;
 
   @IsOptional()
-  role?: string;
+  @IsEnum(Role)
+  role?: Role;
+
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  page?: number;
+
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  @Max(100)
+  limit?: number;
 }

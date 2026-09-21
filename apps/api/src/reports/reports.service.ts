@@ -103,6 +103,13 @@ export class ReportsService {
       },
     });
     if (!report) throw new NotFoundException('Report not found');
+    const visibleToPublic: ReportStatus[] = [
+      ReportStatus.PENDING,
+      ReportStatus.VERIFIED,
+    ];
+    if (!visibleToPublic.includes(report.status)) {
+      throw new NotFoundException('Report not found');
+    }
     return report;
   }
 
@@ -129,6 +136,7 @@ export class ReportsService {
       state: dto.state,
       isDuplicate,
       userCredibility: user.credibilityScore,
+      source: SourceType.CITIZEN,
     });
     const credibilityScore = trust.score;
     const severity =

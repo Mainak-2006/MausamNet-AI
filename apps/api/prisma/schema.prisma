@@ -159,6 +159,7 @@ model Report {
 
   @@index([status])
   @@index([category])
+  @@index([severity])
   @@index([state, city])
   @@index([latitude, longitude])
   @@index([reportedAt])
@@ -176,6 +177,8 @@ model Media {
   report   Report?  @relation(fields: [reportId], references: [id], onDelete: Cascade)
   uploader Profile? @relation(fields: [uploaderId], references: [id], onDelete: SetNull)
 
+  @@index([reportId])
+  @@index([uploaderId])
   @@map("media")
 }
 
@@ -196,6 +199,7 @@ model Alert {
   createdBy Profile? @relation("AlertCreator", fields: [createdById], references: [id], onDelete: SetNull)
 
   @@index([isActive, category])
+  @@index([isActive, startAt])
   @@map("alerts")
 }
 
@@ -316,5 +320,6 @@ model AuditLog {
   actor Profile? @relation(fields: [actorId], references: [id], onDelete: SetNull)
 
   @@index([actorId, createdAt])
+  @@index([createdAt])
   @@map("audit_logs")
 }
