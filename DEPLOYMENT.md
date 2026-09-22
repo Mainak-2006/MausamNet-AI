@@ -1,14 +1,15 @@
-# Deployment — Card-Free, ₹0, No Docker
+# Deployment — Card-Free, ₹0, No Docker, No DNS
 
 Target: **free tiers only, no payment method anywhere**. Runs the full product
 (web, API, ML classification, hourly weather sync, hourly Spark batch analytics)
-= 0 INR/month.
+= 0 INR/month. No custom domain required — every service uses its provider's
+free default subdomain.
 
 | Piece | Host | Cost |
 |---|---|---|
-| `apps/web` Next.js | Vercel Hobby | ₹0 |
-| `apps/api` NestJS | Render free web service | ₹0 (cold starts after ~15 min idle) |
-| `services/ml` FastAPI | Render free web service (2nd one) | ₹0 (same cold-start behaviour) |
+| `apps/web` Next.js | Vercel Hobby (`<web>.vercel.app`) | ₹0 |
+| `apps/api` NestJS | Render free web service (`<api>.onrender.com`) | ₹0 (cold starts after ~15 min idle) |
+| `services/ml` FastAPI | Render free web service (2nd one, `<ml>.onrender.com`) | ₹0 (same cold-start behaviour) |
 | Hourly weather sync + keepalive | Supabase Scheduled Edge Function | ₹0 |
 | Hourly district/state analytics | GitHub Actions `schedule` (Spark batch) | ₹0 |
 | DB / Auth / Realtime / Storage | Supabase free | ₹0 |
@@ -27,6 +28,11 @@ Target: **free tiers only, no payment method anywhere**. Runs the full product
 > **Why not Hugging Face Spaces for the ML service?** As of 2026 HF only offers
 > free **Static** Spaces; Gradio/Docker Spaces require a paid plan (PRO $9/mo),
 > so the FastAPI service runs on a second Render free service instead.
+
+> **No-DNS tradeoff:** URLs are auto-assigned (`<web>.vercel.app`,
+> `<api>.onrender.com`, `<ml>.onrender.com`) and Render may hand out a new
+> hostname if a service is ever renamed — if that happens, re-sync
+> `NEXT_PUBLIC_API_URL`, `CORS_ORIGINS`, and the `API_BASE_URL` edge secret.
 
 ---
 
@@ -50,7 +56,7 @@ set a password first.
 3. Start: `uvicorn main:app --host 0.0.0.0 --port $PORT`.
 4. Env: `NODE_ENV=production`, `ML_API_TOKEN=<shared-with-the-api>`.
    DO NOT set `ML_INSECURE_DEV_MODE=true`.
-5. Note the URL: `https://<name>-ml.onrender.com`.
+5. Note the URL: `https://<ml>.onrender.com`.
 
 The model (`services/ml/artifacts/*.joblib`) must be committed to the repo —
 Render clones it to serve `/api/classify`. Re-train with `train.py` and commit
@@ -66,7 +72,7 @@ the files if you update the model.
 ```
 NODE_ENV=production
 SWAGGER_ENABLED=false
-CORS_ORIGINS=https://mausamnet.duckdns.org
+CORS_ORIGINS=https://<web>.vercel.app
 DATABASE_URL=<pooled :6543, pgbouncer=true>
 DIRECT_DATABASE_URL=<direct :5432>
 SUPABASE_URL=...
@@ -81,7 +87,7 @@ WEATHER_PROVIDERS=openweather,weatherapi
 WEATHERAPI_API_KEY=...
 OPENWEATHER_API_KEY=...
 IMD_API_KEY=...
-ML_SERVICE_URL=https://<name>-ml.onrender.com
+ML_SERVICE_URL=https://<ml>.onrender.com
 ML_API_TOKEN=...
 ML_TIMEOUT_MS=60000
 ML_HEALTH_TIMEOUT_MS=60000
@@ -100,27 +106,16 @@ after 60 s; the server-side run continues, so let it do its thing.
 1. New project from the same repo, Root: `apps/web`, Framework **Next.js**.
 2. Environment:
 ```
-NEXT_PUBLIC_API_URL=https://api.mausamnet.duckdns.org
+NEXT_PUBLIC_API_URL=https://<api>.onrender.com
 NEXT_PUBLIC_SUPABASE_URL=...
 NEXT_PUBLIC_SUPABASE_ANON_KEY=...
 NEXT_PUBLIC_MAP_TILE_URL=https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 ```
-3. Domains: add `mausamnet.duckdns.org`.
+3. No custom domain needed — Vercel serves it at `https://<web>.vercel.app`.
+   `NEXT_PUBLIC_API_URL` must match `CORS_ORIGINS` on the API exactly
+   (next.config builds `connect-src` from it).
 
-## 4. API key / domain notes
-
-DuckDNS supports **A records** (no CNAME). Best options:
-
-```text
-mausamnet.duckdns.org  ->  A  76.76.21.21            (Vercel apex IP)
-api.mausamnet.duckdns.org -> A <Render service IP>   (see Render "Settings -> Domains")
-```
-
-Fallback if you'd rather avoid DNS entirely: use the default free subdomains
-(`<x>.vercel.app`, `<svc>.onrender.com`) and set `NEXT_PUBLIC_API_URL` to the
-Render hostname.
-
-## 5. Supabase scheduled sync (cron)
+## 4. Supabase scheduled sync (cron)
 
 Local once — from repo root:
 
@@ -135,11 +130,11 @@ Secrets → **Edge Function secrets** (or automatically from the linked project:
 `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` are standard, `SUPABASE_ACCESS_TOKEN` is CI-only):
 
 ```
-API_BASE_URL=https://api.mausamnet.duckdns.org
+API_BASE_URL=https://<api>.onrender.com
 ADMIN_EMAIL=<the admin account>
 ADMIN_PASSWORD=<admin password>
 # Optional: keeps the sleeping Render ML service warm each hour too.
-ML_HEALTH_URL=https://<name>-ml.onrender.com
+ML_HEALTH_URL=https://<ml>.onrender.com
 ML_API_TOKEN=<shared token>
 ```
 
@@ -151,7 +146,7 @@ schedule may also fire — that's fine). If both edge-function pings are close
 together, they warm both Render services so the hourly sync and first user hits
 are not cold.
 
-## 6. GitHub Actions → Spark batch
+## 5. GitHub Actions → Spark batch
 
 Add repo secrets (Settings → Secrets and variables → Actions):
 
@@ -168,10 +163,10 @@ SUPABASE_SERVICE_ROLE_KEY=...
 - Run the workflow once manually (`Actions → spark-batch → Run workflow`), then
   it fires every hour. Output: `summaries/by_state.json` + parquet in the bucket.
 
-## 7. Verify
+## 6. Verify
 
 ```bash
-curl -s https://api.mausamnet.duckdns.org/api/health
+curl -s https://<api>.onrender.com/api/health
 # backend UP, database UP, ml UP, weather UP
 ```
 - Submit a report on the site → ML classification round-trips to the ML Render service.
@@ -187,4 +182,5 @@ curl -s https://api.mausamnet.duckdns.org/api/health
 | Spark fails with JDBC/prepared statements | Confirm `SPARK_POSTGRES_JDBC_URL` uses `:5432` (direct, not pooler) |
 | Sync 503s / `SYNC_IN_PROGRESS` | Expected when a run is active; it self-completes |
 | GitHub cron never fires | Scheduled workflows need activity in last 60 days on private repos; re-trigger manually |
-| Vercel CSP blocks API calls | Confirm `NEXT_PUBLIC_API_URL` matches exactly (next.config builds `connect-src` from it) |
+| Vercel CSP blocks API calls | Confirm `NEXT_PUBLIC_API_URL` matches `CORS_ORIGINS` exactly (next.config builds `connect-src` from it) |
+| Render hostname changed (service renamed) | Update `NEXT_PUBLIC_API_URL`, `CORS_ORIGINS`, and the `API_BASE_URL` edge secret to the new hostname |
