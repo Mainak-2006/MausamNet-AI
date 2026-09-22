@@ -21,6 +21,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from pyspark.sql import SparkSession, Window, functions as F
+from pyspark.sql.types import DoubleType
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 load_dotenv(ROOT / ".env")
@@ -63,7 +64,26 @@ def read_postgres(spark, since_hours=None):
         )
     else:
         reader = reader.option("dbtable", "weather_snapshots")
-    return reader.load()
+    # Normalize Postgres column names to the same schema main.py writes to
+    # Parquet (temperature_c, humidity_pct, ...) so downstream code is
+    # source-agnostic.
+    return reader.load().select(
+        F.col("location_id"),
+        F.col("city").alias("location_name"),
+        F.col("state"),
+        F.col("latitude").cast(DoubleType()).alias("latitude"),
+        F.col("longitude").cast(DoubleType()).alias("longitude"),
+        F.col("temperature").cast(DoubleType()).alias("temperature_c"),
+        F.col("feels_like").cast(DoubleType()).alias("feels_like_c"),
+        F.col("humidity").cast(DoubleType()).alias("humidity_pct"),
+        F.col("pressure").cast(DoubleType()).alias("pressure_mb"),
+        F.col("wind_speed").cast(DoubleType()).alias("wind_kph"),
+        F.col("wind_direction").cast(DoubleType()).alias("wind_deg"),
+        F.col("condition"),
+        F.col("source"),
+        F.col("observed_at"),
+        F.col("run_id"),
+    )
 
 
 def latest_snapshot_per_location(snapshots):
