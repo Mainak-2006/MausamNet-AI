@@ -1,4 +1,4 @@
-project_id = "mausamnet"
+project_id = "xvffcavirvznnaeigqeu"
 
 [functions.sync-weather]
 verify_jwt = false

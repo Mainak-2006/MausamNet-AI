@@ -36,3 +36,9 @@ services/spark/services/
 .DS_Store
 coverage/
 .vercel
+
+# Supabase CLI temp artifacts
+supabase/.temp/
+
+# deploy env packs (contain secrets)
+.deploy-*.env
