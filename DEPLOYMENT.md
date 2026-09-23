@@ -123,9 +123,16 @@ Local once — from repo root:
 npm i -g supabase
 supabase login
 supabase link --project-ref <your-ref>   # sets project_id in supabase/config.toml
-supabase functions deploy keep-warm --project-ref <your-ref>
-supabase functions deploy sync-weather --project-ref <your-ref>
+supabase functions deploy keep-warm --use-api --project-ref <your-ref>
+supabase functions deploy sync-weather --use-api --project-ref <your-ref>
 ```
+
+> If the CLI's local bundler fails with `entrypoint path does not exist`, add
+> `--use-api` (bundles server-side) — shown above.
+> The `schedule` rows in `supabase/config.toml` only fire if the **`pg_cron` and
+> `pg_net` extensions are enabled** in Supabase → Database → Extensions. They
+> are created as `cron.job` rows (verified via
+> `select jobname, schedule, active from cron.job;`).
 
 Secrets → **Edge Function secrets** (or automatically from the linked project:
 `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` are standard, `SUPABASE_ACCESS_TOKEN` is CI-only):
@@ -196,6 +203,7 @@ curl -s https://<api>.onrender.com/api/health
 | Spark fails with JDBC/prepared statements | Confirm `SPARK_POSTGRES_JDBC_URL` uses `:5432` (direct, not pooler) |
 | Sync 503s / `SYNC_IN_PROGRESS` | Expected when a run is active; it self-completes |
 | GitHub cron never fires | Scheduled workflows need activity in last 60 days on private repos; re-trigger manually |
+| Supabase schedules never fire | Enable `pg_cron` + `pg_net` extensions in Database → Extensions, then (re)deploy the functions |
 | Render instances sleeping during the day | `keep-warm` wasn't deployed or its secret is missing — deploy it and confirm `cron.job_run_details` in Supabase shows runs every 14 min (`*/14 3-12 * * *` UTC) |
 | Instance hours near the 750 cap | Trim the keep-warm window in `supabase/config.toml` (e.g. `3-11`), or drop the overnight sync |
 | Vercel CSP blocks API calls | Confirm `NEXT_PUBLIC_API_URL` matches `CORS_ORIGINS` exactly (next.config builds `connect-src` from it) |
