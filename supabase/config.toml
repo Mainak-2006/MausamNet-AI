@@ -3,3 +3,7 @@ project_id = "xvffcavirvznnaeigqeu"
 [functions.sync-weather]
 verify_jwt = false
 schedule = "0 * * * *"
+
+[functions.keep-warm]
+verify_jwt = false
+schedule = "*/14 3-12 * * *"

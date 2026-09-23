@@ -10,7 +10,7 @@ free default subdomain.
 | `apps/web` Next.js | Vercel Hobby (`<web>.vercel.app`) | ₹0 |
 | `apps/api` NestJS | Render free web service (`<api>.onrender.com`) | ₹0 (cold starts after ~15 min idle) |
 | `services/ml` FastAPI | Render free web service (2nd one, `<ml>.onrender.com`) | ₹0 (same cold-start behaviour) |
-| Hourly weather sync + keepalive | Supabase Scheduled Edge Function | ₹0 |
+| Hourly weather sync + daytime Render keepalive (14-min) | Supabase Scheduled Edge Functions | ₹0 |
 | Hourly district/state analytics | GitHub Actions `schedule` (Spark batch) | ₹0 |
 | DB / Auth / Realtime / Storage | Supabase free | ₹0 |
 | Media | Cloudinary free | ₹0 |
@@ -21,7 +21,7 @@ free default subdomain.
   repo so Render can run the classifier without a paid host.
 - Repo artifacts added for this stack:
   - `.github/workflows/spark-batch.yml` — hourly Spark batch + upload
-  - `supabase/functions/sync-weather/` + `supabase/config.toml` — hourly sync cron (+ optional ML keepalive)
+  - `supabase/functions/sync-weather/` + `supabase/functions/keep-warm/` + `supabase/config.toml` — hourly sync cron + 14-min daytime keepalive
   - `services/spark/batch.py` — gained `--since-hours` and `SPARK_JDBC_JARS` support
   - `apps/api` — ML call/health timeouts now configurable for cold starts
 
@@ -123,6 +123,7 @@ Local once — from repo root:
 npm i -g supabase
 supabase login
 supabase link --project-ref <your-ref>   # sets project_id in supabase/config.toml
+supabase functions deploy keep-warm --project-ref <your-ref>
 supabase functions deploy sync-weather --project-ref <your-ref>
 ```
 
@@ -133,18 +134,31 @@ Secrets → **Edge Function secrets** (or automatically from the linked project:
 API_BASE_URL=https://<api>.onrender.com
 ADMIN_EMAIL=<the admin account>
 ADMIN_PASSWORD=<admin password>
-# Optional: keeps the sleeping Render ML service warm each hour too.
+# Optional: keeps the sleeping Render ML service warm too.
 ML_HEALTH_URL=https://<ml>.onrender.com
 ML_API_TOKEN=<shared token>
 ```
 
-`supabase/config.toml` declares `schedule = "0 * * * *"` (hourly). The function
-logs in as the admin, pings `/api/health` (keepalive + liveness) and the ML
-service (if `ML_HEALTH_URL` is set), then POSTs `/api/admin/weather/sync`.
-A `SYNC_IN_PROGRESS` response is treated as success (the API's own fallback
-schedule may also fire — that's fine). If both edge-function pings are close
-together, they warm both Render services so the hourly sync and first user hits
-are not cold.
+Two scheduled functions (`supabase/config.toml`):
+
+- **`keep-warm`** — `*/14 3-12 * * *` (UTC) = **08:30–18:29 IST**, every 14 min.
+  Render free spins services down after **15 min idle**, so a sub-15-min ping
+  keeps both instances running through the working day. It pings
+  `GET /api/health` on the API and (if `ML_HEALTH_URL` is set) on the ML
+  service — no auth, no sync, no work for your data.
+- **`sync-weather`** — `0 * * * *` (hourly, 24/7). Logs in as the admin, pings
+  `/api/health` (liveness) + ML, then POSTs `/api/admin/weather/sync`.
+  A `SYNC_IN_PROGRESS` response is treated as success (the API's own fallback
+  schedule may also fire — that's fine).
+
+**Why not a longer window / 24/7 keepalive?** Render grants **750 free
+instance hours/month shared across the whole workspace** (two services here)
+and spun-down instances use 0. Keeping one service up full-time burns ~730
+hrs/mo of the budget. The 10 h window ≈ `2 × 10 × 30.4 = 608` hrs plus the
+nightly wake-up the 24/7 sync causes (~16 min of every night-hour ≈ 97 hrs)
+totals roughly **705 hrs/mo** — just under the cap with headroom. Going to a
+full 08:00–20:00 window (over ~830 hrs) would suspend the services mid-month.
+To buy back the full window, drop the overnight sync instead.
 
 ## 5. GitHub Actions → Spark batch
 
@@ -182,5 +196,7 @@ curl -s https://<api>.onrender.com/api/health
 | Spark fails with JDBC/prepared statements | Confirm `SPARK_POSTGRES_JDBC_URL` uses `:5432` (direct, not pooler) |
 | Sync 503s / `SYNC_IN_PROGRESS` | Expected when a run is active; it self-completes |
 | GitHub cron never fires | Scheduled workflows need activity in last 60 days on private repos; re-trigger manually |
+| Render instances sleeping during the day | `keep-warm` wasn't deployed or its secret is missing — deploy it and confirm `cron.job_run_details` in Supabase shows runs every 14 min (`*/14 3-12 * * *` UTC) |
+| Instance hours near the 750 cap | Trim the keep-warm window in `supabase/config.toml` (e.g. `3-11`), or drop the overnight sync |
 | Vercel CSP blocks API calls | Confirm `NEXT_PUBLIC_API_URL` matches `CORS_ORIGINS` exactly (next.config builds `connect-src` from it) |
 | Render hostname changed (service renamed) | Update `NEXT_PUBLIC_API_URL`, `CORS_ORIGINS`, and the `API_BASE_URL` edge secret to the new hostname |
