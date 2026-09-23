@@ -52,8 +52,9 @@ jobs:
           FILE="services/spark/data/output/summaries/by_state.json"
           test -f "$FILE" || { echo "Summary file missing: $FILE"; exit 1; }
           curl -fsS \
-            -X POST "$SUPABASE_URL/storage/v1/object/analytics/summaries/by_state.json?upsert=true" \
+            -X POST "$SUPABASE_URL/storage/v1/object/analytics/summaries/by_state.json" \
             -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
             -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" \
             -H "Content-Type: application/json" \
+            -H "x-upsert: true" \
             --data-binary "@$FILE"
