@@ -26,7 +26,8 @@ export default function RegisterPage() {
       password,
       options: {
         data: { name },
-        emailRedirectTo: window.location.origin + '/dashboard',
+        emailRedirectTo:
+          window.location.origin + '/auth/callback?next=/dashboard',
       },
     });
     setLoading(false);
