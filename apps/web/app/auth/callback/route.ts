@@ -20,6 +20,13 @@ function fail(origin: string, message: string): NextResponse {
   );
 }
 
+const PKCE_VERIFIER_MISSING =
+  /code verifier not found|pkce_code_verifier_not_found/i;
+
+function verifiedUnexpectedly(origin: string): NextResponse {
+  return NextResponse.redirect(`${origin}/login?verified=1`);
+}
+
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
@@ -37,7 +44,12 @@ export async function GET(request: NextRequest) {
 
   if (code) {
     const { error } = await supabase.auth.exchangeCodeForSession(code);
-    if (error) return fail(origin, error.message);
+    if (error) {
+      if (PKCE_VERIFIER_MISSING.test(error.message)) {
+        return verifiedUnexpectedly(origin);
+      }
+      return fail(origin, error.message);
+    }
     return NextResponse.redirect(`${origin}${next}`);
   }
 

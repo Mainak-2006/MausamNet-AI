@@ -18,6 +18,7 @@ export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(searchParams.get('error'));
+  const verified = searchParams.get('verified') === '1';
   const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e: React.FormEvent) => {
@@ -44,6 +45,11 @@ export default function LoginForm() {
       subtitle="Log in to report weather events and track verification"
     >
       <form onSubmit={onSubmit} className="space-y-4">
+        {verified && (
+          <p className="rounded-lg bg-emerald-50 px-3 py-2 text-sm text-emerald-700">
+            Email confirmed! Log in to continue.
+          </p>
+        )}
         <input
           type="email"
           required
