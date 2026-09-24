@@ -14,7 +14,7 @@ apps/api        NestJS backend (REST API, Prisma, Supabase Auth)
 services/ml     Python FastAPI + scikit-learn classification service
 services/spark  PySpark streaming + batch analytics (Kafka -> district/state summaries)
 DB              Supabase PostgreSQL (via Prisma ORM)
-Media           Cloudinary
+Media           Supabase Storage
 Kafka           optional message broker for the weather sync pipeline
 ```
 
@@ -33,7 +33,7 @@ pnpm install
 # A single root .env is shared by the API, web, ML service and Prisma CLI.
 cp .env.example .env
 # edit .env -> DB_USERNAME, DB_PASSWORD, DATABASE_URL, DIRECT_DATABASE_URL,
-#   SUPABASE_URL, SUPABASE_ANON_KEY, CLOUDINARY_*, *_API_KEY
+#   SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_STORAGE_BUCKET, *_API_KEY
 
 # 2. Push the Prisma schema to the database
 pnpm prisma:generate
@@ -93,7 +93,7 @@ Role-based access uses the `role` column (`USER`, `ADMIN`, `SUPER_ADMIN`).
 - `GET  /api/admin/weather/sync/runs` – recent sync runs
 - `GET  /api/analytics/overview` – dashboard stats
 - `GET  /api/health` – system health (db, ml, weather)
-- `POST /api/media/upload` – Cloudinary upload (auth)
+- `POST /api/media/upload` – Supabase Storage upload (auth)
 
 ## Repo layout
 

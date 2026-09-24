@@ -8,6 +8,10 @@ dotenv.config({ path: path.resolve(webDir, '../../.env') });
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3002';
 const apiWs = apiUrl.replace(/^http/, 'ws');
+const supabaseOrigin = (process.env.NEXT_PUBLIC_SUPABASE_URL ?? '').replace(
+  /\/+$/,
+  '',
+);
 const connectOrigins = [
   ...new Set([
     "'self'",
@@ -42,7 +46,8 @@ const securityHeaders = [
       "default-src 'self'",
       "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.tile.stamen.com https://res.cloudinary.com",
+      "img-src 'self' data: blob: https://*.tile.openstreetmap.org https://*.tile.stamen.com" + (supabaseOrigin ? ` ${supabaseOrigin}` : ''),
+      `media-src 'self'${supabaseOrigin ? ` ${supabaseOrigin}` : ''}`,
       `connect-src ${connectOrigins.join(' ')}`,
       "font-src 'self' data:",
       "object-src 'none'",
