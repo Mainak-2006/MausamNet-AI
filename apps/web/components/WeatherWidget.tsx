@@ -70,8 +70,13 @@ export default function WeatherWidget({ initialCity = 'Siliguri' }) {
     try {
       const coords = await locationToCity();
       await load('', coords);
-    } catch {
-      setError('Could not get your location');
+    } catch (err) {
+      const message = err instanceof DOMException && err.code === 1
+        ? 'Permission denied. Allow location access in your browser.'
+        : !navigator.geolocation
+          ? 'Geolocation is not supported in this browser.'
+          : 'Could not get your location';
+      setError(message);
     }
   };
 
