@@ -16,6 +16,7 @@ import { AnalyticsModule } from './analytics/analytics.module';
 import { AdminModule } from './admin/admin.module';
 import { SyncModule } from './sync/sync.module';
 import { HealthModule } from './health/health.module';
+import { MediaModule } from './media/media.module';
 import { SupabaseAuthGuard } from './auth/supabase.guard';
 import { RolesGuard } from './auth/roles.guard';
 import { validateEnv } from './config/env.validation';
@@ -49,6 +50,7 @@ const envFiles = [
     AdminModule,
     SyncModule,
     HealthModule,
+    MediaModule,
   ],
   providers: [
     { provide: APP_GUARD, useClass: ThrottlerGuard },
